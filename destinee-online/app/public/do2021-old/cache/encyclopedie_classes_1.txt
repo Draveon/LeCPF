@@ -1,0 +1,583 @@
+	<td class="creatbatiliste4"><a href="info_classe.php?classe=Archer" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Archer</h4><br>
+			<img src="/images/classes/archer.gif" width="100" height="100" alt="Archer" title="Archer" border=1></a></td>	<td class="creatbatiliste4"><a href="info_classe.php?classe=Assassin" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Assassin</h4><br>
+			<img src="/images/classes/assassin.gif" width="100" height="100" alt="Assassin" title="Assassin" border=1></a></td>	<td class="creatbatiliste4"><a href="info_classe.php?classe=Barbare" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Barbare</h4><br>
+			<img src="/images/classes/barbare.gif" width="100" height="100" alt="Barbare" title="Barbare" border=1></a></td>	<td class="creatbatiliste4"><a href="info_classe.php?classe=Barde" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Barde</h4><br>
+			<img src="/images/classes/barde.gif" width="100" height="100" alt="Barde" title="Barde" border=1></a></td>	<td class="creatbatiliste4"><a href="info_classe.php?classe=Chevalier" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Chevalier</h4><br>
+			<img src="/images/classes/chevalier.gif" width="100" height="100" alt="Chevalier" title="Chevalier" border=1></a></td>	<td class="creatbatiliste4"><a href="info_classe.php?classe=Chevalier noir" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Chevalier noir</h4><br>
+			<img src="/images/classes/chevaliernoir.jpg" width="100" height="100" alt="Chevalier noir" title="Chevalier noir" border=1></a></td></tr>
+<tr>	<td class="creatbatiliste4"><a href="info_classe.php?classe=Clerc" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Clerc</h4><br>
+			<img src="/images/classes/clerc.png" width="100" height="100" alt="Clerc" title="Clerc" border=1></a></td>	<td class="creatbatiliste4"><a href="info_classe.php?classe=Démonologiste" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Démonologiste</h4><br>
+			<img src="/images/classes/demonologiste.gif" width="100" height="100" alt="Démonologiste" title="Démonologiste" border=1></a></td>	<td class="creatbatiliste4"><a href="info_classe.php?classe=Druide" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Druide</h4><br>
+			<img src="/images/classes/druide.gif" width="100" height="100" alt="Druide" title="Druide" border=1></a></td>	<td class="creatbatiliste4"><a href="info_classe.php?classe=Enchanteur" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Enchanteur</h4><br>
+			<img src="images/classes/enchanteur.gif" width="100" height="100" alt="Enchanteur" title="Enchanteur" border=1></a></td>	<td class="creatbatiliste4"><a href="info_classe.php?classe=Ermite" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Ermite</h4><br>
+			<img src="/images/classes/ermite.png" width="100" height="100" alt="Ermite" title="Ermite" border=1></a></td>	<td class="creatbatiliste4"><a href="info_classe.php?classe=Esclavagiste" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Esclavagiste</h4><br>
+			<img src="/images/classes/esclavagiste.jpg" width="100" height="100" alt="Esclavagiste" title="Esclavagiste" border=1></a></td></tr>
+<tr>	<td class="creatbatiliste4"><a href="info_classe.php?classe=Forgeron" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Forgeron</h4><br>
+			<img src="/images/classes/forgeron.gif" width="100" height="100" alt="Forgeron" title="Forgeron" border=1></a></td>	<td class="creatbatiliste4"><a href="info_classe.php?classe=Guerrier" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Guerrier</h4><br>
+			<img src="/images/classes/guerrier.gif" width="100" height="100" alt="Guerrier" title="Guerrier" border=1></a></td>	<td class="creatbatiliste4"><a href="info_classe.php?classe=Illusioniste" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Illusioniste</h4><br>
+			<img src="/images/classes/illusioniste.gif" width="100" height="100" alt="Illusioniste" title="Illusioniste" border=1></a></td>	<td class="creatbatiliste4"><a href="info_classe.php?classe=Inquisiteur" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Inquisiteur</h4><br>
+			<img src="/images/classes/inquisiteur.png" width="100" height="100" alt="Inquisiteur" title="Inquisiteur" border=1></a></td>	<td class="creatbatiliste4"><a href="info_classe.php?classe=Magicien" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Magicien</h4><br>
+			<img src="/images/classes/magicien.gif" width="100" height="100" alt="Magicien" title="Magicien" border=1></a></td>	<td class="creatbatiliste4"><a href="info_classe.php?classe=Marchand" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Marchand</h4><br>
+			<img src="/images/classes/marchand.gif" width="100" height="100" alt="Marchand" title="Marchand" border=1></a></td></tr>
+<tr>	<td class="creatbatiliste4"><a href="info_classe.php?classe=Nécromancien" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Nécromancien</h4><br>
+			<img src="/images/classes/necromancien.gif" width="100" height="100" alt="Nécromancien" title="Nécromancien" border=1></a></td>	<td class="creatbatiliste4"><a href="info_classe.php?classe=Paladin" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Paladin</h4><br>
+			<img src="/images/classes/paladin.gif" width="100" height="100" alt="Paladin" title="Paladin" border=1></a></td>	<td class="creatbatiliste4"><a href="info_classe.php?classe=Prêtre" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Prêtre</h4><br>
+			<img src="/images/classes/pretre.gif" width="100" height="100" alt="Prêtre" title="Prêtre" border=1></a></td>	<td class="creatbatiliste4"><a href="info_classe.php?classe=Psioniste" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Psioniste</h4><br>
+			<img src="/images/classes/psioniste.gif" width="100" height="100" alt="Psioniste" title="Psioniste" border=1></a></td>	<td class="creatbatiliste4"><a href="info_classe.php?classe=Rôdeur" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Rôdeur</h4><br>
+			<img src="/images/classes/rodeur.gif" width="100" height="100" alt="Rôdeur" title="Rôdeur" border=1></a></td>	<td class="creatbatiliste4"><a href="info_classe.php?classe=Samouraï" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Samouraï</h4><br>
+			<img src="/images/classes/samourai.png" width="100" height="100" alt="Samouraï" title="Samouraï" border=1></a></td></tr>
+<tr>	<td class="creatbatiliste4"><a href="info_classe.php?classe=Shaman" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Shaman</h4><br>
+			<img src="/images/classes/shaman.gif" width="100" height="100" alt="Shaman" title="Shaman" border=1></a></td>	<td class="creatbatiliste4"><a href="info_classe.php?classe=Sorcier" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Sorcier</h4><br>
+			<img src="/images/classes/sorcier.gif" width="100" height="100" alt="Sorcier" title="Sorcier" border=1></a></td>	<td class="creatbatiliste4"><a href="info_classe.php?classe=Transmutateur" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Transmutateur</h4><br>
+			<img src="/images/classes/transmutateur.png" width="100" height="100" alt="Transmutateur" title="Transmutateur" border=1></a></td>	<td class="creatbatiliste4"><a href="info_classe.php?classe=Voleur" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Voleur</h4><br>
+			<img src="/images/classes/voleur.gif" width="100" height="100" alt="Voleur" title="Voleur" border=1></a></td></tr><tr><td colspan="6"><br></td></tr></tbody></table>
+		</div></td></tr>
+	<tr>	<td class="cadrebottom" colspan="4"></td></tr>
+</tbody></table>
+
+<div class="cadrespacer"></div>
+
+<table class="cadretablenormal"><tbody>
+	<tr>	<td class="cadretopleft"  colspan="3"></td>
+		<td class="cadretopright" rowspan="2"></td></tr>
+	<tr>	<td class="cadremiddleleft"></td>
+		<td class="cadrecontenu"  colspan="2">
+			<div class="col-md-12" align="center"><table class="localtable963"><tbody><tr><td><h2>Caractéristiques des classes</h2><center>
+	<table class="tableclasses"><tbody>
+	<tr>	<td style="text-align: center;"></td>
+		<td class="tdclasses"><img src="images/icones/héros/attaque.png" align="middle" title="Attaque"></td>
+		<td class="tdclasses"><img src="images/icones/héros/defense.png" align="middle" title="Défense"></td>
+		<td class="tdclasses"><img src="images/icones/héros/initiative.png" align="middle" title="Initiative"></td>
+		<td class="tdclasses"><img src="images/icones/héros/endurance.png" align="middle" title="Endurance"></td>
+		<td class="tdclasses"><img src="images/icones/héros/puissance.png" align="middle" title="Puissance"></td>
+		<td class="tdclasses"><img src="images/icones/héros/charisme.png" align="middle" title="Charisme"></td>
+		<td class="separator"></td>
+		<td class="tdclasses"><img src="images/icones/magie/sort_1.png" align="middle" title="Sorts niveau 1"></td>
+		<td class="tdclasses"><img src="images/icones/magie/sort_2.png" align="middle" title="Sorts niveau 2"></td>
+		<td class="tdclasses"><img src="images/icones/magie/sort_3.png" align="middle" title="Sorts niveau 3"></td>
+		<td class="tdclasses"><img src="images/icones/magie/sort_4.png" align="middle" title="Sorts niveau 4"></td>
+		<td class="tdclasses"><img src="images/icones/magie/sort_5.png" align="middle" title="Sorts niveau 5"></td>
+		<td class="tdclasses"><img src="images/icones/magie/sort_spe.png" align="middle" title="Sort spécial"></td>
+		<td class="separator"></td>
+		<td style="width: 12%;" colspan="2"><img src="images/icones/héros/aptitude.png" align="middle" title="Points d'aptitude et Aptitude de départ"></td>
+	</tr>
+	<tr>	<td></td>
+		<td colspan="16" class="hline"</td></tr>
+<tr>
+		<td>Archer</td>
+		<td class="tdclasses">7</td>
+		<td class="tdclasses">3.5</td>
+		<td class="tdclasses">4</td>
+		<td class="tdclasses">3.5</td>
+		<td class="tdclasses">0</td>
+		<td class="tdclasses">1</td>
+		<td class="separator"></td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">2</td>
+		<td class="tdclasses">2</td>
+		<td class="tdclasses">0</td>
+		<td class="tdclasses">0</td><td><a  href="info_sorts.php?sort=1" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/sorts/spe_archer.gif" height="35px" width="30px"></a></td>
+		<td class="separator"></td>
+		<td class="tdclasses">24</td><td><a  href="info_aptitude.php?aptitude=17" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/aptitudes/embuscade.gif" height="35px" width="30px"></a></td></tr>
+		<tr>	<td></td>
+		<td colspan="16" class="hline"</td></tr><tr>
+		<td>Assassin</td>
+		<td class="tdclasses">5</td>
+		<td class="tdclasses">1</td>
+		<td class="tdclasses">7</td>
+		<td class="tdclasses">1</td>
+		<td class="tdclasses">5</td>
+		<td class="tdclasses">1</td>
+		<td class="separator"></td>
+		<td class="tdclasses">4</td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">1</td>
+		<td class="tdclasses">1</td>
+		<td class="tdclasses">0</td><td><a  href="info_sorts.php?sort=2" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/sorts/spe_assassin.gif" height="35px" width="30px"></a></td>
+		<td class="separator"></td>
+		<td class="tdclasses">23</td><td><a  href="info_aptitude.php?aptitude=16" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/aptitudes/assassinat.gif" height="35px" width="30px"></a></td></tr>
+		<tr>	<td></td>
+		<td colspan="16" class="hline"</td></tr><tr>
+		<td>Barbare</td>
+		<td class="tdclasses">9</td>
+		<td class="tdclasses">1.5</td>
+		<td class="tdclasses">5.5</td>
+		<td class="tdclasses">3.5</td>
+		<td class="tdclasses">0</td>
+		<td class="tdclasses">1</td>
+		<td class="separator"></td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">1</td>
+		<td class="tdclasses">1</td>
+		<td class="tdclasses">0</td>
+		<td class="tdclasses">0</td><td><a  href="info_sorts.php?sort=3" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/sorts/spe_barbare.gif" height="35px" width="30px"></a></td>
+		<td class="separator"></td>
+		<td class="tdclasses">28</td><td><a  href="info_aptitude.php?aptitude=12" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/aptitudes/charge.gif" height="35px" width="30px"></a></td></tr>
+		<tr>	<td></td>
+		<td colspan="16" class="hline"</td></tr><tr>
+		<td>Barde</td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">3</td>
+		<td class="separator"></td>
+		<td class="tdclasses">5</td>
+		<td class="tdclasses">4</td>
+		<td class="tdclasses">2</td>
+		<td class="tdclasses">1</td>
+		<td class="tdclasses">0</td><td><a  href="info_sorts.php?sort=4" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/sorts/spe_barde.gif" height="35px" width="30px"></a></td>
+		<td class="separator"></td>
+		<td class="tdclasses">22</td><td><img src="/images/icones/au_choix.png" height="35px" width="30px"></td></tr>
+		<tr>	<td></td>
+		<td colspan="16" class="hline"</td></tr><tr>
+		<td>Chevalier</td>
+		<td class="tdclasses">6</td>
+		<td class="tdclasses">4</td>
+		<td class="tdclasses">5</td>
+		<td class="tdclasses">2</td>
+		<td class="tdclasses">1</td>
+		<td class="tdclasses">2</td>
+		<td class="separator"></td>
+		<td class="tdclasses">4</td>
+		<td class="tdclasses">2</td>
+		<td class="tdclasses">1</td>
+		<td class="tdclasses">0</td>
+		<td class="tdclasses">0</td><td><a  href="info_sorts.php?sort=6" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/sorts/spe_chevalier.gif" height="35px" width="30px"></a></td>
+		<td class="separator"></td>
+		<td class="tdclasses">24</td><td><a  href="info_aptitude.php?aptitude=8" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/aptitudes/force.gif" height="35px" width="30px"></a></td></tr>
+		<tr>	<td></td>
+		<td colspan="16" class="hline"</td></tr><tr>
+		<td>Chevalier noir</td>
+		<td class="tdclasses">6</td>
+		<td class="tdclasses">2</td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">5</td>
+		<td class="tdclasses">2</td>
+		<td class="tdclasses">1</td>
+		<td class="separator"></td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">2</td>
+		<td class="tdclasses">0</td>
+		<td class="tdclasses">0</td><td><a  href="info_sorts.php?sort=5" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/sorts/spe_necrolvl3.gif" height="35px" width="30px"></a></td>
+		<td class="separator"></td>
+		<td class="tdclasses">24</td><td><a  href="info_aptitude.php?aptitude=29" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/aptitudes/effroi.gif" height="35px" width="30px"></a></td></tr>
+		<tr>	<td></td>
+		<td colspan="16" class="hline"</td></tr><tr>
+		<td>Clerc</td>
+		<td class="tdclasses">2</td>
+		<td class="tdclasses">2</td>
+		<td class="tdclasses">2</td>
+		<td class="tdclasses">5.5</td>
+		<td class="tdclasses">7</td>
+		<td class="tdclasses">2</td>
+		<td class="separator"></td>
+		<td class="tdclasses">1</td>
+		<td class="tdclasses">2</td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">0</td>
+		<td class="tdclasses">0</td><td><a  href="info_sorts.php?sort=7" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/sorts/confusion.png" height="35px" width="30px"></a></td>
+		<td class="separator"></td>
+		<td class="tdclasses">28</td><td><a  href="info_aptitude.php?aptitude=15" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/aptitudes/espionnage.gif" height="35px" width="30px"></a></td></tr>
+		<tr>	<td></td>
+		<td colspan="16" class="hline"</td></tr><tr>
+		<td>Démonologiste</td>
+		<td class="tdclasses">1.5</td>
+		<td class="tdclasses">1</td>
+		<td class="tdclasses">1.5</td>
+		<td class="tdclasses">2</td>
+		<td class="tdclasses">7</td>
+		<td class="tdclasses">1</td>
+		<td class="separator"></td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">3</td><td><a  href="info_sorts.php?sort=8" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/sorts/portailinfernal.gif" height="35px" width="30px"></a></td>
+		<td class="separator"></td>
+		<td class="tdclasses">17</td><td><a  href="info_aptitude.php?aptitude=19" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/aptitudes/intelligence.gif" height="35px" width="30px"></a></td></tr>
+		<tr>	<td></td>
+		<td colspan="16" class="hline"</td></tr><tr>
+		<td>Druide</td>
+		<td class="tdclasses">1.5</td>
+		<td class="tdclasses">2.5</td>
+		<td class="tdclasses">1</td>
+		<td class="tdclasses">2.5</td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">1</td>
+		<td class="separator"></td>
+		<td class="tdclasses">5</td>
+		<td class="tdclasses">5</td>
+		<td class="tdclasses">5</td>
+		<td class="tdclasses">2</td>
+		<td class="tdclasses">1</td><td><a  href="info_sorts.php?sort=9" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/sorts/croissanceacceleree.gif" height="35px" width="30px"></a></td>
+		<td class="separator"></td>
+		<td class="tdclasses">16</td><td><a  href="info_aptitude.php?aptitude=14" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/aptitudes/ferveur.gif" height="35px" width="30px"></a></td></tr>
+		<tr>	<td></td>
+		<td colspan="16" class="hline"</td></tr><tr>
+		<td>Enchanteur</td>
+		<td class="tdclasses">0.5</td>
+		<td class="tdclasses">4</td>
+		<td class="tdclasses">1</td>
+		<td class="tdclasses">4</td>
+		<td class="tdclasses">0.5</td>
+		<td class="tdclasses">1</td>
+		<td class="separator"></td>
+		<td class="tdclasses">7</td>
+		<td class="tdclasses">5</td>
+		<td class="tdclasses">5</td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">0</td><td><a  href="info_sorts.php?sort=22" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="images/sorts/spe_enchanteur.gif" height="35px" width="30px"></a></td>
+		<td class="separator"></td>
+		<td class="tdclasses">19</td><td><a  href="info_aptitude.php?aptitude=34" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/aptitudes/fureur.jpg" height="35px" width="30px"></a></td></tr>
+		<tr>	<td></td>
+		<td colspan="16" class="hline"</td></tr><tr>
+		<td>Ermite</td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">1.5</td>
+		<td class="tdclasses">2.5</td>
+		<td class="tdclasses">5.5</td>
+		<td class="tdclasses">1</td>
+		<td class="tdclasses">2</td>
+		<td class="separator"></td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">5</td>
+		<td class="tdclasses">2</td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">2</td><td><a  href="info_sorts.php?sort=129" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/sorts/special/morphologie.png" height="35px" width="30px"></a></td>
+		<td class="separator"></td>
+		<td class="tdclasses">22</td><td><a  href="info_aptitude.php?aptitude=2" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/aptitudes/endurance.gif" height="35px" width="30px"></a></td></tr>
+		<tr>	<td></td>
+		<td colspan="16" class="hline"</td></tr><tr>
+		<td>Esclavagiste</td>
+		<td class="tdclasses">4</td>
+		<td class="tdclasses">2.5</td>
+		<td class="tdclasses">2</td>
+		<td class="tdclasses">2.5</td>
+		<td class="tdclasses">0</td>
+		<td class="tdclasses">4</td>
+		<td class="separator"></td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">2</td>
+		<td class="tdclasses">0</td>
+		<td class="tdclasses">0</td><td><a  href="info_sorts.php?sort=10" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/sorts/esclavage.gif" height="35px" width="30px"></a></td>
+		<td class="separator"></td>
+		<td class="tdclasses">22</td><td><a  href="info_aptitude.php?aptitude=26" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/aptitudes/navigation.gif" height="35px" width="30px"></a></td></tr>
+		<tr>	<td></td>
+		<td colspan="16" class="hline"</td></tr><tr>
+		<td>Forgeron</td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">4</td>
+		<td class="tdclasses">1</td>
+		<td class="tdclasses">5</td>
+		<td class="tdclasses">0</td>
+		<td class="tdclasses">5</td>
+		<td class="separator"></td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">4</td>
+		<td class="tdclasses">2</td>
+		<td class="tdclasses">0</td>
+		<td class="tdclasses">0</td><td><a  href="info_sorts.php?sort=132" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/sorts/lamestrempees.gif" height="35px" width="30px"></a></td>
+		<td class="separator"></td>
+		<td class="tdclasses">23</td><td><a  href="info_aptitude.php?aptitude=6" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="images/aptitudes/artisanat.gif" height="35px" width="30px"></a></td></tr>
+		<tr>	<td></td>
+		<td colspan="16" class="hline"</td></tr><tr>
+		<td>Guerrier</td>
+		<td class="tdclasses">7</td>
+		<td class="tdclasses">7</td>
+		<td class="tdclasses">1</td>
+		<td class="tdclasses">4</td>
+		<td class="tdclasses">0</td>
+		<td class="tdclasses">1</td>
+		<td class="separator"></td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">2</td>
+		<td class="tdclasses">1</td>
+		<td class="tdclasses">0</td>
+		<td class="tdclasses">0</td><td><a  href="info_sorts.php?sort=11" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/sorts/spe_guerrier.gif" height="35px" width="30px"></a></td>
+		<td class="separator"></td>
+		<td class="tdclasses">27</td><td><a  href="info_aptitude.php?aptitude=24" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/aptitudes/resistance.gif" height="35px" width="30px"></a></td></tr>
+		<tr>	<td></td>
+		<td colspan="16" class="hline"</td></tr><tr>
+		<td>Illusioniste</td>
+		<td class="tdclasses">0.5</td>
+		<td class="tdclasses">4</td>
+		<td class="tdclasses">1.5</td>
+		<td class="tdclasses">2</td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">3</td>
+		<td class="separator"></td>
+		<td class="tdclasses">4</td>
+		<td class="tdclasses">4</td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">1</td>
+		<td class="tdclasses">1</td><td><a  href="info_sorts.php?sort=12" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/sorts/realiteparallele.gif" height="35px" width="30px"></a></td>
+		<td class="separator"></td>
+		<td class="tdclasses">20</td><td><a  href="info_aptitude.php?aptitude=20" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/aptitudes/manipulation.gif" height="35px" width="30px"></a></td></tr>
+		<tr>	<td></td>
+		<td colspan="16" class="hline"</td></tr><tr>
+		<td>Inquisiteur</td>
+		<td class="tdclasses">4</td>
+		<td class="tdclasses">7.5</td>
+		<td class="tdclasses">0.5</td>
+		<td class="tdclasses">7.5</td>
+		<td class="tdclasses">4</td>
+		<td class="tdclasses">1</td>
+		<td class="separator"></td>
+		<td class="tdclasses">4</td>
+		<td class="tdclasses">4</td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">1</td>
+		<td class="tdclasses">0</td><td><a  href="info_sorts.php?sort=23" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/sorts/zeledivin.gif" height="35px" width="30px"></a></td>
+		<td class="separator"></td>
+		<td class="tdclasses">23</td><td><a  href="info_aptitude.php?aptitude=14" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/aptitudes/ferveur.gif" height="35px" width="30px"></a></td></tr>
+		<tr>	<td></td>
+		<td colspan="16" class="hline"</td></tr><tr>
+		<td>Magicien</td>
+		<td class="tdclasses">0.5</td>
+		<td class="tdclasses">0.5</td>
+		<td class="tdclasses">1</td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">6</td>
+		<td class="tdclasses">1</td>
+		<td class="separator"></td>
+		<td class="tdclasses">6</td>
+		<td class="tdclasses">5</td>
+		<td class="tdclasses">4</td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">1</td><td><a  href="info_sorts.php?sort=13" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/sorts/Contresort.gif" height="35px" width="30px"></a></td>
+		<td class="separator"></td>
+		<td class="tdclasses">17</td><td><a  href="info_aptitude.php?aptitude=10" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/aptitudes/concentration.gif" height="35px" width="30px"></a></td></tr>
+		<tr>	<td></td>
+		<td colspan="16" class="hline"</td></tr><tr>
+		<td>Marchand</td>
+		<td class="tdclasses">2</td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">5</td>
+		<td class="tdclasses">4</td>
+		<td class="tdclasses">0</td>
+		<td class="tdclasses">7</td>
+		<td class="separator"></td>
+		<td class="tdclasses">2</td>
+		<td class="tdclasses">2</td>
+		<td class="tdclasses">2</td>
+		<td class="tdclasses">0</td>
+		<td class="tdclasses">0</td><td><a  href="info_sorts.php?sort=14" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/sorts/spe_marchand.gif" height="35px" width="30px"></a></td>
+		<td class="separator"></td>
+		<td class="tdclasses">27</td><td><a  href="info_aptitude.php?aptitude=21" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/aptitudes/commerce.gif" height="35px" width="30px"></a></td></tr>
+		<tr>	<td></td>
+		<td colspan="16" class="hline"</td></tr><tr>
+		<td>Nécromancien</td>
+		<td class="tdclasses">2.5</td>
+		<td class="tdclasses">1</td>
+		<td class="tdclasses">1.5</td>
+		<td class="tdclasses">6</td>
+		<td class="tdclasses">5.5</td>
+		<td class="tdclasses">1</td>
+		<td class="separator"></td>
+		<td class="tdclasses">4</td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">2</td>
+		<td class="tdclasses">1</td><td><a  href="info_sorts.php?sort=15" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/sorts/animationdesmorts.gif" height="35px" width="30px"></a></td>
+		<td class="separator"></td>
+		<td class="tdclasses">22</td><td><a  href="info_aptitude.php?aptitude=5" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/aptitudes/profanation.gif" height="35px" width="30px"></a></td></tr>
+		<tr>	<td></td>
+		<td colspan="16" class="hline"</td></tr><tr>
+		<td>Paladin</td>
+		<td class="tdclasses">2</td>
+		<td class="tdclasses">4</td>
+		<td class="tdclasses">1</td>
+		<td class="tdclasses">5.5</td>
+		<td class="tdclasses">0.5</td>
+		<td class="tdclasses">3</td>
+		<td class="separator"></td>
+		<td class="tdclasses">4</td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">2</td>
+		<td class="tdclasses">2</td>
+		<td class="tdclasses">0</td><td><a  href="info_sorts.php?sort=16" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/sorts/spe_paladin.gif" height="35px" width="30px"></a></td>
+		<td class="separator"></td>
+		<td class="tdclasses">23</td><td><a  href="info_aptitude.php?aptitude=4" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/aptitudes/purification.gif" height="35px" width="30px"></a></td></tr>
+		<tr>	<td></td>
+		<td colspan="16" class="hline"</td></tr><tr>
+		<td>Prêtre</td>
+		<td class="tdclasses">2</td>
+		<td class="tdclasses">5</td>
+		<td class="tdclasses">0.5</td>
+		<td class="tdclasses">3.5</td>
+		<td class="tdclasses">4</td>
+		<td class="tdclasses">3</td>
+		<td class="separator"></td>
+		<td class="tdclasses">6</td>
+		<td class="tdclasses">4</td>
+		<td class="tdclasses">2</td>
+		<td class="tdclasses">1</td>
+		<td class="tdclasses">2</td><td><a  href="info_sorts.php?sort=17" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/sorts/protectiondivine.gif" height="35px" width="30px"></a></td>
+		<td class="separator"></td>
+		<td class="tdclasses">19</td><td><a  href="info_aptitude.php?aptitude=31" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/aptitudes/medecinedeguerre.gif" height="35px" width="30px"></a></td></tr>
+		<tr>	<td></td>
+		<td colspan="16" class="hline"</td></tr><tr>
+		<td>Psioniste</td>
+		<td class="tdclasses">2.5</td>
+		<td class="tdclasses">1.5</td>
+		<td class="tdclasses">6</td>
+		<td class="tdclasses">3.5</td>
+		<td class="tdclasses">3.5</td>
+		<td class="tdclasses">2</td>
+		<td class="separator"></td>
+		<td class="tdclasses">4</td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">2</td>
+		<td class="tdclasses">2</td>
+		<td class="tdclasses">1</td><td><a  href="info_sorts.php?sort=18" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/sorts/controlemental.gif" height="35px" width="30px"></a></td>
+		<td class="separator"></td>
+		<td class="tdclasses">20</td><td><a  href="info_aptitude.php?aptitude=1" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/aptitudes/agilite.gif" height="35px" width="30px"></a></td></tr>
+		<tr>	<td></td>
+		<td colspan="16" class="hline"</td></tr><tr>
+		<td>Rôdeur</td>
+		<td class="tdclasses">3.5</td>
+		<td class="tdclasses">1</td>
+		<td class="tdclasses">5</td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">1</td>
+		<td class="tdclasses">2</td>
+		<td class="separator"></td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">0</td>
+		<td class="tdclasses">0</td><td><a  href="info_sorts.php?sort=19" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/sorts/spe_rodeur.gif" height="35px" width="30px"></a></td>
+		<td class="separator"></td>
+		<td class="tdclasses">21</td><td><a  href="info_aptitude.php?aptitude=33" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/aptitudes/filets.jpg" height="35px" width="30px"></a></td></tr>
+		<tr>	<td></td>
+		<td colspan="16" class="hline"</td></tr><tr>
+		<td>Samouraï</td>
+		<td class="tdclasses">5</td>
+		<td class="tdclasses">1</td>
+		<td class="tdclasses">4</td>
+		<td class="tdclasses">1.5</td>
+		<td class="tdclasses">2</td>
+		<td class="tdclasses">4.5</td>
+		<td class="separator"></td>
+		<td class="tdclasses">2</td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">2</td>
+		<td class="tdclasses">0</td><td><a  href="info_sorts.php?sort=130" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/sorts/special/lame_rasoir.png" height="35px" width="30px"></a></td>
+		<td class="separator"></td>
+		<td class="tdclasses">17</td><td><a  href="info_aptitude.php?aptitude=32" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/aptitudes/perfectionnisme.gif" height="35px" width="30px"></a></td></tr>
+		<tr>	<td></td>
+		<td colspan="16" class="hline"</td></tr><tr>
+		<td>Shaman</td>
+		<td class="tdclasses">4.5</td>
+		<td class="tdclasses">4.5</td>
+		<td class="tdclasses">3.5</td>
+		<td class="tdclasses">0.5</td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">1</td>
+		<td class="separator"></td>
+		<td class="tdclasses">6</td>
+		<td class="tdclasses">6</td>
+		<td class="tdclasses">2</td>
+		<td class="tdclasses">1</td>
+		<td class="tdclasses">1</td><td><a  href="info_sorts.php?sort=20" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/sorts/brouillarddeguerre.gif" height="35px" width="30px"></a></td>
+		<td class="separator"></td>
+		<td class="tdclasses">21</td><td><a  href="info_aptitude.php?aptitude=22" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/aptitudes/rage.gif" height="35px" width="30px"></a></td></tr>
+		<tr>	<td></td>
+		<td colspan="16" class="hline"</td></tr><tr>
+		<td>Sorcier</td>
+		<td class="tdclasses">0</td>
+		<td class="tdclasses">0</td>
+		<td class="tdclasses">0.5</td>
+		<td class="tdclasses">1</td>
+		<td class="tdclasses">5</td>
+		<td class="tdclasses">1</td>
+		<td class="separator"></td>
+		<td class="tdclasses">7</td>
+		<td class="tdclasses">7</td>
+		<td class="tdclasses">6</td>
+		<td class="tdclasses">4</td>
+		<td class="tdclasses">0</td><td><a  href="info_sorts.php?sort=24" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/sorts/Desintegration.gif" height="35px" width="30px"></a></td>
+		<td class="separator"></td>
+		<td class="tdclasses">16</td><td><a  href="info_aptitude.php?aptitude=11" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/aptitudes/focus.gif" height="35px" width="30px"></a></td></tr>
+		<tr>	<td></td>
+		<td colspan="16" class="hline"</td></tr><tr>
+		<td>Transmutateur</td>
+		<td class="tdclasses">1</td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">2.5</td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">4</td>
+		<td class="tdclasses">3</td>
+		<td class="separator"></td>
+		<td class="tdclasses">4</td>
+		<td class="tdclasses">2</td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">4</td>
+		<td class="tdclasses">0</td><td><a  href="info_sorts.php?sort=131" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/sorts/special/polymorphisme.png" height="35px" width="30px"></a></td>
+		<td class="separator"></td>
+		<td class="tdclasses">18</td><td><a  href="info_aptitude.php?aptitude=35" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/aptitudes/mutation.png" height="35px" width="30px"></a></td></tr>
+		<tr>	<td></td>
+		<td colspan="16" class="hline"</td></tr><tr>
+		<td>Voleur</td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">2</td>
+		<td class="tdclasses">5</td>
+		<td class="tdclasses">2</td>
+		<td class="tdclasses">2</td>
+		<td class="tdclasses">3</td>
+		<td class="separator"></td>
+		<td class="tdclasses">4</td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">3</td>
+		<td class="tdclasses">0</td>
+		<td class="tdclasses">0</td><td><a  href="info_sorts.php?sort=21" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/sorts/spe_voleur.gif" height="35px" width="30px"></a></td>
+		<td class="separator"></td>
+		<td class="tdclasses">21</td><td><a  href="info_aptitude.php?aptitude=36" onclick="NewWindow(this.href,'name','480','500','yes');return false"><img src="/images/aptitudes/perturbation_flux.png" height="35px" width="30px"></a></td></tr>
+		<tr>	<td></td>
+		<td colspan="16" class="hline"</td></tr></tbody></table></center><br></td></tr></tbody></table>
+		</div></td></tr>
+	<tr>	<td class="cadrebottom" colspan="4"></td></tr>
+</tbody></table>
+
+<div class="cadrespacer"></div>
+
+<table class="cadretablenormal"><tbody>
+	<tr>	<td class="cadretopleft"  colspan="3"></td>
+		<td class="cadretopright" rowspan="2"></td></tr>
+	<tr>	<td class="cadremiddleleft"></td>
+		<td class="cadrecontenu"  colspan="2">
+			<div class="col-md-12" align="center"><table class="localtable963"><tbody><tr><td><h2>Gameplay</h2><div class="longtexte">La classe, comme la race, détermine l'évolution de vos statistiques.
+	Ainsi, à chaque niveau, s'ajoutent aux statistiques du héros les bonus définis ci-dessus, qui sont directement fonction de la classe. Lorsque, le cas échéant, l'évolution d'une certaine statistique se fait à coup de 0,50 points, cela veut alors dire que cette statistique ne connaîtra de réelle évolution que tous les deux niveaux. De la même manière, une évolution de 1,50 points voudra alors dire que, une fois sur deux, cette statistique gagne un point supplémentaire, et ce en plus de son gain habituel.</div><div class="longtexte">Il va de soi qu'un barbare n'est pas aussi apte à utiliser la magie que l'est un mage ou un prêtre. Par conséquent, chaque classe se voit attribuer un nombre défini de sorts de chaque niveau; un nombre de 0 signifiant que la classe n'a pas accès à ce niveau de sort. Veuillez de plus prendre note que les toutes les classes se voient octroyer un sort dit spécial dont la définition et les effets sont décrits sur <a href="forum/index.php">le forum général</a> ainsi que <a href="encyclopedie_sorts.php">dans l'encyclopédie</a>.</div><div class="longtexte">De plus, lors du choix de votre classe <a href="encyclopedie_aptitudes.php">une aptitude</a> dite "de base" vous est attribuée, de la même manière qu'il l'est fait lors <a href="encyclopedie_races.php">du choix de votre race</a>. Cette aptitude de base trouve sont sens dans le fait que toute classe possède un trait, un attribut ou un pouvoir unique et spécifique à cette dernière. Ici, chaque classe possède sa propre aptitude, aucune n'y fait exception. Qui plus est, il vous sera de plus possible de remarquer que chaque classe ne gagne pas nécessairement le même nombre de points d'aptitude par niveau. Le tableau ci-dessus en fait d'ailleurs mention.</div></tbody></table>

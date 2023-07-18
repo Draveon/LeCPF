@@ -1,0 +1,55 @@
+/*LOGO*/
+
+#main-container.container-fluid .logo .logo2, H2 {
+    margin: 10px auto 0;
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: -11px -5px 4px #633a2287, 0 0 20px #633a2394, 7px 3px 3px #633a2266;
+    animation-name: notMatrixText;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function:  ease-in-out;
+}
+
+#main-container.container-fluid .logo {
+    text-align: center;
+    line-height: 0.8;
+    margin: 0 0 5vh;
+}
+#main-container.container-fluid .logo HR {
+    width: 80%;
+    margin: 6px auto 12px;
+    border: 4px solid #734b38;
+    box-shadow: 0px 0px 5px #734b38;
+    border-radius: 50%;
+}
+#main-container.container-fluid .logo .logo1 {
+    font-family: 'IM Fell English SC';
+    letter-spacing: 7px;
+    margin: 10px auto 0;
+    text-shadow: -1px 0px 0px #734b38;
+    color: #734b38;
+}
+#main-container.container-fluid .logo .logo2 {
+    font-size: 4rem;
+}
+#main-container.container-fluid .logo .logo2 > A {
+    text-decoration:   none;
+}
+#main-container.container-fluid .logo .logo2:hover > A SPAN {
+    text-shadow: -2px 0px 5px #734b38;
+    color: #734b38;
+    transition: color, text-shadow, 0.2s ease;
+}
+#main-container.container-fluid .logo .logo2 A SPAN {
+    font-family: 'IM Fell English SC';
+    text-transform: uppercase;
+    text-shadow: -2px 0px 0px #734b38;
+    color: #734b38;
+    transition: color, text-shadow 0.5s, 0.3s ease;
+}
+#main-container.container-fluid .logo .logo2clone {
+    text-align: left;
+    font-size: 4rem;
+}

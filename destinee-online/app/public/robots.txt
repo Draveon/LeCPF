@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /*?
+Disallow: /http://www.destinee-online.com/administration.php
+Disallow: /http://www.destinee-online.com/administration/
+Disallow: /http://www.destinee-online.com/admin_compte.php
+Disallow: /https://www.destinee-online.com/administration.php
+Disallow: /https://www.destinee-online.com/administration/
+Disallow: /https://www.destinee-online.com/admin_compte.php

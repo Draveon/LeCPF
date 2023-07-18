@@ -1,0 +1,24 @@
+<?php
+if($note != '' && !$afficher_form)
+{
+	if($erreur == 0)
+		echo '<fieldset style="width:70%;border-color:darkgreen;"><legend>Informations</legend>'.$note.'</fieldset>';
+	else
+		echo '<fieldset style="width:70%;border-color:darkred;"><legend>Erreurs</legend>'.$note.'</fieldset>';
+}
+?>
+<form method="post" action="profil.php?v=1&t=<?php echo $token; ?>">
+<fieldset>
+	<legend>Suppression de compte</legend>	
+		<table>
+			<tr>
+				<td colspan="2" style="text-align:center;"><label for="critique">Aidez nous à améliorer le jeu, vos remarques nous intéressent !<br />Avec nos remerciements :</label></td>
+			</tr>
+			<tr>
+				<td colspan="2"><textarea rows="5" cols="40" id="critique" name="critique"></textarea></td>
+			</tr>
+		</table>
+</fieldset>
+<input type="hidden" name="del" value="etape1" />
+<div style="text-align:center;"><a href="profil.php"><input type="button" value="Précédent >>" /></a><input type="submit" value="Suivant >>" /></div>
+</form>

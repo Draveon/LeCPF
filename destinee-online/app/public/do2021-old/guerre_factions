@@ -1,0 +1,180 @@
+<?php session_start();
+
+
+//chaque faction commence au palier 1
+// paliers de victoires de faction : (moyenne des niveaux de la faction*10)
+//A chaque palier de faction atteint, les membres recoivent un bonus d'xp
+// 500xp * palier de faction
+// error_reporting(-1); // reports all errors
+// ini_set("display_errors", "1"); // shows all errors
+// ini_set("log_errors", 1);
+// ini_set("error_log", "/tmp/php-error.log");
+
+include('debut.php');
+
+if ($_SESSION['connexion'] == 1) {
+    include ('menu.php');
+} else if ($_SESSION['connexion_compte'] == 1) {
+  include ('menu_compte.php');
+} else {
+  include('menu_index.php');
+}
+
+
+entete_index('Guerre de Factions');
+
+include('factions_functions.inc');
+
+$factionsIds = array();
+$factionsNoms = array();
+$factionsNivx = array();
+
+$faction1 = mysql_query("SELECT * FROM factions WHERE id = 1");
+$faction2 = mysql_query("SELECT * FROM factions WHERE id = 2");
+$faction3 = mysql_query("SELECT * FROM factions WHERE id = 3");
+
+$dataFac1 = mysql_fetch_array($faction1);
+$dataFac2 = mysql_fetch_array($faction2);
+$dataFac3 = mysql_fetch_array($faction3);
+
+/*$nbMbr1 = 0;
+$nbMbr2 = 0;
+$nbMbr3 = 0;
+
+$reqNbMbr1 = mysql_query("SELECT COUNT(factions_membres.id_membre) FROM factions_membres WHERE factions_membres.faction_id = 1 ");
+while ($dataNbMbr1 = $reqNbMbr1) {
+  $nbMbr1 = $dataNbMbr1[0];
+}
+$reqNbMbr2 = mysql_query("SELECT COUNT(factions_membres.id_membre) FROM factions_membres WHERE factions_membres.faction_id = 2 ");
+while ($dataNbMbr2 = $reqNbMbr2) {
+  $nbMbr2 = $dataNbMbr2[0];
+}
+$reqNbMbr3 = mysql_query("SELECT COUNT(factions_membres.id_membre) FROM factions_membres WHERE factions_membres.faction_id = 3 ");
+while ($dataNbMbr3 = $reqNbMbr3) {
+  $nbMbr3 = $dataNbMbr3[0];
+}*/
+
+$i = 0;
+$sql = "SELECT `id`, `nom`, `niv`, `prochpalier`
+FROM factions";
+$req = mysql_query($sql) or die(mysql_error());
+while($reqData = mysql_fetch_array($req)) {
+	$facId = $reqData['id'];
+	$facNom = $reqData['nom'];
+	$facNiv = $reqData['niv'];
+	array_push($factionsIds, $facId);
+	array_push($factionsNoms, $facNom);
+	array_push($factionsNivx, $facNiv);
+}
+
+ ?>
+ <style>
+
+  .imgFac img {
+    width: 100px;
+   }
+   .jgTable td {
+    border: 1px solid grey;
+   }
+   .jgTable td+td+td {
+    width: 150px;
+    text-align: center;
+   }
+   .imgFac {
+    width: 50px;
+   }
+   .nomFacLegend, .nomFac {
+    padding-left: 100px;
+    font-size: large;
+   }
+   .nivFacLegend, .nivFac {
+    font-size: large;
+   }
+ </style>
+<p></p>
+<?php
+$aide =	'<div class="longtexte" style="padding-bottom:0px; position:relative; top:0px; text-align: center;">
+<h4 style="font-weight: bold;"> Chaque race est répartie dans l\'une des trois factions du jeu :</h4>
+  <ul style="list-style: none; text-align: left;">
+    <li> <span style="font-weight: bold;">Les Six Lames </span>: Ashtar, Célestial, Malakeh, Septentrional, Sahuagin, Fétide</li>
+    <li> <span style="font-weight: bold;">L\'Ordre Impérial </span>: Elfe, Homme, Nain, Fée, Gnome, Ancien </li>
+    <li> <span style="font-weight: bold;">Les Disciples du Chaos </span>: Vampire, Infernal, Géant, Minotaure, Orque, Elfe Noir</li>
+  </ul>
+</div>
+';
+echo '<table class="localtable963">';
+
+
+
+    echo '<tr><td colspan="3"><br><br><div id="aide"  style="display:block;font-family: arial;font-weight: bold;"><a href="javascript:swapbonus(\'aide\', \'nonaide\');">Afficher l\'aide</a></div>';
+echo '<div id="nonaide" style="display:none; font-family: arial;"><a href="javascript:swapbonus(\'nonaide\', \'aide\');" >Cacher l\'aide</a><br><br><div style="font-family:default;">'.$aide.'</div></div></td></tr>';
+echo '</tbody></table>';
+
+
+
+
+
+?>
+<table class="jgTable">
+  <tbody>
+    <tr>
+      <th class="nomFacLegend" colspan="2">Faction</th><th class="nivFacLegend">Niveau</th><th>Progression</th>
+    </tr>
+<?php
+// SIX LAMES
+vicFacAtt(1);
+vicFacDef(1);
+// calcul des victoires en attaque + en défense
+$vic = $vicFactionsAtt+$vicFactionsDef;
+
+      $vic = round( $vic/((nbMembers(1)/10)) , 1 );
+
+
+  ?>
+    <tr>
+      <td class="imgFac"><img src="<?php echo $dataFac1['image']; ?>" /></td>
+      <td class="nomFac"><?php echo $dataFac1['nom']; ?></td>
+      <td class="nivFac"><?php echo $dataFac1['niv']; ?></td>
+      <td><?php echo $vic; ?> / <?php echo getPaliers(1); ?></td>
+
+    </tr>
+    <?php
+    // ORDRE IMPERIAL
+    vicFacAtt(2);
+    vicFacDef(2);
+    // calcul des victoires en attaque + en défense
+    $vic = $vicFactionsAtt+$vicFactionsDef;
+        if ($actual_db == 1) {
+      $vic = round( $vic/((nbMembers(2)/10)) , 1 );
+    }
+     ?>
+    <tr>
+      <td class="imgFac"><img src="<?php echo $dataFac2['image']; ?>" /></td>
+      <td class="nomFac"><?php echo $dataFac2['nom']; ?></td>
+      <td class="nivFac"><?php echo $dataFac2['niv']; ?></td>
+      <td><?php echo $vic; ?> / <?php echo getPaliers(2); ?></td>
+
+    </tr>
+    <?php
+    // DISCIPLES
+    vicFacAtt(3);
+    vicFacDef(3);
+    // calcul des victoires en attaque + en défense
+    $vic = $vicFactionsAtt+$vicFactionsDef;
+        if ($actual_db == 1) {
+      $vic = round( $vic/((nbMembers(3)/10)) , 1 );
+    }
+     ?>
+    <tr>
+      <td class="imgFac"><img src="<?php echo $dataFac3['image']; ?>" /></td>
+      <td class="nomFac"><?php echo $dataFac3['nom']; ?></td>
+      <td class="nivFac"><?php echo $dataFac3['niv']; ?></td>
+      <td><?php echo $vic; ?> / <?php echo getPaliers(3); ?></td>
+
+    </tr>
+</tbody>
+</table>
+
+<?php
+include('fin.php');
+ ?>

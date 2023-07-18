@@ -1,0 +1,26 @@
+AuthType Basic
+AuthName "Access for /Destinee-online/administration" 
+AuthUserFile /home/www/.htpasswd
+require user Miles
+require user Ordak
+require user Bosary
+require user Memnon
+require user Axilias
+require user Eleusis
+require user Yortsedd
+require user Enguerrand
+require user Gilnarfein
+require user Permanganate
+require user Madcat
+require user CrowCrow
+require user Wobey
+require user Candy
+require user Itanagon
+require user Ainkurn
+require user Aro
+require user Draziel
+require user Geinfrindel
+require user Tauren
+require user Han
+require user Tharkis
+require user Vordazeth

@@ -1,0 +1,72 @@
+A {
+	text-decoration:none
+}
+a.info {
+	position: relative;
+	color: #000000;
+	text-decoration: none;
+	z-index: 4;     /* on définit une valeur pour l'ordre d'affichage */
+}
+a.info span {
+	display: none; /* on masque l'infobulle */
+	visibility: hidden;
+	z-index: 3;
+}
+a.info:hover {
+	background: none; /* correction d'un bug IE */
+	z-index: 500;     /* on définit une valeur pour l'ordre d'affichage */
+	cursor: help;     /* on change le curseur par défaut en curseur d'aide */
+	color: #a09987;
+	z-index: 5;     /* on définit une valeur pour l'ordre d'affichage */
+}
+a.info:hover span {
+	display: block;
+	visibility: visible;
+	position: absolute;
+	white-space: nowrap; /* on change la valeur de la propriété white-space pour qu'il n'y ait pas de retour à la ligne non-désiré */
+	z-index: 501;
+	top: 30px; /* on positionne notre infobulle */
+	left: 20px;
+	background: lightyellow;
+	color: #000000;
+	padding: 5px;
+	border: 1px solid darkblue;
+	width : 150px;
+}
+
+tr.cl_player {
+	background-color: none;
+	text-align: left;
+}	
+tr.cl_player:hover {
+	background-color: #D2A945;
+}
+td.cl_aligneC {
+	text-align: center;
+}
+td.cl_aligneL {
+	text-align: left;
+}
+td.cl_aligneR {
+	text-align: right;
+}
+td.cl_position {
+	text-align: right;
+	font-size: 0.83em;
+	white-space: nowrap;
+}	
+td.cl_entete {
+	text-align: center;
+	background-color: #002450;
+	font-size: 1.17em;
+	color: #DCBC6C;
+	white-space: nowrap;
+}
+a.cl_entete {
+	color: #DCBC6C;
+}	
+td.cl_vspacer {
+	text-align: center;
+	vertical-align: center;
+	background-image: URL(/images/splitbar.gif);
+}

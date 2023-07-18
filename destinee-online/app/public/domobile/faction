@@ -1,0 +1,329 @@
+<?php session_start();
+
+if ($_SESSION['connexion'] != 1 OR $_SESSION['connexion'] == 'null') {
+
+	echo '<META http-equiv="refresh" content="1; URL=http://www.destinee-online.com">';
+		exit;
+}
+
+include ("debut.php");
+include ("menu.php");
+entete("Factions");
+include("connect.php");
+
+//fait rejoindre une faction à un personnage
+$id = $_SESSION['id'];
+$nom = $_SESSION['nom'];
+$race = $_SESSION['race'];
+
+
+	switch ($race){
+		//Les Six Lames
+		case 'Célestial': $faction = 1; break;
+		case 'Fétide': $faction = 1; break;
+		case 'Sahuagin': $faction = 1; break;
+		case 'Septentrional': $faction = 1; break;
+		case 'Ashtar': $faction = 1; break;
+		case 'Malakeh': $faction = 1; break;
+
+		//L'Ordre Impérial
+		case 'Elfe': $faction = 2; break;
+		case 'Homme': $faction = 2; break;
+		case 'Nain': $faction = 2; break;
+		case 'Ancien': $faction = 2; break;
+		case 'Gnome': $faction = 2; break;
+		case 'Fée': $faction = 2; break;
+
+		//Les Disciples du Chaos
+		case 'Vampire': $faction = 3; break;
+		case 'Orque': $faction = 3; break;
+		case 'Infernal': $faction = 3; break;
+		case 'Minotaure': $faction = 3; break;
+		case 'Géant': $faction = 3; break;
+		case 'Elfe Noir': $faction = 3; break;
+
+	}
+	//Commandes SQL nécessaires :
+
+			$sqlAjoutMembre = "INSERT INTO `factions_membres` (`id_membre`, `nom_membre`, `faction_id`) VALUES ('".$id."', '".$nom."', $faction);";
+			$sqlMAJMembre = "UPDATE `factions_membres` SET `faction_id` = $faction WHERE nom_membre = '".$nom."' ";
+
+			$sqlNomFaction = "SELECT nom, image, descr FROM `factions` WHERE id = $faction";
+	//On prépare la commande sql d'insertion si le personnage n'est pas déjà présent dans une faction
+			$reqCondition = mysql_query("SELECT COUNT(nom_membre) FROM `factions_membres` WHERE nom_membre = '".$nom."' ")or die('Erreur SQL !<br>'.$sql.'<br>'.mysql_error());
+			$res = mysql_fetch_array($reqCondition);
+
+				//Si le personnage n'est pas inscrit dans une faction
+				if ($res[0] == 0) {
+					//On l'ajoute
+					$reqAjoutMembre = mysql_query($sqlAjoutMembre) or die('Erreur SQL !<br>'.$sql.'<br>'.mysql_error());
+				} else if ($res[0] == 1) {
+				//Si déjà inscrit on met à jour sa faction au cas où il a reset
+					$reqAjoutMembre = mysql_query($sqlMAJMembre) or die('Erreur SQL !<br>'.$sql.'<br>'.mysql_error());
+				}
+
+			$reqNomFaction = mysql_query($sqlNomFaction) or die('Erreur SQL !<br>'.$sql.'<br>'.mysql_error());
+			$res2 = mysql_fetch_array($reqNomFaction);
+			$nomFaction = $res2[0];
+			$imageFaction = $res2[1];
+			$descrFaction = $res2[2];
+
+
+
+
+
+// récupération des données pour l'affichage de la page
+$req = mysql_query("SELECT * FROM `factions_membres` INNER JOIN `factions` ON `factions_membres`.`faction_id` = `factions`.`id`");
+while ($data = mysql_fetch_array($req)) {
+
+	if ($_SESSION['nom'] == $data['nom_membre']) {
+
+
+
+
+
+	?>
+
+		 <!-- Début de la page -->
+	 <div class="factionPage">
+		<h2 style="font-size: 38px;"><span class="nomFaction"><?php echo $nomFaction ?></span></h2>
+		<img class="imageFaction col-md-6" src=" <?php echo $imageFaction ?> " alt="">
+
+
+
+		<?php
+
+		////// CHAT DE FACTION /////////////
+
+		$nom_membre = $_SESSION['nom'];
+	echo '
+	<div[taverneFaction] class="col-md-6">
+		<h2>Taverne de la faction</h2>
+		<form action="faction.php" method="post">
+			<p>
+					<label for="message">Message</label> :  <textarea name="message" id="message" placeholder="votre message..."></textarea><br />
+					<input type="submit" name="subchat" value="Envoyer" />
+			</p>
+		</form>
+	';
+
+	$message = $_POST['message'];
+	// Insertion du message
+	// Si le message n'est pas NULL, on envoie.
+	if ($_POST['subchat'] !== NULL) {
+		$sql = 'INSERT INTO `chatFaction` (`nom_joueur`, `message`, `faction_id`)	VALUES ("'.$nom_membre.'", "'.$message.'", '.$faction.')';
+			 $result = mysql_query($sql)
+		or die('<font color="red">Error :/</font> on line <b>'.__LINE__.'</b>:<br />'.mysql_error());
+	}
+
+			// NOTE A DRAVEON de la part de DRAVEON =
+					// Ajouter un int faction_id dans la tableau chatFaction pour pouvoir différencier les messages par id de faction et non par joueur....
+
+	// if ($faction === 1) {
+		$reponse = mysql_query('SELECT nom_joueur, message FROM chatFaction WHERE faction_id = '.$faction.' ORDER BY id DESC LIMIT 100');
+	// } else if ($faction === 2) {
+	// 	$reponse = mysql_query('SELECT nom_joueur, message FROM chatFaction JOIN factions_membres ON factions_membres.`nom_membre` = chatFaction.`nom_joueur` WHERE factions_membres.`faction_id` = 2 ORDER BY id DESC LIMIT 100');
+	// } else {
+	// 	$reponse = mysql_query('SELECT nom_joueur, message FROM chatFaction JOIN factions_membres ON factions_membres.`nom_membre` = chatFaction.`nom_joueur` WHERE factions_membres.`faction_id` = 3 ORDER BY id DESC LIMIT 100');
+	// }
+	// Affichage de chaque message (toutes les données sont protégées par htmlspecialchars)
+		echo '<ul class="chatFactionList">';
+		while ($donnees = mysql_fetch_array($reponse))
+		{
+			echo '<li class="ligneMessageFaction"><strong>' . $donnees['nom_joueur'] . ' :</strong> <span class="messageFaction">' . $donnees['message'] . '</span></li>';
+		}
+		echo '</ul>
+
+		';
+
+ ?>
+	</div>
+ <div class="panel-groupFaction">
+	 <div class="panel panel-default" id="accordion">
+		 <div class="panel-heading btn btn-do-faction" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+			 <h2 class="panel-title">
+				 <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+				 Voir l'Historique de la faction</a>
+			 </h2>
+		 </div>
+		 <div id="collapse1" class="panel-collapse collapse">
+			 <div class="panel-body"><?php echo $descrFaction; ?></div>
+		 </div>
+	 </div>
+ </div>
+
+		  <div style="text-align: center; width: 500px;">
+		  	<p>Pour accéder aux différents rangs de votre faction, il vous faut obtenir un nombre de victoires supérieur ou égal à un certain palier : 20, 40, 80, 100, 125, 150...</p>
+		  </div>
+
+		  	<h2><?php echo $nomFaction ?> participants à la guerre</h2>
+			<table class="tableFactionMembres">
+				<tr>
+					<th class="thFaction">Nom</th><th class="thFaction">Titre</th><th class="thFaction">Royaume</th><th class="thFaction">Niveau</th><th class="thFaction">Race</th><th class="thFaction">Classe</th><th class="thFaction">Rang</th><th class="thFaction">Puissance</th>
+				</tr>
+
+<?php
+
+
+			$req = mysql_query("SELECT DISTINCT nom_membre, `joueurs_heros`.titre, `joueurs_heros`.royaume, `joueurs_heros`.race, `joueurs_heros`.classe, `joueurs_bonus`.rangFaction, `joueurs_stats`.niveau, `joueurs_heros`.puissance, `joueurs_heros`.id FROM `joueurs_heros` INNER JOIN `factions_membres` ON `joueurs_heros`.nom = `factions_membres`.nom_membre INNER JOIN `joueurs_bonus` ON `joueurs_bonus`.id = `joueurs_heros`.id INNER JOIN `joueurs_stats` ON `joueurs_stats`.id = `joueurs_heros`.id INNER JOIN combat_factions ON combat_factions.victoire = joueurs_heros.nom WHERE `factions_membres`.faction_id = '".$faction."' ORDER BY puissance DESC");
+			while ($data = mysql_fetch_array($req)) {
+
+				//RANGS de faction
+				//Si faction =
+
+
+
+			  echo '
+
+			    <tr class="cl_player">
+			      <td class="celluleTableauFaction" style="font-weight: bold;"><a href="/profil_compte.php?show_compte='.$data['id'].'&serv=1">'.$data['nom_membre'].'</a></td>
+			      <td class="celluleTableauFaction">'.$data['titre'].'</td>
+			      <td class="celluleTableauFaction">'.$data['royaume'].'</td>
+			      <td class="celluleTableauFaction">'.$data['niveau'].'</td>
+			      <td class="celluleTableauFaction">'.$data['race'].'</td><td class="celluleTableauFaction">'.$data['classe'].'</td>
+			      <td class="celluleTableauFaction">'.$data['rangFaction'].'</td><td class="celluleTableauFaction">'.$data['puissance'].'
+			      </td>
+			    </tr>
+
+			  ';
+			}
+
+
+			?>
+			</table>
+
+
+<?php if ($actual_db === 2) { ?>
+
+			<!-- PARTIE CANDIDATURE LEADER-->
+
+			<div class="devenirChefFaction">
+				<h2 class="text-center">Devenir Leader de ma faction :</h2>
+				<p>Proposez votre candidature au poste de Leader de faction, vos pairs déciderons si vous en êtes digne !</p>
+				<form action="faction.php" method="post">
+					<?php
+					$req = mysql_query("SELECT nom FROM `chefferie_faction` WHERE nom = '$nom' ");
+					$nomPresentOuPas = mysql_num_rows($req);
+
+					if ($nomPresentOuPas > 0) {
+						?>
+						<h2 class="text-center">Vous avez déjà postulé</h2>
+
+						<!-- <input type="submit" value="Modifier mon discours"> -->
+						<input type="submit" name="supprimerDiscours" value="Supprimer mon discours">
+						<?php
+					} else { ?>
+
+						<label for="candidatureDiscours">Discours : </label><br />	<textarea  maxlength="800" minlength="250" id=" textarea candidatureDiscours" name="discours" rows="8" cols="80" placeholder="Ecrivez votre discours... (Minimum 250 caractères)"></textarea><br>
+						<input type="submit" value="Transmettre mon discours" name="sendDiscours">
+						<?php
+					}
+					?>
+				</form>
+
+			</div>
+
+			<!-- PARTIE VOTE DU LEADER -->
+
+			<div class="choixChefFaction">
+				<h2>Vote du chef de faction</h2>
+				<form class="" action="validationChefFaction.php" method="post">
+ 					<?php
+					$voteMemo = mysql_query("SELECT voteLeader FROM `joueurs_bonus` WHERE `id` = '$id' ");
+					$data = mysql_fetch_array($voteMemo);
+			if ($data[0] == '') {
+?>
+						<table>
+								<tr>
+									<th></th><th>Nom</th><th>Votes</th><th>Discours</th>
+								</tr>
+						<?php
+						$voteMemo = mysql_query("SELECT voteLeader FROM `joueurs_bonus` WHERE `id` = '$id' ");
+
+							$req = mysql_query("SELECT `chefferie_faction`.nom, discours, votes FROM `chefferie_faction` LEFT OUTER JOIN `factions` ON `chefferie_faction`.id_faction = `factions`.id WHERE `id_Faction` = '$faction' ");
+							while ($data = mysql_fetch_array($req)) {
+								$nbLeadCandidats = mysql_num_rows($req);
+								if ($nbLeadCandidats === 0) { ?>
+									<li>il n'y a pas de candidature pour le poste de leader de votre faction</li>
+									<?php
+								}
+								else {
+									echo '<tr><td><input type="radio" name="leaderChoose" value="'.$data['nom'].'"></td><td>'.$data['nom'].'</td><td>'.$data['votes'].'</td><td discours><a href="selectDiscours.php?nom='.$data['nom'].' "><p>Voir le discours</p></a></td></tr>';
+								}
+							}
+									?>
+						</table>
+						<input type="submit" name="voteForLeader" value="Voter">
+<?php } else {
+
+	echo "Vous avez voté pour ".$data[0]." "; ?>
+
+	<table>
+		<tr>
+			<th></th><th>Nom</th><th>Votes</th><th>Discours</th>
+		</tr>
+	<?php
+	$req = mysql_query("SELECT `chefferie_faction`.id, `chefferie_faction`.nom, discours, votes FROM `chefferie_faction` LEFT OUTER JOIN `factions` ON `chefferie_faction`.id_faction = `factions`.id WHERE `id_Faction` = '$faction' ");
+	while ($data = mysql_fetch_array($req)) {
+			$id = $data['id'];
+			$nom = $data['nom'];
+			$votes = $data['votes'];
+			$discours = $data['discours'];
+
+
+			echo '<tr><td></td><td>'.$nom.'</td><td>'.$votes.'</td><td discours><a href="selectDiscours.php?nom='.$nom.' "><p>Voir le discours</p></a></td></tr>';
+	}
+
+	?>
+</table>
+
+<input type="submit" name="resetVote" value="Changer mon vote">
+
+	<?php
+} ?>
+
+			 </form>
+			</div>
+
+		  </div>
+		</div>
+	</div>
+
+
+
+
+
+<?php
+			// FIN ACTUAL DB
+			}
+
+
+
+
+	} //if session name tout ça
+
+} // fin du while
+
+
+
+
+
+
+	echo $dataIndex.'</td>';
+
+include("fin.php");
+mysqli_close($db);
+ ?>
+
+	<script>
+	tinymce.init({
+	 selector: 'textarea',
+	 plugins: [
+		 'emoticons textpattern'
+	 ],
+	 toolbar1: 'bold italic underline strikethrough |emoticons',
+	 statusbar: false,
+	 menubar: false,
+	 resizehandle: true,
+	});
+	</script>

@@ -1,0 +1,2 @@
+Dossier où sont entreposés les résultats des HoF.
+Ce fichier peut être supprimé sur le serveur.

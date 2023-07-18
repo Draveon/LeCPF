@@ -1,0 +1,59 @@
+<?php 
+//fait rejoindre une faction à un personnage
+$id = $_SESSION['id'];
+$nom = $_SESSION['nom'];
+$race = $_SESSION['race'];
+
+
+	switch ($race){
+		//Les Six Lames
+		case 'Célestial': $faction = 1; break;
+		case 'Fétide': $faction = 1; break;
+		case 'Sahuagin': $faction = 1; break;
+		case 'Septentrional': $faction = 1; break;
+		case 'Ashtar': $faction = 1; break;
+		case 'Malakeh': $faction = 1; break;
+
+		//L'Ordre Impérial
+		case 'Elfe': $faction = 2; break;
+		case 'Homme': $faction = 2; break;
+		case 'Nain': $faction = 2; break;
+		case 'Ancien': $faction = 2; break;
+		case 'Gnome': $faction = 2; break;
+		case 'Fée': $faction = 2; break;
+
+		//Les Disciples du Chaos
+		case 'Vampire': $faction = 3; break;
+		case 'Orque': $faction = 3; break;
+		case 'Infernal': $faction = 3; break;
+		case 'Minotaure': $faction = 3; break;
+		case 'Géant': $faction = 3; break;
+		case 'Elfe Noir': $faction = 3; break;
+		
+	}
+	//Commandes SQL nécessaires :
+
+			$sqlAjoutMembre = "INSERT INTO `factions_membres` (`id_membre`, `nom_membre`, `faction_id`) VALUES ('$id', '$nom', $faction);";
+			$sqlMAJMembre = "UPDATE `factions_membres` SET `faction_id` = $faction WHERE nom_membre = '$nom';";
+			
+			$sqlNomFaction = "SELECT nom, image, descr FROM `factions` WHERE id = $faction";
+	//On prépare la commande sql d'insertion si le personnage n'est pas déjà présent dans une faction
+			$reqCondition = mysql_query("SELECT COUNT(nom_membre) FROM `factions_membres` WHERE nom_membre = '$nom'; ")or die('Erreur SQL !<br>'.$sql.'<br>'.mysql_error());
+			$res = mysql_fetch_array($reqCondition);
+			
+				//Si le personnage n'est pas inscrit dans une faction
+				if ($res[0] == 0) {
+					//On l'ajoute
+					$reqAjoutMembre = mysql_query($sqlAjoutMembre) or die('Erreur SQL !<br>'.$sql.'<br>'.mysql_error());
+				} else if ($res[0] == 1) {
+				//Si déjà inscrit on met à jour sa faction au cas où il a reset
+					$reqAjoutMembre = mysql_query($sqlMAJMembre) or die('Erreur SQL !<br>'.$sql.'<br>'.mysql_error());
+				}
+
+			$reqNomFaction = mysql_query($sqlNomFaction) or die('Erreur SQL !<br>'.$sql.'<br>'.mysql_error());
+			$res2 = mysql_fetch_array($reqNomFaction);
+			$nomFaction = $res2[0];
+			$imageFaction = $res2[1];
+			$descrFaction = $res2[2];
+
+ ?>

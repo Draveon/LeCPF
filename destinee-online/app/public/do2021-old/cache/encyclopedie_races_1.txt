@@ -1,0 +1,237 @@
+	<td class="creatbatiliste4"><a href="info_race.php?race=Ancien" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Ancien</h4><br>
+			<img src="/images/races/anciens.gif" width="100" height="100" alt="Ancien" title="Ancien" border=1></a></td>
+	<td class="creatbatiliste4"><a href="info_race.php?race=Ashtar" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Ashtar</h4><br>
+			<img src="/images/races/ashtars.gif" width="100" height="100" alt="Ashtar" title="Ashtar" border=1></a></td>
+	<td class="creatbatiliste4"><a href="info_race.php?race=Célestial" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Célestial</h4><br>
+			<img src="/images/races/celestiaux.gif" width="100" height="100" alt="Célestial" title="Célestial" border=1></a></td>
+	<td class="creatbatiliste4"><a href="info_race.php?race=Elfe" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Elfe</h4><br>
+			<img src="/images/races/elfes.gif" width="100" height="100" alt="Elfe" title="Elfe" border=1></a></td>
+	<td class="creatbatiliste4"><a href="info_race.php?race=Elfe Noir" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Elfe Noir</h4><br>
+			<img src="/images/races/elfesnoirs.gif" width="100" height="100" alt="Elfe Noir" title="Elfe Noir" border=1></a></td>
+	<td class="creatbatiliste4"><a href="info_race.php?race=Fée" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Fée</h4><br>
+			<img src="/images/races/fees.gif" width="100" height="100" alt="Fée" title="Fée" border=1></a></td>
+</tr>
+<tr>	<td class="creatbatiliste4"><a href="info_race.php?race=Fétide" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Fétide</h4><br>
+			<img src="/images/races/fetides.gif" width="100" height="100" alt="Fétide" title="Fétide" border=1></a></td>
+	<td class="creatbatiliste4"><a href="info_race.php?race=Géant" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Géant</h4><br>
+			<img src="/images/races/geants.gif" width="100" height="100" alt="Géant" title="Géant" border=1></a></td>
+	<td class="creatbatiliste4"><a href="info_race.php?race=Gnome" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Gnome</h4><br>
+			<img src="/images/races/gnomes.gif" width="100" height="100" alt="Gnome" title="Gnome" border=1></a></td>
+	<td class="creatbatiliste4"><a href="info_race.php?race=Homme" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Homme</h4><br>
+			<img src="/images/races/hommes.gif" width="100" height="100" alt="Homme" title="Homme" border=1></a></td>
+	<td class="creatbatiliste4"><a href="info_race.php?race=Infernal" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Infernal</h4><br>
+			<img src="/images/races/infernaux.gif" width="100" height="100" alt="Infernal" title="Infernal" border=1></a></td>
+	<td class="creatbatiliste4"><a href="info_race.php?race=Malakeh" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Malakeh</h4><br>
+			<img src="/images/races/malakeh.jpg" width="100" height="100" alt="Malakeh" title="Malakeh" border=1></a></td>
+</tr>
+<tr>	<td class="creatbatiliste4"><a href="info_race.php?race=Minotaure" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Minotaure</h4><br>
+			<img src="/images/races/minotaures.gif" width="100" height="100" alt="Minotaure" title="Minotaure" border=1></a></td>
+	<td class="creatbatiliste4"><a href="info_race.php?race=Nain" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Nain</h4><br>
+			<img src="/images/races/nains.gif" width="100" height="100" alt="Nain" title="Nain" border=1></a></td>
+	<td class="creatbatiliste4"><a href="info_race.php?race=Orque" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Orque</h4><br>
+			<img src="/images/races/orques.gif" width="100" height="100" alt="Orque" title="Orque" border=1></a></td>
+	<td class="creatbatiliste4"><a href="info_race.php?race=Sahuagin" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Sahuagin</h4><br>
+			<img src="images/races/sahuagins.gif" width="100" height="100" alt="Sahuagin" title="Sahuagin" border=1></a></td>
+	<td class="creatbatiliste4"><a href="info_race.php?race=Septentrional" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Septentrional</h4><br>
+			<img src="/images/races/septentrionaux.png" width="100" height="100" alt="Septentrional" title="Septentrional" border=1></a></td>
+	<td class="creatbatiliste4"><a href="info_race.php?race=Vampire" onclick="NewWindow(this.href,'name','550','550','yes');return false">
+			<h4>Vampire</h4><br>
+			<img src="/images/races/vampires.gif" width="100" height="100" alt="Vampire" title="Vampire" border=1></a></td>
+</tr><tr><td colspan="6"><br></td></tr></tbody></table>
+		</div></td></tr>
+	<tr>	<td class="cadrebottom" colspan="4"></td></tr>
+</tbody></table>
+
+<div class="cadrespacer"></div>
+
+<table class="cadretablenormal"><tbody>
+	<tr>	<td class="cadretopleft"  colspan="3"></td>
+		<td class="cadretopright" rowspan="2"></td></tr>
+	<tr>	<td class="cadremiddleleft"></td>
+		<td class="cadrecontenu"  colspan="2">
+			<div class="col-md-12" align="center"><table class="localtable963"><tbody><tr><td><h2>Les races</h2>		<div class="longtexte" style="padding-bottom:0px; position:relative; top:0px;">
+<ul>
+<li>Un héros choisit une race parmi l'ensemble des races disponibles</li>
+<li>On ne peut changer de race en cours de round, à moins de reset son héros</li>
+<li>La race confère au héros une aptitude de départ (cf. tableau ci-dessous)</li>
+<li>La race confère au héros la possibilité de construire 2 bâtiments de créatures dites "raciales" (cf. section "créatures")</li>
+<li>À chaque montée de niveau, le héros voit ses statistiques augmentées par celles de sa race (cf. tableau ci-dessous)</li>
+<li>Chaque race est plus ou moins à l'aise pour exploiter les terrains (cf terrains)</li>
+<li style="padding: 0 25px;">Au regard des aptitudes Purification & Profanation, les races sont dites: <ul>
+<li> bonnes (Ancien, Elfe, Fée, Fétide, Gnome, Célestial, Nain, Malakeh)</li>
+<li> mauvaises (i.e. Elfe Noir, Géant, Infernal, Minotaure, Orque, Sahuagin, Septentrional, Vampire)</li>
+<li> neutres (i.e. Humain, Ashtar)</li><br /></li></ul>
+</ul>
+</div>
+		<br></td></tr></tbody></table>
+		</div></td></tr>
+	<tr>	<td class="cadrebottom" colspan="4"></td></tr>
+</tbody></table>
+
+<div class="cadrespacer"></div>
+
+<table class="cadretablenormal"><tbody>
+	<tr>	<td class="cadretopleft"  colspan="3"></td>
+		<td class="cadretopright" rowspan="2"></td></tr>
+	<tr>	<td class="cadremiddleleft"></td>
+		<td class="cadrecontenu"  colspan="2">
+			<div class="col-md-12" align="center"><table class="localtable963"><tbody><tr><td><h2>Les statistiques</h2><div class="longtexte" style="padding-bottom:0px; position:relative; top:0px;">Les statistiques gagnées à chaque niveau de tout héros sont fonction de sa race, à l'exception près de quelques facteurs traités en d'autres sections, tels que les dieux, les objets, etc. Ainsi le choix de la race est primordial, quelque soit la classe qui vous intéresse. Distribuées de manière équilibrée, les statistiques raciales établissent ce que deviendront les héros, influençant lors des gains de niveau. Le tableau qui suit vous montre les statistiques gagnées à chaques gain de niveau, en fonction de la race donnée.</div>
+		<center>
+<table class="tableraces" style="margin-right:30px;"><tbody>
+<tr>	<td></td>
+	<td style="width: 30px;"><img src="/images/terrain/anciens.gif" align="middle"></td>
+	<td style="width: 30px;"><img src="/images/terrain/ashtars.gif" align="middle"></td>
+	<td style="width: 30px;"><img src="/images/terrain/celestiaux.gif" align="middle"></td>
+	<td style="width: 30px;"><img src="/images/terrain/elfes.gif" align="middle"></td>
+	<td style="width: 30px;"><img src="/images/terrain/elfesnoirs.gif" align="middle"></td>
+	<td style="width: 30px;"><img src="/images/terrain/fees.gif" align="middle"></td>
+	<td style="width: 30px;"><img src="/images/terrain/fetides.gif" align="middle"></td>
+	<td style="width: 30px;"><img src="/images/terrain/geants.gif" align="middle"></td>
+	<td style="width: 30px;"><img src="/images/terrain/gnomes.gif" align="middle"></td>
+	<td style="width: 30px;"><img src="/images/terrain/hommes.gif" align="middle"></td>
+	<td style="width: 30px;"><img src="/images/terrain/infernaux.gif" align="middle"></td>
+	<td style="width: 30px;"><img src="/images/terrain/malakehs.gif" align="middle"></td>
+	<td style="width: 30px;"><img src="/images/terrain/minotaures.gif" align="middle"></td>
+	<td style="width: 30px;"><img src="/images/terrain/nains.gif" align="middle"></td>
+	<td style="width: 30px;"><img src="/images/terrain/orques.gif" align="middle"></td>
+	<td style="width: 30px;"><img src="/images/terrain/sahuagins.gif" align="middle"></td>
+	<td style="width: 30px;"><img style="height: 125px;" src="/images/terrain/septentrionaux.gif" align="middle"></td>
+	<td style="width: 30px;"><img src="/images/terrain/vampires.gif" align="middle"></td>
+	</tr><tr><td></td><td colspan="16" class="hline"></td></tr><tr><td class="tdraces">Attaque</td>	<td class="rollovercolor">1</td>
+		<td class="rollovercolor">4</td>
+		<td class="rollovercolor">1</td>
+		<td class="rollovercolor">1</td>
+		<td class="rollovercolor">4</td>
+		<td class="rollovercolor">0</td>
+		<td class="rollovercolor">0</td>
+		<td class="rollovercolor">6</td>
+		<td class="rollovercolor">0</td>
+		<td class="rollovercolor">3</td>
+		<td class="rollovercolor">5</td>
+		<td class="rollovercolor">4</td>
+		<td class="rollovercolor">2</td>
+		<td class="rollovercolor">2</td>
+		<td class="rollovercolor">5</td>
+		<td class="rollovercolor">3</td>
+		<td class="rollovercolor">5</td>
+		<td class="rollovercolor">2</td>
+		</tr><tr><td></td><td colspan="16" class="hline"></td></tr><tr><td class="tdraces">Défense</td>	<td class="rollovercolor">0</td>
+		<td class="rollovercolor">0</td>
+		<td class="rollovercolor">3</td>
+		<td class="rollovercolor">0</td>
+		<td class="rollovercolor">3</td>
+		<td class="rollovercolor">0</td>
+		<td class="rollovercolor">4</td>
+		<td class="rollovercolor">0</td>
+		<td class="rollovercolor">0</td>
+		<td class="rollovercolor">2</td>
+		<td class="rollovercolor">8</td>
+		<td class="rollovercolor">2</td>
+		<td class="rollovercolor">1</td>
+		<td class="rollovercolor">4</td>
+		<td class="rollovercolor">4</td>
+		<td class="rollovercolor">0</td>
+		<td class="rollovercolor">2</td>
+		<td class="rollovercolor">1</td>
+		</tr><tr><td></td><td colspan="16" class="hline"></td></tr><tr><td class="tdraces">Initiative</td>	<td class="rollovercolor">1</td>
+		<td class="rollovercolor">1</td>
+		<td class="rollovercolor">0</td>
+		<td class="rollovercolor">5</td>
+		<td class="rollovercolor">3</td>
+		<td class="rollovercolor">2</td>
+		<td class="rollovercolor">3</td>
+		<td class="rollovercolor">0</td>
+		<td class="rollovercolor">0</td>
+		<td class="rollovercolor">2</td>
+		<td class="rollovercolor">0</td>
+		<td class="rollovercolor">4</td>
+		<td class="rollovercolor">4</td>
+		<td class="rollovercolor">1</td>
+		<td class="rollovercolor">1</td>
+		<td class="rollovercolor">5</td>
+		<td class="rollovercolor">1</td>
+		<td class="rollovercolor">2</td>
+		</tr><tr><td></td><td colspan="16" class="hline"></td></tr><tr><td class="tdraces">Charisme</td>	<td class="rollovercolor">4</td>
+		<td class="rollovercolor">4</td>
+		<td class="rollovercolor">5</td>
+		<td class="rollovercolor">3</td>
+		<td class="rollovercolor">0</td>
+		<td class="rollovercolor">3</td>
+		<td class="rollovercolor">3</td>
+		<td class="rollovercolor">3</td>
+		<td class="rollovercolor">2</td>
+		<td class="rollovercolor">2</td>
+		<td class="rollovercolor">0</td>
+		<td class="rollovercolor">0</td>
+		<td class="rollovercolor">0</td>
+		<td class="rollovercolor">0</td>
+		<td class="rollovercolor">0</td>
+		<td class="rollovercolor">1</td>
+		<td class="rollovercolor">0</td>
+		<td class="rollovercolor">4</td>
+		</tr><tr><td></td><td colspan="16" class="hline"></td></tr><tr><td class="tdraces">Endurance</td>	<td class="rollovercolor">2</td>
+		<td class="rollovercolor">0</td>
+		<td class="rollovercolor">3</td>
+		<td class="rollovercolor">0</td>
+		<td class="rollovercolor">1</td>
+		<td class="rollovercolor">2</td>
+		<td class="rollovercolor">2</td>
+		<td class="rollovercolor">0</td>
+		<td class="rollovercolor">2</td>
+		<td class="rollovercolor">2</td>
+		<td class="rollovercolor">0</td>
+		<td class="rollovercolor">0</td>
+		<td class="rollovercolor">5</td>
+		<td class="rollovercolor">8</td>
+		<td class="rollovercolor">2</td>
+		<td class="rollovercolor">0</td>
+		<td class="rollovercolor">4</td>
+		<td class="rollovercolor">1</td>
+		</tr><tr><td></td><td colspan="16" class="hline"></td></tr><tr><td class="tdraces">Puissance</td>	<td class="rollovercolor">3</td>
+		<td class="rollovercolor">4</td>
+		<td class="rollovercolor">1</td>
+		<td class="rollovercolor">1</td>
+		<td class="rollovercolor">4</td>
+		<td class="rollovercolor">3</td>
+		<td class="rollovercolor">0</td>
+		<td class="rollovercolor">0</td>
+		<td class="rollovercolor">6</td>
+		<td class="rollovercolor">3</td>
+		<td class="rollovercolor">5</td>
+		<td class="rollovercolor">4</td>
+		<td class="rollovercolor">2</td>
+		<td class="rollovercolor">1</td>
+		<td class="rollovercolor">0</td>
+		<td class="rollovercolor">3</td>
+		<td class="rollovercolor">2</td>
+		<td class="rollovercolor">2</td>
+		</tr></tbody></table></center><br></td></tr></tbody></table>
+		</div></td></tr>
+	<tr>	<td class="cadrebottom" colspan="4"></td></tr>
+</tbody></table>
+
+<div class="cadrespacer"></div>
+
+<table class="cadretablenormal"><tbody>
+	<tr>	<td class="cadretopleft"  colspan="3"></td>
+		<td class="cadretopright" rowspan="2"></td></tr>
+	<tr>	<td class="cadremiddleleft"></td>
+		<td class="cadrecontenu"  colspan="2">
+			<div class="col-md-12" align="center"><table class="localtable963"><tbody><tr><td><h2>Les aptitudes</h2><div class="longtexte">Lors du choix de votre race, <a href="encyclopedie_aptitudes.php">une aptitude</a> dite "de base" vous est attribuée, de la même manière qu'il l'est fait lors du choix de <a href="encyclopedie_classes.php">votre classe</a>. Cette aptitude de base trouve son sens dans le fait que toute race possède un trait, un attribut ou un pouvoir unique et spécifique à cette dernière.</div><UL style="text-align: left">	<li><div style="width:125px; float:left;">Ancien</div> -> <a href="info_aptitude.php?aptitude=32" onclick="NewWindow(this.href,'name','380','500','yes');return false">Perfectionnisme</a></li>	<li><div style="width:125px; float:left;">Ashtar</div> -> <a href="info_aptitude.php?aptitude=25" onclick="NewWindow(this.href,'name','380','500','yes');return false">Synergie</a></li>	<li><div style="width:125px; float:left;">Célestial</div> -> <a href="info_aptitude.php?aptitude=4" onclick="NewWindow(this.href,'name','380','500','yes');return false">Purification</a></li>	<li><div style="width:125px; float:left;">Elfe</div> -> <a href="info_aptitude.php?aptitude=1" onclick="NewWindow(this.href,'name','380','500','yes');return false">Agilité</a></li>	<li><div style="width:125px; float:left;">Elfe Noir</div> -> <a href="info_aptitude.php?aptitude=15" onclick="NewWindow(this.href,'name','380','500','yes');return false">Espionnage</a></li>	<li><div style="width:125px; float:left;">Fée</div> -> <a href="info_aptitude.php?aptitude=31" onclick="NewWindow(this.href,'name','380','500','yes');return false">Médecine de Guerre</a></li>	<li><div style="width:125px; float:left;">Fétide</div> -> <a href="info_aptitude.php?aptitude=10" onclick="NewWindow(this.href,'name','380','500','yes');return false">Concentration</a></li>	<li><div style="width:125px; float:left;">Géant</div> -> <a href="info_aptitude.php?aptitude=8" onclick="NewWindow(this.href,'name','380','500','yes');return false">Force Brute</a></li>	<li><div style="width:125px; float:left;">Gnome</div> -> <a href="info_aptitude.php?aptitude=19" onclick="NewWindow(this.href,'name','380','500','yes');return false">Intelligence</a></li>	<li><div style="width:125px; float:left;">Homme</div> -> <a href="info_aptitude.php?aptitude=26" onclick="NewWindow(this.href,'name','380','500','yes');return false">Navigation</a></li>	<li><div style="width:125px; float:left;">Infernal</div> -> <a href="info_aptitude.php?aptitude=5" onclick="NewWindow(this.href,'name','380','500','yes');return false">Profanation</a></li>	<li><div style="width:125px; float:left;">Malakeh</div> -> <a href="info_aptitude.php?aptitude=12" onclick="NewWindow(this.href,'name','380','500','yes');return false">Charge Meurtrière</a></li>	<li><div style="width:125px; float:left;">Minotaure</div> -> <a href="info_aptitude.php?aptitude=20" onclick="NewWindow(this.href,'name','380','500','yes');return false">Manipulation</a></li>	<li><div style="width:125px; float:left;">Nain</div> -> <a href="info_aptitude.php?aptitude=6" onclick="NewWindow(this.href,'name','380','500','yes');return false">Artisanat</a></li>	<li><div style="width:125px; float:left;">Orque</div> -> <a href="info_aptitude.php?aptitude=34" onclick="NewWindow(this.href,'name','380','500','yes');return false">Fureur</a></li>	<li><div style="width:125px; float:left;">Sahuagin</div> -> Aucune aptitude n'est imposée au niveau 1</li>	<li><div style="width:125px; float:left;">Septentrional</div> -> <a href="info_aptitude.php?aptitude=35" onclick="NewWindow(this.href,'name','380','500','yes');return false">Mutations</a></li>	<li><div style="width:125px; float:left;">Vampire</div> -> <a href="info_aptitude.php?aptitude=29" onclick="NewWindow(this.href,'name','380','500','yes');return false">Effroi</a></li></UL></div></td></tr></tbody></table>

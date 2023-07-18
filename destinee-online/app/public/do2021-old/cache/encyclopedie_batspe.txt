@@ -1,0 +1,536 @@
+<div style="width:963px;"><div style="text-align:left; width:100%;"><b>Branche du Combat</b></div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"><div class="BSpmB"><div id="show1"><a href="javascript:swapMultiple(new Array('show1'), new Array('inner1', 'hide1'))">&nbsp;+&nbsp;</a></div><div id="hide1" style="display:none;" ><a href="javascript:swapMultiple(new Array('inner1', 'hide1'), new Array('show1'))">&nbsp;-&nbsp;</a></div></div></div><img src="images/special/forge.gif" alt="" class="BSimg"> Forge</div><div class="BSdesc" style="padding-left: 400px;">Bonus de 2 % aux dégâts infligés</div>
+<div id="inner1" style="display:none; padding-left:28px;">
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/ecurieroyale.gif" alt="" class="BSimg"> Combat rapproché</div><div class="BSdesc" style="padding-left: 372px;">Bonus de 5 % aux dégâts contre les créatures à distance</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/forgeimperiale.gif" alt="" class="BSimg"> Techniques d`affûtage</div><div class="BSdesc" style="padding-left: 372px;">Bonus de 4 % aux dégâts contre les créatures de corps à corps</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/templedelafolie.gif" alt="" class="BSimg"> Combat aérien</div><div class="BSdesc" style="padding-left: 372px;">Bonus de 5 % aux dégâts contre les créatures volantes</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/tactique.gif" alt="" class="BSimg"> Génie tactique</div><div class="BSdesc" style="padding-left: 372px;">Bonus de 4 % aux dégâts contre les créatures au sol</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"><div class="BSpmB"><div id="show7"><a href="javascript:swapMultiple(new Array('show7'), new Array('inner7', 'hide7'))">&nbsp;+&nbsp;</a></div><div id="hide7" style="display:none;" ><a href="javascript:swapMultiple(new Array('inner7', 'hide7'), new Array('show7'))">&nbsp;-&nbsp;</a></div></div></div><img src="images/special/force.gif" alt="" class="BSimg"> Ecole de la Force Brute</div><div class="BSdesc" style="padding-left: 372px;">Bonus de 20 % à Force Brute</div>
+<div id="inner7" style="display:none; padding-left:28px;">
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/embuscade.gif" alt="" class="BSimg"> Ecole de l`Embuscade</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Embuscade</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/charge.gif" alt="" class="BSimg"> Ecole de la Charge Meutrière</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Charge Meutrière</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/precision.gif" alt="" class="BSimg"> Ecole de la Précision</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Précision</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/rage.gif" alt="" class="BSimg"> Ecole de la Rage</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Rage</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/aerien.gif" alt="" class="BSimg"> Ecole de la Maîtrise Aérienne</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Maîtrise Aérienne</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/profanation.gif" alt="" class="BSimg"> Ecole de la Profanation</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Profanation</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/purification.gif" alt="" class="BSimg"> Ecole de la Purification</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Purification</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/effroi.gif" alt="" class="BSimg"> Ecole de l`Effroi</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Effroi</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/assassinat.gif" alt="" class="BSimg"> Ecole d`Assassinat</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Assassinat</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/fureur_batspe.jpg" alt="" class="BSimg"> École de la Fureur</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Fureur</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/filets_batspe.jpg" alt="" class="BSimg"> École de la Capture</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Filets</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/muta_batspe.png" alt="" class="BSimg"> Ecole de la Mutation</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 0 % à Mutations</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/perturbation.png" alt="" class="BSimg"> Maîtrise des flux</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Perturbation des Flux</div>
+</div>
+</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"><div class="BSpmB"><div id="show8"><a href="javascript:swapMultiple(new Array('show8'), new Array('inner8', 'hide8'))">&nbsp;+&nbsp;</a></div><div id="hide8" style="display:none;" ><a href="javascript:swapMultiple(new Array('inner8', 'hide8'), new Array('show8'))">&nbsp;-&nbsp;</a></div></div></div><img src="images/special/resistance.gif" alt="" class="BSimg"> Ecole de la Résistance</div><div class="BSdesc" style="padding-left: 372px;">Bonus de 20 % à Résistance</div>
+<div id="inner8" style="display:none; padding-left:28px;">
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/embuscade.gif" alt="" class="BSimg"> Ecole de l`Embuscade</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Embuscade</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/charge.gif" alt="" class="BSimg"> Ecole de la Charge Meutrière</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Charge Meutrière</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/precision.gif" alt="" class="BSimg"> Ecole de la Précision</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Précision</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/rage.gif" alt="" class="BSimg"> Ecole de la Rage</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Rage</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/aerien.gif" alt="" class="BSimg"> Ecole de la Maîtrise Aérienne</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Maîtrise Aérienne</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/profanation.gif" alt="" class="BSimg"> Ecole de la Profanation</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Profanation</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/purification.gif" alt="" class="BSimg"> Ecole de la Purification</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Purification</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/effroi.gif" alt="" class="BSimg"> Ecole de l`Effroi</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Effroi</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/assassinat.gif" alt="" class="BSimg"> Ecole d`Assassinat</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Assassinat</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/fureur_batspe.jpg" alt="" class="BSimg"> École de la Fureur</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Fureur</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/filets_batspe.jpg" alt="" class="BSimg"> École de la Capture</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Filets</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/muta_batspe.png" alt="" class="BSimg"> Ecole de la Mutation</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 0 % à Mutations</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/perturbation.png" alt="" class="BSimg"> Maîtrise des flux</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Perturbation des Flux</div>
+</div>
+</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"><div class="BSpmB"><div id="show9"><a href="javascript:swapMultiple(new Array('show9'), new Array('inner9', 'hide9'))">&nbsp;+&nbsp;</a></div><div id="hide9" style="display:none;" ><a href="javascript:swapMultiple(new Array('inner9', 'hide9'), new Array('show9'))">&nbsp;-&nbsp;</a></div></div></div><img src="images/special/agilite.gif" alt="" class="BSimg"> Ecole de l`Agilité</div><div class="BSdesc" style="padding-left: 372px;">Bonus de 20 % à Agilité</div>
+<div id="inner9" style="display:none; padding-left:28px;">
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/embuscade.gif" alt="" class="BSimg"> Ecole de l`Embuscade</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Embuscade</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/charge.gif" alt="" class="BSimg"> Ecole de la Charge Meutrière</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Charge Meutrière</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/precision.gif" alt="" class="BSimg"> Ecole de la Précision</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Précision</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/rage.gif" alt="" class="BSimg"> Ecole de la Rage</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Rage</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/aerien.gif" alt="" class="BSimg"> Ecole de la Maîtrise Aérienne</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Maîtrise Aérienne</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/profanation.gif" alt="" class="BSimg"> Ecole de la Profanation</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Profanation</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/purification.gif" alt="" class="BSimg"> Ecole de la Purification</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Purification</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/effroi.gif" alt="" class="BSimg"> Ecole de l`Effroi</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Effroi</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/assassinat.gif" alt="" class="BSimg"> Ecole d`Assassinat</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Assassinat</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/fureur_batspe.jpg" alt="" class="BSimg"> École de la Fureur</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Fureur</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/filets_batspe.jpg" alt="" class="BSimg"> École de la Capture</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Filets</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/muta_batspe.png" alt="" class="BSimg"> Ecole de la Mutation</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 0 % à Mutations</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/perturbation.png" alt="" class="BSimg"> Maîtrise des flux</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Perturbation des Flux</div>
+</div>
+</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"><div class="BSpmB"><div id="show10"><a href="javascript:swapMultiple(new Array('show10'), new Array('inner10', 'hide10'))">&nbsp;+&nbsp;</a></div><div id="hide10" style="display:none;" ><a href="javascript:swapMultiple(new Array('inner10', 'hide10'), new Array('show10'))">&nbsp;-&nbsp;</a></div></div></div><img src="images/special/intelligence.gif" alt="" class="BSimg"> Ecole de l`Intelligence</div><div class="BSdesc" style="padding-left: 372px;">Bonus de 20 % à Intelligence</div>
+<div id="inner10" style="display:none; padding-left:28px;">
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/embuscade.gif" alt="" class="BSimg"> Ecole de l`Embuscade</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Embuscade</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/charge.gif" alt="" class="BSimg"> Ecole de la Charge Meutrière</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Charge Meutrière</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/precision.gif" alt="" class="BSimg"> Ecole de la Précision</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Précision</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/rage.gif" alt="" class="BSimg"> Ecole de la Rage</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Rage</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/aerien.gif" alt="" class="BSimg"> Ecole de la Maîtrise Aérienne</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Maîtrise Aérienne</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/profanation.gif" alt="" class="BSimg"> Ecole de la Profanation</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Profanation</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/purification.gif" alt="" class="BSimg"> Ecole de la Purification</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Purification</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/effroi.gif" alt="" class="BSimg"> Ecole de l`Effroi</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Effroi</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/assassinat.gif" alt="" class="BSimg"> Ecole d`Assassinat</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Assassinat</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/fureur_batspe.jpg" alt="" class="BSimg"> École de la Fureur</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Fureur</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/filets_batspe.jpg" alt="" class="BSimg"> École de la Capture</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Filets</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/muta_batspe.png" alt="" class="BSimg"> Ecole de la Mutation</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 0 % à Mutations</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/perturbation.png" alt="" class="BSimg"> Maîtrise des flux</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Perturbation des Flux</div>
+</div>
+</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"><div class="BSpmB"><div id="show11"><a href="javascript:swapMultiple(new Array('show11'), new Array('inner11', 'hide11'))">&nbsp;+&nbsp;</a></div><div id="hide11" style="display:none;" ><a href="javascript:swapMultiple(new Array('inner11', 'hide11'), new Array('show11'))">&nbsp;-&nbsp;</a></div></div></div><img src="images/special/endurance.gif" alt="" class="BSimg"> Ecole de l`Endurance</div><div class="BSdesc" style="padding-left: 372px;">Bonus de 20 % à Endurance</div>
+<div id="inner11" style="display:none; padding-left:28px;">
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/embuscade.gif" alt="" class="BSimg"> Ecole de l`Embuscade</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Embuscade</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/charge.gif" alt="" class="BSimg"> Ecole de la Charge Meutrière</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Charge Meutrière</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/precision.gif" alt="" class="BSimg"> Ecole de la Précision</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Précision</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/rage.gif" alt="" class="BSimg"> Ecole de la Rage</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Rage</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/aerien.gif" alt="" class="BSimg"> Ecole de la Maîtrise Aérienne</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Maîtrise Aérienne</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/profanation.gif" alt="" class="BSimg"> Ecole de la Profanation</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Profanation</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/purification.gif" alt="" class="BSimg"> Ecole de la Purification</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Purification</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/effroi.gif" alt="" class="BSimg"> Ecole de l`Effroi</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Effroi</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/assassinat.gif" alt="" class="BSimg"> Ecole d`Assassinat</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Assassinat</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/fureur_batspe.jpg" alt="" class="BSimg"> École de la Fureur</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Fureur</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/filets_batspe.jpg" alt="" class="BSimg"> École de la Capture</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Filets</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/muta_batspe.png" alt="" class="BSimg"> Ecole de la Mutation</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 0 % à Mutations</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/perturbation.png" alt="" class="BSimg"> Maîtrise des flux</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Perturbation des Flux</div>
+</div>
+</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"><div class="BSpmB"><div id="show12"><a href="javascript:swapMultiple(new Array('show12'), new Array('inner12', 'hide12'))">&nbsp;+&nbsp;</a></div><div id="hide12" style="display:none;" ><a href="javascript:swapMultiple(new Array('inner12', 'hide12'), new Array('show12'))">&nbsp;-&nbsp;</a></div></div></div><img src="images/special/ferveur.gif" alt="" class="BSimg"> Ecole de la Ferveur</div><div class="BSdesc" style="padding-left: 372px;">Bonus de 20 % à Ferveur</div>
+<div id="inner12" style="display:none; padding-left:28px;">
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/embuscade.gif" alt="" class="BSimg"> Ecole de l`Embuscade</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Embuscade</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/charge.gif" alt="" class="BSimg"> Ecole de la Charge Meutrière</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Charge Meutrière</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/precision.gif" alt="" class="BSimg"> Ecole de la Précision</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Précision</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/rage.gif" alt="" class="BSimg"> Ecole de la Rage</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Rage</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/aerien.gif" alt="" class="BSimg"> Ecole de la Maîtrise Aérienne</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Maîtrise Aérienne</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/profanation.gif" alt="" class="BSimg"> Ecole de la Profanation</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Profanation</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/purification.gif" alt="" class="BSimg"> Ecole de la Purification</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Purification</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/effroi.gif" alt="" class="BSimg"> Ecole de l`Effroi</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Effroi</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/assassinat.gif" alt="" class="BSimg"> Ecole d`Assassinat</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Assassinat</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/fureur_batspe.jpg" alt="" class="BSimg"> École de la Fureur</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Fureur</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/filets_batspe.jpg" alt="" class="BSimg"> École de la Capture</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Filets</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/muta_batspe.png" alt="" class="BSimg"> Ecole de la Mutation</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 0 % à Mutations</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/perturbation.png" alt="" class="BSimg"> Maîtrise des flux</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Perturbation des Flux</div>
+</div>
+</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/tortue.png" alt="" class="BSimg"> Formation Tortue</div><div class="BSdesc" style="padding-left: 372px;">Diminution de 5 % des dégâts subis face aux créatures à distance</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/maitrise_rondache.png" alt="" class="BSimg"> Maîtrise de la Rondache</div><div class="BSdesc" style="padding-left: 372px;">Diminution de 4 % des dégâts subis face aux créatures de corps à corps</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/meteorologie.png" alt="" class="BSimg"> Institut d`Astronomie et Météorologie</div><div class="BSdesc" style="padding-left: 372px;">Diminution de 5 % des dégâts subis face aux créatures volantes</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/salledestacticiens.gif" alt="" class="BSimg"> Science du combat</div><div class="BSdesc" style="padding-left: 372px;">Diminution de 4 % des dégâts subis face aux créatures au sol</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"><div class="BSpmB"><div id="show62"><a href="javascript:swapMultiple(new Array('show62'), new Array('inner62', 'hide62'))">&nbsp;+&nbsp;</a></div><div id="hide62" style="display:none;" ><a href="javascript:swapMultiple(new Array('inner62', 'hide62'), new Array('show62'))">&nbsp;-&nbsp;</a></div></div></div><img src="images/special/synergie.gif" alt="" class="BSimg"> Ecole de la Synergie</div><div class="BSdesc" style="padding-left: 372px;">Bonus de 20 % à Synergie</div>
+<div id="inner62" style="display:none; padding-left:28px;">
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/embuscade.gif" alt="" class="BSimg"> Ecole de l`Embuscade</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Embuscade</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/charge.gif" alt="" class="BSimg"> Ecole de la Charge Meutrière</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Charge Meutrière</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/precision.gif" alt="" class="BSimg"> Ecole de la Précision</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Précision</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/rage.gif" alt="" class="BSimg"> Ecole de la Rage</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Rage</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/aerien.gif" alt="" class="BSimg"> Ecole de la Maîtrise Aérienne</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Maîtrise Aérienne</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/profanation.gif" alt="" class="BSimg"> Ecole de la Profanation</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Profanation</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/purification.gif" alt="" class="BSimg"> Ecole de la Purification</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Purification</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/effroi.gif" alt="" class="BSimg"> Ecole de l`Effroi</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Effroi</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/assassinat.gif" alt="" class="BSimg"> Ecole d`Assassinat</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Assassinat</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="text-align:left; width:100%;"><b>Branche de la Magie</b></div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"><div class="BSpmB"><div id="show25"><a href="javascript:swapMultiple(new Array('show25'), new Array('inner25', 'hide25'))">&nbsp;+&nbsp;</a></div><div id="hide25" style="display:none;" ><a href="javascript:swapMultiple(new Array('inner25', 'hide25'), new Array('show25'))">&nbsp;-&nbsp;</a></div></div></div><img src="images/special/templedeladevastation.gif" alt="" class="BSimg"> Portail des Arcanes</div><div class="BSdesc" style="padding-left: 400px;">Bonus de -6 % à la consommation de mana,<br>Bonus de -6 % au coût en mana des créatures</div>
+<div id="inner25" style="display:none; padding-left:28px;">
+<div class="BS"><div class="BSnom"><div class="BSpm"><div class="BSpmB"><div id="show27"><a href="javascript:swapMultiple(new Array('show27'), new Array('inner27', 'hide27'))">&nbsp;+&nbsp;</a></div><div id="hide27" style="display:none;" ><a href="javascript:swapMultiple(new Array('inner27', 'hide27'), new Array('show27'))">&nbsp;-&nbsp;</a></div></div></div><img src="images/special/tourdelinstabilite.gif" alt="" class="BSimg"> Arcanes magiques</div><div class="BSdesc" style="padding-left: 372px;">Bonus de 7 % aux effets des sorts défensifs,<br>Bonus de 7 % aux dégâts des sorts offensifs</div>
+<div id="inner27" style="display:none; padding-left:28px;">
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/jaillissementdeflamme.gif" alt="" class="BSimg"> Arcane du Feu</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 10 % aux sorts offensifs de Feu,<br>Bonus de 10 % aux sorts défensifs de Feu</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/eau.gif" alt="" class="BSimg"> Arcane de l`Eau</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 10 % aux sorts offensifs d'Eau,<br>Bonus de 10 % aux sorts défensifs d'Eau</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/terre.gif" alt="" class="BSimg"> Arcane de la Terre</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 10 % aux sorts offensifs de Terre,<br>Bonus de 10 % aux sorts défensifs de Terre</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/air.gif" alt="" class="BSimg"> Arcane de l`Air</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 10 % aux sorts offensifs d'Air,<br>Bonus de 10 % aux sorts défensifs d'Air</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/foudredutrekt.gif" alt="" class="BSimg"> Arcane de l`Electricité</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 10 % aux sorts offensifs d'Electricité,<br>Bonus de 10 % aux sorts défensifs d'Electricité</div>
+</div>
+</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/laboratoirealchimique.gif" alt="" class="BSimg"> Efficience</div><div class="BSdesc" style="padding-left: 372px;">Bonus de -20 % à la consommation de ressources</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"><div class="BSpmB"><div id="show29"><a href="javascript:swapMultiple(new Array('show29'), new Array('inner29', 'hide29'))">&nbsp;+&nbsp;</a></div><div id="hide29" style="display:none;" ><a href="javascript:swapMultiple(new Array('inner29', 'hide29'), new Array('show29'))">&nbsp;-&nbsp;</a></div></div></div><img src="images/special/concentration.gif" alt="" class="BSimg"> Ecole de la Concentration</div><div class="BSdesc" style="padding-left: 372px;">Bonus de 20 % à Concentration</div>
+<div id="inner29" style="display:none; padding-left:28px;">
+<div class="BS"><div class="BSnom"><div class="BSpm"><div class="BSpmB"><div id="show10_"><a href="javascript:swapMultiple(new Array('show10_'), new Array('inner10_', 'hide10_'))">&nbsp;+&nbsp;</a></div><div id="hide10_" style="display:none;" ><a href="javascript:swapMultiple(new Array('inner10_', 'hide10_'), new Array('show10_'))">&nbsp;-&nbsp;</a></div></div></div><img src="images/special/intelligence.gif" alt="" class="BSimg"> Ecole de l`Intelligence</div><div class="BSdesc" style="padding-left: 344px;"> <b>(Branche du Combat)</b><br>Bonus de 20 % à Intelligence</div>
+<div id="inner10_" style="display:none; padding-left:28px;">
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/embuscade.gif" alt="" class="BSimg"> Ecole de l`Embuscade</div><div class="BSdesc" style="padding-left: 316px;">Bonus de 20 % à Embuscade</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/charge.gif" alt="" class="BSimg"> Ecole de la Charge Meutrière</div><div class="BSdesc" style="padding-left: 316px;">Bonus de 20 % à Charge Meutrière</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/precision.gif" alt="" class="BSimg"> Ecole de la Précision</div><div class="BSdesc" style="padding-left: 316px;">Bonus de 20 % à Précision</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/rage.gif" alt="" class="BSimg"> Ecole de la Rage</div><div class="BSdesc" style="padding-left: 316px;">Bonus de 20 % à Rage</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/aerien.gif" alt="" class="BSimg"> Ecole de la Maîtrise Aérienne</div><div class="BSdesc" style="padding-left: 316px;">Bonus de 20 % à Maîtrise Aérienne</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/profanation.gif" alt="" class="BSimg"> Ecole de la Profanation</div><div class="BSdesc" style="padding-left: 316px;">Bonus de 20 % à Profanation</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/purification.gif" alt="" class="BSimg"> Ecole de la Purification</div><div class="BSdesc" style="padding-left: 316px;">Bonus de 20 % à Purification</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/effroi.gif" alt="" class="BSimg"> Ecole de l`Effroi</div><div class="BSdesc" style="padding-left: 316px;">Bonus de 20 % à Effroi</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/assassinat.gif" alt="" class="BSimg"> Ecole d`Assassinat</div><div class="BSdesc" style="padding-left: 316px;">Bonus de 20 % à Assassinat</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/fureur_batspe.jpg" alt="" class="BSimg"> École de la Fureur</div><div class="BSdesc" style="padding-left: 316px;">Bonus de 20 % à Fureur</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/filets_batspe.jpg" alt="" class="BSimg"> École de la Capture</div><div class="BSdesc" style="padding-left: 316px;">Bonus de 20 % à Filets</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/muta_batspe.png" alt="" class="BSimg"> Ecole de la Mutation</div><div class="BSdesc" style="padding-left: 316px;">Bonus de 0 % à Mutations</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/perturbation.png" alt="" class="BSimg"> Maîtrise des flux</div><div class="BSdesc" style="padding-left: 316px;">Bonus de 20 % à Perturbation des Flux</div>
+</div>
+</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"><div class="BSpmB"><div id="show11_"><a href="javascript:swapMultiple(new Array('show11_'), new Array('inner11_', 'hide11_'))">&nbsp;+&nbsp;</a></div><div id="hide11_" style="display:none;" ><a href="javascript:swapMultiple(new Array('inner11_', 'hide11_'), new Array('show11_'))">&nbsp;-&nbsp;</a></div></div></div><img src="images/special/endurance.gif" alt="" class="BSimg"> Ecole de l`Endurance</div><div class="BSdesc" style="padding-left: 344px;"> <b>(Branche du Combat)</b><br>Bonus de 20 % à Endurance</div>
+<div id="inner11_" style="display:none; padding-left:28px;">
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/embuscade.gif" alt="" class="BSimg"> Ecole de l`Embuscade</div><div class="BSdesc" style="padding-left: 316px;">Bonus de 20 % à Embuscade</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/charge.gif" alt="" class="BSimg"> Ecole de la Charge Meutrière</div><div class="BSdesc" style="padding-left: 316px;">Bonus de 20 % à Charge Meutrière</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/precision.gif" alt="" class="BSimg"> Ecole de la Précision</div><div class="BSdesc" style="padding-left: 316px;">Bonus de 20 % à Précision</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/rage.gif" alt="" class="BSimg"> Ecole de la Rage</div><div class="BSdesc" style="padding-left: 316px;">Bonus de 20 % à Rage</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/aerien.gif" alt="" class="BSimg"> Ecole de la Maîtrise Aérienne</div><div class="BSdesc" style="padding-left: 316px;">Bonus de 20 % à Maîtrise Aérienne</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/profanation.gif" alt="" class="BSimg"> Ecole de la Profanation</div><div class="BSdesc" style="padding-left: 316px;">Bonus de 20 % à Profanation</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/purification.gif" alt="" class="BSimg"> Ecole de la Purification</div><div class="BSdesc" style="padding-left: 316px;">Bonus de 20 % à Purification</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/effroi.gif" alt="" class="BSimg"> Ecole de l`Effroi</div><div class="BSdesc" style="padding-left: 316px;">Bonus de 20 % à Effroi</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/assassinat.gif" alt="" class="BSimg"> Ecole d`Assassinat</div><div class="BSdesc" style="padding-left: 316px;">Bonus de 20 % à Assassinat</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/fureur_batspe.jpg" alt="" class="BSimg"> École de la Fureur</div><div class="BSdesc" style="padding-left: 316px;">Bonus de 20 % à Fureur</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/filets_batspe.jpg" alt="" class="BSimg"> École de la Capture</div><div class="BSdesc" style="padding-left: 316px;">Bonus de 20 % à Filets</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/muta_batspe.png" alt="" class="BSimg"> Ecole de la Mutation</div><div class="BSdesc" style="padding-left: 316px;">Bonus de 0 % à Mutations</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/perturbation.png" alt="" class="BSimg"> Maîtrise des flux</div><div class="BSdesc" style="padding-left: 316px;">Bonus de 20 % à Perturbation des Flux</div>
+</div>
+</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/focus.gif" alt="" class="BSimg"> Ecole du Focus Mental</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Focus Mental</div>
+</div>
+</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/campdelillumination.gif" alt="" class="BSimg"> Temple de la Spiritualité</div><div class="BSdesc" style="padding-left: 372px;">Bonus de 20 % à la vitesse de récupération de la mana</div>
+</div>
+</div>
+</div>
+<div style="text-align:left; width:100%;"><b>Branche du Héros</b></div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"><div class="BSpmB"><div id="show36"><a href="javascript:swapMultiple(new Array('show36'), new Array('inner36', 'hide36'))">&nbsp;+&nbsp;</a></div><div id="hide36" style="display:none;" ><a href="javascript:swapMultiple(new Array('inner36', 'hide36'), new Array('show36'))">&nbsp;-&nbsp;</a></div></div></div><img src="images/special/bibliothequeroyale.gif" alt="" class="BSimg"> Université</div><div class="BSdesc" style="padding-left: 400px;">Bonus de 3 % au revenu</div>
+<div id="inner36" style="display:none; padding-left:28px;">
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/templedelapuissance.gif" alt="" class="BSimg"> Conscience de la manipulation</div><div class="BSdesc" style="padding-left: 372px;">Résistance de 16 % face aux dégâts des sorts offensifs</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"><div class="BSpmB"><div id="show24"><a href="javascript:swapMultiple(new Array('show24'), new Array('inner24', 'hide24'))">&nbsp;+&nbsp;</a></div><div id="hide24" style="display:none;" ><a href="javascript:swapMultiple(new Array('inner24', 'hide24'), new Array('show24'))">&nbsp;-&nbsp;</a></div></div></div><img src="images/special/medecinedeguerre.gif" alt="" class="BSimg"> Ecole de Médecine de Guerre</div><div class="BSdesc" style="padding-left: 372px;">Bonus de 20 % à Médecine de Guerre</div>
+<div id="inner24" style="display:none; padding-left:28px;">
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/perfectionnisme.gif" alt="" class="BSimg"> Ecole du Perfectionnisme</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Perfectionnisme</div>
+</div>
+</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/fissure.gif" alt="" class="BSimg"> Techniques de Minage</div><div class="BSdesc" style="padding-left: 372px;">Bonus de 25 % à la production de ressources</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/guildedespionnage.gif" alt="" class="BSimg"> Formation d`éclaireurs</div><div class="BSdesc" style="padding-left: 372px;">Bonus de 6 au coefficient de pacification</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/ecurie.gif" alt="" class="BSimg"> Officine de recrutement</div><div class="BSdesc" style="padding-left: 372px;">Bonus de 7 % au recrutement</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"><div class="BSpmB"><div id="show41"><a href="javascript:swapMultiple(new Array('show41'), new Array('inner41', 'hide41'))">&nbsp;+&nbsp;</a></div><div id="hide41" style="display:none;" ><a href="javascript:swapMultiple(new Array('inner41', 'hide41'), new Array('show41'))">&nbsp;-&nbsp;</a></div></div></div><img src="images/special/manipulation.gif" alt="" class="BSimg"> Ecole de la Manipulation</div><div class="BSdesc" style="padding-left: 372px;">Bonus de 20 % à Manipulation</div>
+<div id="inner41" style="display:none; padding-left:28px;">
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/perfectionnisme.gif" alt="" class="BSimg"> Ecole du Perfectionnisme</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Perfectionnisme</div>
+</div>
+</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"><div class="BSpmB"><div id="show42"><a href="javascript:swapMultiple(new Array('show42'), new Array('inner42', 'hide42'))">&nbsp;+&nbsp;</a></div><div id="hide42" style="display:none;" ><a href="javascript:swapMultiple(new Array('inner42', 'hide42'), new Array('show42'))">&nbsp;-&nbsp;</a></div></div></div><img src="images/special/commerce.gif" alt="" class="BSimg"> Ecole du Commerce</div><div class="BSdesc" style="padding-left: 372px;">Bonus de 20 % à Commerce</div>
+<div id="inner42" style="display:none; padding-left:28px;">
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/perfectionnisme.gif" alt="" class="BSimg"> Ecole du Perfectionnisme</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Perfectionnisme</div>
+</div>
+</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"><div class="BSpmB"><div id="show44"><a href="javascript:swapMultiple(new Array('show44'), new Array('inner44', 'hide44'))">&nbsp;+&nbsp;</a></div><div id="hide44" style="display:none;" ><a href="javascript:swapMultiple(new Array('inner44', 'hide44'), new Array('show44'))">&nbsp;-&nbsp;</a></div></div></div><img src="images/special/espionnage.gif" alt="" class="BSimg"> Ecole d`Espionnage</div><div class="BSdesc" style="padding-left: 372px;">Bonus de 20 % à Espionnage</div>
+<div id="inner44" style="display:none; padding-left:28px;">
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/perfectionnisme.gif" alt="" class="BSimg"> Ecole du Perfectionnisme</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Perfectionnisme</div>
+</div>
+</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"><div class="BSpmB"><div id="show45"><a href="javascript:swapMultiple(new Array('show45'), new Array('inner45', 'hide45'))">&nbsp;+&nbsp;</a></div><div id="hide45" style="display:none;" ><a href="javascript:swapMultiple(new Array('inner45', 'hide45'), new Array('show45'))">&nbsp;-&nbsp;</a></div></div></div><img src="images/special/ingeniosite.gif" alt="" class="BSimg"> Ecole de l`Ingéniosité</div><div class="BSdesc" style="padding-left: 372px;">Bonus de 20 % à Ingéniosité</div>
+<div id="inner45" style="display:none; padding-left:28px;">
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/perfectionnisme.gif" alt="" class="BSimg"> Ecole du Perfectionnisme</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Perfectionnisme</div>
+</div>
+</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"><div class="BSpmB"><div id="show47"><a href="javascript:swapMultiple(new Array('show47'), new Array('inner47', 'hide47'))">&nbsp;+&nbsp;</a></div><div id="hide47" style="display:none;" ><a href="javascript:swapMultiple(new Array('inner47', 'hide47'), new Array('show47'))">&nbsp;-&nbsp;</a></div></div></div><img src="images/special/navigation.gif" alt="" class="BSimg"> Ecole de Navigation</div><div class="BSdesc" style="padding-left: 372px;">Bonus de 20 % à Navigation</div>
+<div id="inner47" style="display:none; padding-left:28px;">
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/perfectionnisme.gif" alt="" class="BSimg"> Ecole du Perfectionnisme</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Perfectionnisme</div>
+</div>
+</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"><div class="BSpmB"><div id="show48"><a href="javascript:swapMultiple(new Array('show48'), new Array('inner48', 'hide48'))">&nbsp;+&nbsp;</a></div><div id="hide48" style="display:none;" ><a href="javascript:swapMultiple(new Array('inner48', 'hide48'), new Array('show48'))">&nbsp;-&nbsp;</a></div></div></div><img src="images/special/sabotage.gif" alt="" class="BSimg"> Ecole du Sabotage</div><div class="BSdesc" style="padding-left: 372px;">Bonus de 20 % à Sabotage</div>
+<div id="inner48" style="display:none; padding-left:28px;">
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/perfectionnisme.gif" alt="" class="BSimg"> Ecole du Perfectionnisme</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Perfectionnisme</div>
+</div>
+</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/armurerie.gif" alt="" class="BSimg"> Gymnase</div><div class="BSdesc" style="padding-left: 372px;">Bonus de 20 à la caractéristique Attaque</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/armurerieimperiale.gif" alt="" class="BSimg"> Armurerie</div><div class="BSdesc" style="padding-left: 372px;">Bonus de 30 à la caractéristique Défense</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/guildedesassassins.gif" alt="" class="BSimg"> Guilde des Ombres</div><div class="BSdesc" style="padding-left: 372px;">Bonus de 20 à la caractéristique Initiative</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/ecoledelarhetorique.gif" alt="" class="BSimg"> Lycée de la Rhétorique</div><div class="BSdesc" style="padding-left: 372px;">Bonus de 30 à la caractéristique Charisme</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/campdentrainement.gif" alt="" class="BSimg"> Camp d`entraînement</div><div class="BSdesc" style="padding-left: 372px;">Bonus de 30 à la caractéristique Endurance</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/forteressedusavoir.gif" alt="" class="BSimg"> Bibliothèque</div><div class="BSdesc" style="padding-left: 372px;">Bonus de 20 à la caractéristique Puissance</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"><div class="BSpmB"><div id="show56"><a href="javascript:swapMultiple(new Array('show56'), new Array('inner56', 'hide56'))">&nbsp;+&nbsp;</a></div><div id="hide56" style="display:none;" ><a href="javascript:swapMultiple(new Array('inner56', 'hide56'), new Array('show56'))">&nbsp;-&nbsp;</a></div></div></div><img src="images/special/artisanat.gif" alt="" class="BSimg"> Ecole de l`Artisanat</div><div class="BSdesc" style="padding-left: 372px;">Bonus de 20 % à Artisanat</div>
+<div id="inner56" style="display:none; padding-left:28px;">
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/perfectionnisme.gif" alt="" class="BSimg"> Ecole du Perfectionnisme</div><div class="BSdesc" style="padding-left: 344px;">Bonus de 20 % à Perfectionnisme</div>
+</div>
+</div>
+</div>
+
+<div class="BS"><div class="BSnom"><div class="BSpm"></div><img src="images/special/ecole_defense_mal.png" alt="" class="BSimg"> École de défense contre les malédictions</div><div class="BSdesc" style="padding-left: 372px;">Résistance de 16 % face aux malédictions</div>
+</div>
+</div>
+</div>
+</div>

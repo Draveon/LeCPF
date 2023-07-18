@@ -1,0 +1,19 @@
+#dropmenudiv {
+	position:absolute;
+	border:0px solid black;
+	BACKGROUND-IMAGE: URL(../images/bouton/arriere.gif);
+	font:normal 12px Verdana;
+	line-height:18px;
+	z-index:100;
+}
+
+#dropmenudiv a {
+	width: 100%;
+	display: block;
+	text-indent: 5px;
+}
+
+#dropmenudiv a:hover {
+	/*hover background color*/
+	background-color: #E8C782;
+}

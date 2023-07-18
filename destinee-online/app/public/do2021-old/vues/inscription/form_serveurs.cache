@@ -1,0 +1,79 @@
+<?php  include ("connect.php"); 
+
+$req = mysql_query("SELECT COUNT(id) AS nb FROM joueurs_stats WHERE `puissance` > '0'") or die('Erreur SQL !<br>'.mysql_error());
+	$dat = mysql_fetch_row($req);
+	$all = $dat[0];
+
+
+?>
+<table class="localtable630">
+<form method="get" name="form" action="inscription.php">
+	<input type="hidden" name="etape" value="1" />
+	<tr>	
+		<td colspan=2><h2>Inscription - étape 1/2</h2>
+		<span style="color:red;font-weight:bold;">Note : Attention !<br />Un joueur peut posséder un compte par serveur et deux personnages par compte !</span><br />
+		<span style="font-style:italic;">Si vous prévoyez que plus d'une personne se connectera à partir de la même<br />adresse IP (frère(s), soeur(s) et/ou ami(s)), contactez Draveon à draveongoblin@gmail.com</span> .<br /><br /></td>
+	</tr>
+<?php if ($afficher_serveur_1) { ?>
+	<tr>	
+		<td class="inscrLef"><input type="radio" value="1" name="serveur" required></td>
+		<td class="inscrRig"><h4>SERVEUR 1</h4><br /><br />
+		<span style="font-size:small;"><span style="font-style:italic;">Serveur principal. Si vous êtes nouveau sur le jeu, c'est ici que vous devriez vous inscrire: c'est là que vous croiserez le plus de joueurs et d'animation. Maximum de population : 2000.<br /><br />Actuellement :</span> <?php echo (string)$all.' / '.(string)MAX_JOUEURS; ?><br /><br /></span></td>
+	</tr>
+<?php }/* if ($afficher_serveur_2) { ?>
+	<tr>
+		<td class="inscrLef"><input type="radio" value="2" name="serveur"></td>
+		<td class="inscrRig"><h4>SERVEUR  2</h4><br /><br />
+		<span style="font-size:small;"><span style="font-style:italic;">Serveur secondaire. Pour les habitués qui veulent tester un compte différent. Maximum de population : 2000.<br /><br />Actuellement :</span> <?php echo (string)$joueurs_serveur_2.' / '.(string)MAX_JOUEURS; ?><br /><br /></span></td>
+	</tr>
+<?php }*/ ?>
+	<tr>
+		<td colspan=2><textarea rows=10 cols=59 wrap="on" style="visibility:hidden;display:none;color:black;" id="reglement" disabled>L'acceptation des règlements ci-dessous est un prérequis pour tout joueur. Toute personne inscrite est considérée comme ayant lu, accepté et approuvé ces règlements, dans leurs entièretés indissociables. Le joueur promet également de dégager l'équipe d'administration ainsi que l'hébergeur de tout problème lié à leur compte, quel qu'il soit. Tous les comptes de www.destinee-online.com sont et demeurent la propriété des Administrateurs, lesquels s'engagent à respecter la confidentialité des données auxquelles ils ont accès.
+
+		Article premier :
+		Par la présente, je déclare avoir lu, compris et accepté les différents règlements relatifs à la possession d'un compte. Je suis conscient des différents interdits et encourage l'application des pénalités qui découlent de leur non-respect, et ce même à mon propre égard. Je suis de plus conscient que ces règlements sont susceptibles d'évoluer avec le jeu, et consens à les suivre et à les respecter dans leur intégralité.
+	
+		Article deuxième :
+		Par la présente, je m'engage à utiliser en tout temps un langage respectueux envers tous les joueurs, tous les membres de l'équipe et tous les visiteurs au sein du cadre virtuel de Destinée, tant dans le jeu que sur les forums.
+		
+		Article troisième :
+		Par la présente, je m'engage à divulguer tout acte allant à l'encontre des deux premiers articles, ou encore à l'encontre de tout autre(s) règlement(s) présent(s) et/ou futur(s) que ce soit. L'individu préférant garder le silence est considéré comme complice du fautif.
+
+		Article quatrième :
+		Par la présente, j'exige de la part des membres de l'Équipe d'Administration de Destinée le respect des règlements, d'être intègres et d'être professionnels. L'Équipe s'engage, en juste retour des choses, à faire appliquer le plein respect des règlements tant pour elle-même qu'aux joueurs.
+	
+		Article cinquième :
+		Je comprends que www.destinee-online.com est et demeure la propriété des administrateurs et qu'ils ont pleins droits quant à la validation des inscriptions, au bannissement et à la suppression des comptes et/ou des guildes de joueurs n'ayant pas respecté ces présents règlements ainsi qu'au choix d'une date de fermeture du présent site web. Aucune mesure ne peut être prise contre l'application de ces droits.
+
+		Article sixième :
+		Toute personne possédant un compte sur www.destinee-online est en droit de s'en défaire, et ce sans restriction ni questionnement obligatoire de la part de l'Équipe d'Administration. Pour ce faire, le joueur doit passer par la page Personnage => Votre Compte pour cocher la case permettant de supprimer son compte. Les joueurs peuvent (dans ce cadre) laisser leurs comptes inactifs pour quelques jours, ces derniers seront supprimés au bout de 30 jours. Un mode "vacances" prévoit la mise en pause du jeu. Pour ce faire, le joueur doit passer par la page Personnage => Votre Compte pour cocher la case permettant de mettre son compte en "vacances" pour la durée choisie (il en résulte une impossibilité de se connecter pendant la période choisie). Un compte n'étant pas mis "en vacances" est considéré comme un compte à l'abandon. L'utilisation de ce mode "vacances" à des fins stratégiques et/ou tactiques est formellement interdit. Tout contrevenant s'expose à des sanctions pouvant aller du blocage à la suppression du compte.
+
+		Article septième :
+		En aucun cas ni pour aucune raison que ce soit, un joueur ne pourra pas demander un quelconque dédommagement pour la perte de données, d'un compte, d'une armada ou la fermeture du présent site web. De manière volontaire ou obligatoire, tout joueur accepte de partir sans indemnités en retour, et ce peu importe les raisons invoquées.
+
+		Article huitième :
+		En vous inscrivant sur www.destinee-online.com vous acceptez de recevoir plusieurs mails (Inscription, rapport de combat, etc...) Vous ne pourrez donc pas tenir pour responsable les membres de l'administration ou notre hébergeur le cas échéant. Vous pourrez à tous moment via la page Votre compte, disponible sous l'onglet Personnage, demander la résiliation de votre compte.
+
+		Article neuvième :
+		Est considéré comme multicomptes, un nombre de "jeux" gérés par une seule et même personne. Sauf conditions très particulières (ordinateur familial) et autorisations exceptionnelles des administrateurs, tout joueur pris en faute verra ses comptes bloqués et/ou supprimés.
+
+		Article dixième :
+		Est rigoureusement interdit le don d'or abusif  entre joueurs d'une même armada, armadas alliées ou entre indépendants. Les administrateurs et l'équipe se réservent le droit d'estimer et de supprimer la transaction ainsi que l'or lié à celle-ci. La sanction pouvant être la perte de l'or et de l'objet...voire même le blocage des comptes associés.
+
+		Article onzième :
+		Est considéré comme abusif et passible de blocage voire de bannissement le fait d'attaquer, à quelques minutes d'intervalle le même joueur à partir de plusieurs comptes différents via le même ordinateur, les personnes en multicomptes autorisés ne devant pas abuser de ce privilège pour affiner leur stratégie.
+
+		L'Équipe d'Administration
+		</textarea></td>
+	</tr>
+	<tr>
+		<td><br /></td>
+	</tr>
+	<tr>
+		<td colspan=2><input type="checkbox" onClick="if(this.checked == true) { window.document.forms['form'].submit.disabled = false; } else { window.document.forms['form'].submit.disabled = true; }" />Je déclare comprendre et accepter le <span style="cursor:pointer;text-decoration:underline;" onClick="afficherReglement()">règlement du jeu</span>.</td>
+	</tr>
+	<tr>
+		<td style="padding-top:10px;" colspan=2 style="text-align:center;"><input type="submit" id="submit" name="submit" value="Continuer >>" disabled></td>
+	</tr>
+</form>
+</table>

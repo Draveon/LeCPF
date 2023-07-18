@@ -1,0 +1,14 @@
+[09-Aug-2006 20:07:15] PHP Parse error:  syntax error, unexpected T_ELSE in /home/desti12/public_html/administration/multi.php on line 116
+[09-Aug-2006 20:14:43] PHP Warning:  Division by zero in /home/desti12/public_html/administration/multi.php on line 56
+[09-Aug-2006 20:34:05] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /home/desti12/public_html/administration/multi.php on line 121
+[09-Aug-2006 21:48:47] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/desti12/public_html/administration/multi.php on line 73
+[09-Aug-2006 21:53:58] PHP Parse error:  syntax error, unexpected ';' in /home/desti12/public_html/administration/multi.php on line 68
+[09-Aug-2006 22:12:26] PHP Parse error:  syntax error, unexpected '{' in /home/desti12/public_html/administration/multi.php on line 101
+[10-Aug-2006 12:27:22] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/desti12/public_html/administration/username.php on line 23
+[10-Aug-2006 12:27:47] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/desti12/public_html/administration/username.php on line 23
+[10-Aug-2006 12:28:51] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/desti12/public_html/administration/username.php on line 23
+[17-Aug-2006 12:32:14] PHP Warning:  main(connecta.php): failed to open stream: No such file or directory in /home/desti12/public_html/administration/ajout_medaille.php on line 11
+[17-Aug-2006 12:32:14] PHP Warning:  main(connecta.php): failed to open stream: No such file or directory in /home/desti12/public_html/administration/ajout_medaille.php on line 11
+[17-Aug-2006 12:32:14] PHP Warning:  main(): Failed opening 'connecta.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/desti12/public_html/administration/ajout_medaille.php on line 11
+[17-Aug-2006 12:32:14] PHP Warning:  mysql_query(): Access denied for user 'desti12'@'localhost' (using password: NO) in /home/desti12/public_html/administration/ajout_medaille.php on line 14
+[17-Aug-2006 12:32:14] PHP Warning:  mysql_query(): A link to the server could not be established in /home/desti12/public_html/administration/ajout_medaille.php on line 14

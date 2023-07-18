@@ -1,0 +1,24 @@
+<?php
+include('connect.php');
+include('factions_functions.inc');
+
+// On récupère la faction du joueur
+$myFactionId = getFactionIdByMember($joueur);
+$myFactionNiv = getFactionNivByMember($joueur);
+$palierVic = getPaliers($joueur);
+// On transforme en integer et on réduit de 1 pour aller chercher la faction dans le tableau de victoires (vicFactions) qui va de 0 à 2
+// $myFactionId = intval($myFactionId);
+echo "MYFACTIONID // ".$myFactionId." //";
+// Test du nb de victoires
+echo "nb victoires faction : ".$vicFactions[$myFactionId];
+// Si son nombre de victoires est supérieur ou égal à son prochain palier
+ if ($vicFactions[$myFactionId] >= $palierVic) {
+  echo "MONTEE DE NIVEAU";
+  // On incrémente le niveau de faction
+   executeMajFaction($myFactionId, $palierVic, $joueur, $myFactionNiv);
+
+  }
+
+
+
+ ?>

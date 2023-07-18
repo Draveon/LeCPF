@@ -1,0 +1,118 @@
+<?php session_start();
+
+$head_title = 'Classement des armadas';
+$head_keywords = 'classement, armada, guilde, joueur, mmorpg';
+
+if (!isset($_SESSION['connexion']))
+	{$_SESSION['connexion'] = 0;}
+
+include ("debut.php");
+if ($_SESSION['connexion'] != 1){
+	include ("menu_index.php");
+}
+
+if ($_SESSION['connexion'] == 1){
+    include ("menu.php");
+}
+entete_index("Classement");
+
+$temps = floor(time()/60);
+
+
+// On détermine quel serveur on affiche
+if(!isset($_GET['affichage']))	$serveur_off = 0;
+else				$serveur_off = $_GET['affichage'];
+if ( (isset($_SESSION['serveur'])) && ($serveur_off == 0) )
+	$serveur_off = $_SESSION['serveur'];
+
+
+
+
+if ($serveur_off == 0)
+{
+	echo '<table class="localtable630"><tbody>
+		<tr><td><h2>Classements des guildes</h2></td></tr>
+		<tr><td style="text-align: center;">
+		<a href="classement_factions.php?affichage=1">Serveur 1</a> |
+		  <a href="classement_factions.php?affichage=2">Serveur 2</a>';
+}
+
+// Si le serveur a été choisi (ou si joueur connecté) !
+if ($serveur_off != 0)
+{
+
+	include("administration/choix_serveurs_off.php");
+
+	// vérification du nombre de joueurs et mise à jour de la puissance de l'armada
+	$req1 = mysql_query("SELECT nom FROM guildes") or die('Erreur SQL !<br>'.mysql_error());
+	while ($data = mysql_fetch_row($req1))
+	{
+		$guilde = $data[0];
+		$sql = "SELECT ROUND(0.2 * COUNT(joueurs_bonus.id) *POW(AVG(POW(joueurs_stats.puissance,0.5)),2)) AS `puissance`, COUNT(joueurs_bonus.id) AS `nbr` FROM `joueurs_bonus` INNER JOIN joueurs_stats ON joueurs_stats.id = joueurs_bonus.id INNER JOIN joueurs_connexions ON joueurs_connexions.id = joueurs_bonus.id WHERE joueurs_bonus.guilde = '".$guilde."' AND joueurs_connexions.connexion_dernière < '".($temps+1)."' GROUP BY joueurs_bonus.guilde";
+		$req = mysql_query($sql) or die('Erreur SQL !<br>'.$sql.'<br>'.mysql_error());
+		$datapuiss = mysql_fetch_row($req);
+		$sql = "SELECT COUNT(joueurs_bonus.id) AS `nbr` FROM `joueurs_bonus` WHERE joueurs_bonus.guilde = '".$guilde."' GROUP BY joueurs_bonus.guilde";
+		$req = mysql_query($sql) or die('Erreur SQL !<br>'.$sql.'<br>'.mysql_error());
+		$datanbr = mysql_fetch_row($req);
+		$sql = "UPDATE `guildes` SET `nb_membres` = '".$datanbr[0]."', `puissance` = '".$datapuiss[0]."' WHERE nom = '$guilde'";
+		$req = mysql_query($sql) or die('Erreur SQL !<br>'.$sql.'<br>'.mysql_error());
+	}
+	//
+	// $req_membres_faction_stats = mysql_query("SELECT nom, puissance, niveau FROM joueurs_stats INNER JOIN factions_membres ON `factions_membres`.nom_membre = `joueurs_stats`.nom GROUP BY faction_id ");
+	// $qtee = mysql_num_rows($req_membres_faction_stats);
+	// for ($i=0; $i < $qtee ; $i++) {
+	// 	$data = mysql_fetch_row($req_membres_faction_stats);
+	// 	$puissance = $data[1];
+	// 	$niveau = $data[2];
+
+	}
+
+	$id = $_SESSION['id'];
+
+	// affichage
+	//$sql = "SELECT `factions`.id, `factions`.image ,`factions`.nom, COUNT(`joueurs_stats`.id), FLOOR(SUM(`joueurs_stats`.puissance)/COUNT(`factions_membres`.id_membre)), FLOOR(SUM(`joueurs_stats`.xp)), FLOOR(SUM(`joueurs_bonus`.victoire)/COUNT(`factions_membres`.id_membre)), FLOOR(SUM(`joueurs_bonus`.défaite)/COUNT(`factions_membres`.id_membre)) FROM factions INNER JOIN factions_membres ON `factions`.id = `factions_membres`.faction_id INNER JOIN joueurs_stats ON `joueurs_stats`.nom = `factions_membres`.nom_membre INNER JOIN joueurs_bonus ON `joueurs_bonus`.nom = `factions_membres`.nom_membre  GROUP BY `factions_membres`.faction_id";
+
+	$sql = mysql_query("SELECT `factions`.id, `factions`.image, `factions`.nom, COUNT(`factions_membres`.id_membre) as Nb, SUM(`joueurs_bonus`.victoire), SUM(`joueurs_stats`.puissance)/Nb FROM factions INNER JOIN factions_membres ON `factions`.id = `factions_membres`.faction_id INNER JOIN joueurs_bonus ON `joueurs_bonus`.id = `factions_membres`.id_membre GROUP BY `factions_membres`.`faction_id` ORDER BY SUM(`joueurs_bonus`.victoire) DESC ");
+
+	echo '<table class="localtable680combat"><tbody>
+		<tr><td colspan="8"><h2>Classement des factions</h2></td></tr>';
+	echo $menuserv;
+	echo '
+	<tr>
+		<td class="cl_entete" colspan=2>Faction</td>
+		<td class="cl_entete">Membres</td>
+
+	';
+
+	while ($data = mysql_fetch_array($sql)) {
+		$id = $data[0];
+		$image = $data[1];
+		$nom_guilde = $data[2];
+		$membres = $data[3];
+		$vic = $data[4];
+		$puiss = $data[5];
+
+
+
+		echo '<tr class="rollovercolor">
+			<td><img src="'.$image.'" width="100" height="100" alt="'.$nom_guilde.'" ALIGN=middle border=1></td>
+			<td>'.$nom_guilde.'</td>
+			<td style="text-align: center;">'.$membres.'</td>
+			<td style="text-align: center;">'.$vic.'</td>
+			<td style="text-align: center;">'.$puiss.'</td>
+
+';
+
+			echo '</tr>
+		<tr>	<td></td>
+			<td></td>
+			<td colspan="6" class="hline"></td></tr>'."\n";
+	}
+
+	echo '<tr><td colspan="'.$colspan.'">&nbsp;</td></tr>';
+	echo $menuserv;
+
+	mysql_close();
+}
+echo "</tbody></table>";
+include ("fin.php"); ?>

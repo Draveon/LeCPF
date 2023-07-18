@@ -1,0 +1,721 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+
+* {
+    color : #fff !important;
+}
+
+/* HTML, BODY*/
+
+html,body{
+  width:100%;
+  height:100%;
+  margin:0;
+  /*background-color: #052923;*/
+
+     background: #052923; /* Old browsers */
+
+
+background-image: url("/revival/tile-black.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
+    animation-name: notMatrixBackground;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+}
+/* ALL ELEMENTS */
+
+* {
+    font-family: 'IM Fell English SC';
+    padding: 0;
+    margin: 0;
+}
+
+/* ALL P */ 
+
+p {
+    font-family: 'IM Fell English SC', sans-serif;
+    margin: 0 10vh 3vh;
+    color: white;
+    font-weight: bold;
+    /*text-transform: capitalize;*/
+    font-size: 1.2em;
+    /*text-shadow: -19px -5px 4px #8ac9b1a1, 0 0 20px #fff, 17px 3px 3px #2becc085;*/
+/*    animation-name: notMatrixText;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;*/
+
+}
+/* CLASSE UTILITAIRE POUR MONTRER */
+
+.display {
+    display: block !important;
+}
+
+/* WRAPPER - MAIN CONTAINER */
+
+
+.wrapper, .wrapper-nav {
+    position: absolute;
+    width: 100%;
+}
+.wrapper-nav {
+    bottom: 0;
+}
+#main-container.container-fluid H2 {
+    font-size: 1rem;
+    text-align: center;
+}
+#main-container.container-fluid H2 SPAN {
+    font-family: IM+Fell+English+SC;
+}
+/* MAIN - FALSE MAIN CONTAINER - CONTIENT login & dashboard */
+
+MAIN {
+    flex-grow: 1;
+}
+
+#main-container.container-fluid #login.form-index {
+    position: relative;
+}
+#main-container.container-fluid #presentation.text-index {
+    position: relative;
+}
+#main-container.container-fluid #presentation.text-index P {
+    position: absolute;
+    left: 0;
+}
+
+/* PROFILE */
+#main-container.container-fluid #profile-infos H1 {
+    overflow-wrap: break-word;
+    width: 80%;
+}
+#main-container.container-fluid #profile-infos H1 SPAN {
+    text-transform: capitalize;
+}
+#main-container.container-fluid #profile-infos #profile-stats {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#main-container.container-fluid #profile-infos #profile-stats TABLE {
+    height: 250px;
+    margin: 0 15px;
+    font-size: 1.2em;
+}
+#main-container.container-fluid #profile-infos #profile-stats TABLE {
+    height: 250px;
+    margin: 0 15px;
+    font-size: 1.2em;
+}
+#main-container.container-fluid #profile-infos #chat P {
+    margin: 0;
+    width: 500px;
+    height: 150px;
+    word-break: break-word;
+    overflow-y: scroll;
+}
+/* END PROFILE */
+/* DASHBOARD*/
+#main-container.container-fluid #profile-dashboard {
+margin: 0 15px;
+}
+#main-container.container-fluid #profile-dashboard H2 {
+    text-align: left;
+    margin: 15px 0;
+    font-size: 1.2em;
+}
+#main-container.container-fluid #profile-dashboard #competences > .subcontainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#main-container.container-fluid #profile-dashboard #competences .subcontainer H2 {
+    border: 1px solid #ffffff;
+    text-align: center;
+}
+#main-container.container-fluid #profile-dashboard #inventory TABLE TD {
+    border: 1px solid #ffffff;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+}
+#main-container.container-fluid #realm-dashboard H2 {
+    text-align: left;
+    margin: 15px 0;
+    font-size: 1.2em;
+}
+#main-container.container-fluid #realm-dashboard P {
+    margin: 0;
+}
+#main-container.container-fluid #realm-dashboard {
+margin: 0 15px;
+}
+#main-container.container-fluid #realm-dashboard P {
+    margin: 0;
+}
+
+/* END DASHBOARD*/
+
+#main-container.container-fluid .boxtab {
+    display: none;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0; 
+    margin: 25px 5px;
+    font-size: 25px;
+    color: #fff;
+    background-image: url("/revival/tile-black.png");
+    animation-name: notMatrixBackground;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 80px #54d3c0, 0 0 100px #00dbba;
+    border: 1px solid #fff;
+    border-radius: 100px/0px 40px;
+    box-shadow: 0 0 18px #FFF;
+}
+BODY > .boxtab {
+    display: none;
+    text-align: center;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
+    color: #fff;
+  
+}
+BODY > .boxtab .boxtab-content {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    right: 2%;
+    bottom: 2%;
+    border: 8px double #fff;
+    background-color: #000000ad;
+    background-size: 50% 1135%;
+    background-blend-mode: color;
+    background-image: url(/revival/tile-black.png);
+    animation-name: notMatrixBackground;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    box-shadow: 0 0 30px #fff, 0 0 70px #54d3c0, 0 0 50px #00dbba;
+}
+BODY > .boxtab .boxtab-content UL {
+   list-style-type: none;
+}
+BODY > .boxtab .boxtab-content .closeTab {
+    position: absolute;
+    top: 5%;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    text-transform: lowercase;
+    right: 5%;
+    font-size: 1.5em;
+    background-color: #7fffd4;
+    transition: background-color 0.3s, 0.5s ease;
+    text-decoration: none;
+    color: black;
+}
+BODY > .boxtab .boxtab-content .closeTab DIV {
+    position: absolute;
+    top: -25px;
+    right: 25px;
+    font-size: 2.5em;
+}
+BODY > .boxtab .boxtab-content .closeTab:hover {
+    background-color: #fbbebe00;
+    color: #ff00a5;
+    box-shadow: 0 0 15px #ff00a5, 0 0 5px #ff00a5, 0 0 45px #ff00a5;
+    text-shadow: 0 0 15px #ff00a5, 0 0 5px #ff00a5, 0 0 25px #ff00a5;
+}
+
+#main-container.container-fluid #dashboardQG {
+    display:    none;
+}
+#main-container.container-fluid #dashboard .main, #main-container.container-fluid #dashboardQG .main {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#main-container.container-fluid #dashboard .main {
+    display: flex;
+    flex-wrap: wrap;
+}
+HTML .break {
+  flex-basis: 100%;
+  height: 0;
+}
+#main-container.container-fluid #dashboard .main {
+    flex-direction: column;
+}
+#main-container.container-fluid #dashboard .main .firstLvl {
+    display: flex;
+}
+/*#main-container.container-fluid #dashboard .main .img {*/
+#main-container.container-fluid .leftTop .img {
+    z-index: 2;
+    position: absolute;
+    background-color: azure;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTWDUUToLKxTmFuNHTJ9KCEy4pKXPAAk8JX4YK_BBbTSObUrJtY&usqp=CAU);
+    height: 200px;
+    width: 200px;
+    /*margin: 0 0 0 50px;*/
+    top:    0;
+     border-radius: 0 0 100%/70% 0; 
+}
+/*#main-container.container-fluid #dashboard .main .img:after {*/
+#main-container.container-fluid .leftTop .img:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fdfdfd00;
+    height: 100%;
+    width: 100%;
+    background-image: url(/revival/tile-white.png);
+    background-size: 75% 10000%;
+    opacity: 0.8;
+    animation-name: notMatrixBackground;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    box-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #54d3c0, 0 0 50px #00dbba;
+    border-radius: 0 0 100%/70% 0;
+}
+#main-container.container-fluid #dashboardQG .main .img {
+    z-index: 2;
+    position: relative;
+    background-color: azure;
+    background-image: url(https://i.redd.it/7gpqy6tujbhz.jpg);
+    background-size: 200px 200px;
+    height: 200px;
+    width: 200px;
+    margin: 0 0 0 50px;
+     border-radius: 0 0 100%/70% 0;  
+}
+#main-container.container-fluid #dashboardQG .main .img:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius:  0 0 100%/70% 0;
+    background-color: #fdfdfd00;
+    height: 100%;
+    width: 100%;
+    background-image: url(/revival/tile-white.png);
+    background-size: 75% 10000%;
+    opacity: 0.8;
+    animation-name: notMatrixBackground;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    box-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #54d3c0, 0 0 50px #00dbba;
+}        
+#main-container.container-fluid .leftTop .dashbar,
+#main-container.container-fluid .leftTop .dashbar {
+    position: absolute;
+    right: 200px;
+    padding: 15px 0;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+#main-container.container-fluid .leftBot .infosbar .stats {
+    left: 0;
+    position: absolute;
+    padding: 15px 25px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+#main-container.container-fluid .rightArea .content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+#main-container.container-fluid .rightArea .content .subcontent {
+        display: flex;
+    position: relative;
+    flex-direction: row;
+    height: 100%;
+}
+#main-container.container-fluid .rightArea .content .subcontent .colMenu {
+background-color: aliceblue;
+    display: flex;
+    left: 0;
+    position: relative;
+    margin: 0;
+    width: 200px;
+}
+#main-container.container-fluid .rightArea .content .subcontent .colMenu UL {
+    list-style-type: none;
+        margin: 15px auto 0;
+}
+#main-container.container-fluid .rightArea .content .subcontent .colContent {
+        display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 0;
+}
+#main-container.container-fluid #dashboard .main .dashbar .contentbar,
+#main-container.container-fluid #dashboardQG .main .dashbar .contentbar {
+   position: absolute;
+    left: 150px;
+    display: flex;
+    flex-direction: column;
+}
+#main-container.container-fluid #dashboard .main .dashbar .contentbar H2,
+#main-container.container-fluid #dashboardQG .main .dashbar .contentbar H2 {
+    font-size: 2rem;
+    text-align: left;
+}
+#main-container.container-fluid #dashboard .main .dashbar .contentbar .stats,
+ #main-container.container-fluid #dashboardQG .main .dashbar .contentbar .stats {
+        display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+    color: #fff;
+}
+#main-container.container-fluid #dashboard .main .dashbar:after,
+#main-container.container-fluid #dashboardQG .main .dashbar:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fdfdfd00;
+    height: 100%;
+    width: 100%;
+    background-image: url(/revival/tile-black.png);
+    /* opacity: 0.8; */
+    animation-name: notMatrixBackground;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    box-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #54d3c0, 0 0 50px #00dbba;
+    border-radius: 0;
+}
+#main-container.container-fluid #dashboard .main .content,
+#main-container.container-fluid #dashboardQG .main .content {
+    position: relative;
+    background-color: #f0ffff00;
+    /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTWDUUToLKxTmFuNHTJ9KCEy4pKXPAAk8JX4YK_BBbTSObUrJtY&usqp=CAU); */
+    height: 400px;
+    width: 60%;
+    margin: 0 50px 0;
+}
+#main-container.container-fluid #dashboard .main .content:after,
+#main-container.container-fluid #dashboardQG .main .content:after {
+       content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fdfdfd00;
+    height: 100%;
+    width: 100%;
+    background-image: url(/revival/tile-black.png);
+    /* opacity: 0.8; */
+    animation-name: notMatrixBackground;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    box-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #54d3c0, 0 0 50px #00dbba;
+    border-radius: 0;
+}
+#main-container.container-fluid #dashboard .main .content .deco1,
+#main-container.container-fluid #dashboardQG .main .content .deco1 {
+    position:   absolute;
+    left:   0;
+    bottom: 0;
+       clip-path: polygon(0 0, 100% 0%, 94% 100%, 29% 100%);
+}
+
+/*LOGO*/
+
+#main-container.container-fluid .logo .logo2, H2 {
+    margin: 10px auto 0;
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 0 0 15px #ff00a5, 0 0 5px #ff00a5, 0 0 25px #ff00a5;
+
+    animation-name: notMatrixText;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function:  ease-in-out;
+}
+
+#main-container.container-fluid .logo {
+    text-align: center;
+    line-height: 0.8;
+    margin: 5vh 0 5vh;
+}
+#main-container.container-fluid .logo HR {
+    width: 80%;
+    margin: 6px auto 12px;
+    box-shadow: 0 0 10px #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+#main-container.container-fluid .logo .logo1 {
+    font-family: 'IM Fell English SC';
+    color: #fff;
+    text-shadow: 0 0 6px #fff;  
+    letter-spacing: 7px;
+}
+#main-container.container-fluid .logo .logo2 {
+    text-align: center;
+    font-size: 4rem;
+}
+#main-container.container-fluid .logo .logo2 > A {
+    text-decoration:   none;
+}
+#main-container.container-fluid .logo .logo2:hover > A SPAN {
+    text-shadow: 0 0 4px #ff00a5, 0 0 15px #ff00a5, 0 0 5px #ff00a5, 0 0 25px #ff00a5;
+    color: #000000e6;
+    transition: color, text-shadow 0.5s, 0.3s ease;
+}
+#main-container.container-fluid .logo .logo2 A SPAN {
+    /*font-family: 'IM Fell English SC';
+    text-transform: uppercase;
+    text-shadow: 0 0 15px #ff00a5, 0 0 5px #ff00a5, 0 0 25px #ff00a5;
+    color: #fff;
+    transition: color, text-shadow 0.5s, 0.3s ease;*/
+        font-family: 'IM Fell English SC';
+    text-transform: uppercase;
+    text-shadow: 0 0 11px #ff00a5, 0 0 1px #ff00a5, 0 0 5px #ff00a5;
+    color: #ff00a5;
+    transition: color, text-shadow 0.5s, 0.3s ease;
+}
+#main-container.container-fluid .logo .logo2clone {
+    text-align: left;
+    font-size: 4rem;
+}
+
+/* LOGIN */
+
+  HTML MAIN #login .loginButtons {
+    display: flex;
+    justify-content: center;
+  } 
+  HTML MAIN #login #loginForm,
+  HTML MAIN #login #signinForm {
+    position: absolute;
+    z-index: 999;
+    right: 0;
+  }
+  HTML MAIN #login .loginButtons A {
+    color: #fff;
+    text-decoration: none;
+    /*border: 1px solid #fff;*/
+    /*border-radius: 100px/0px 40px;*/
+    font-family: 'IM Fell English SC', sans-serif;
+    margin: 5px 0;
+    padding: 5px;
+  }
+  HTML MAIN #login .loginButtons SPAN {
+    color:  #fff;
+    text-shadow: 0 0 10px #fff;
+        margin: 5px 0;
+    padding: 5px;
+  }
+
+#main-container.container-fluid #login FORM P:not(:last-child) {
+    position:   relative;
+}
+#main-container.container-fluid #login INPUT[type=submit] {
+    width: 100%;    
+    background-color: transparent;
+    border: 0px;
+    color: #fff;
+    font-size: 2rem;
+    font-family: 'IM Fell English SC';
+    transition: letter-spacing 1s;
+    padding: 15px 0;
+    cursor: pointer;
+}
+#main-container.container-fluid #login .spanSubmit {
+    padding: 15px 0;
+}
+#main-container.container-fluid #login INPUT[type=submit]:hover {
+    letter-spacing: 20px;
+
+}
+#main-container.container-fluid #login P:last-child {
+    width: 20%;
+    margin: 0 auto;
+}
+#main-container.container-fluid #login P:not(:last-child) INPUT {
+    margin-left: 15px;
+    background-color: transparent;
+    color: #fff;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    font-size: 3rem;
+        display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.shadow {
+    position: absolute; 
+    width:100%;
+    height: 1px;
+    margin: 0 15px;
+    background: #ffffff;
+    -webkit-box-shadow: 0px 0px 10px 0.5px #fff;
+    -moz-box-shadow: 0px 0px 10px 0.5px #fff;
+    box-shadow: 0px 0px 10px 0.5px #fff;
+}
+#main-container.container-fluid #login P:not(:last-child) INPUT:focus {
+    outline-width: 0px;
+}
+#main-container.container-fluid #login #antibot {
+        display: flex;
+    justify-content: center;
+    color: #fff;
+}
+#main-container.container-fluid #login #antibot A {
+    color: #fff;
+    margin: 0 10px;
+}
+/* The animation code */
+@keyframes notMatrixBackground {
+/*  from {background-size: 5%;}
+  to {background-size: 15%;}
+*/  from {background-position: 0% 0%;}
+  to {background-position: 100% 100%;}
+
+}/* The animation code */
+@keyframes notMatrixBackgroundNav {
+/*  from {background-size: 5%;}
+  to {background-size: 15%;}
+*/  from {box-shadow: 0 0 20px #fff, 0 0 80px #54d3c0, 0 0 100px #00dbba;}
+  to {box-shadow: 0 0 50px #fff, 0 0 80px #54d3c0, 0 0 100px #00dbba;}
+
+}
+@keyframes notMatrixBackgroundText {
+/*  from {background-size: 5%;}
+  to {background-size: 15%;}
+*/  from {text-shadow: 0 0 20px #fff, 0 0 80px #54d3c0, 0 0 100px #00dbba;}
+  to {text-shadow: 0 0 50px #fff, 0 0 80px #54d3c0, 0 0 100px #00dbba;}
+
+}
+
+
+
+
+@-webkit-keyframes colorBackground {
+    0%{background-position:11% 0%}
+    50%{background-position:90% 100%}
+    100%{background-position:11% 0%}
+}
+@-moz-keyframes colorBackground {
+    0%{background-position:11% 0%}
+    50%{background-position:90% 100%}
+    100%{background-position:11% 0%}
+}
+@-o-keyframes colorBackground {
+    0%{background-position:11% 0%}
+    50%{background-position:90% 100%}
+    100%{background-position:11% 0%}
+}
+@keyframes colorBackground {
+    0%{background-position:11% 0%}
+    50%{background-position:90% 100%}
+    100%{background-position:11% 0%}
+}
+
+/*@keyframes widthAnimation {
+    0%{width: 0px}
+    100%{width: 1640px}
+}*/
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 35% 35% 35%;
+    margin: 5% 10%;
+    grid-template-rows: 50% 50%;
+}
+
+.leftBot { 
+    /*grid-row: 2;
+    grid-column: 1;
+    grid-area: leftBot; 
+    background-color:   red;*/
+
+    grid-row: 2;
+    grid-column: 1;
+    /* background-color: green; */
+    height: 200px;
+    position: relative;
+    border-radius: 0 0 20%/50% 0;
+    background-color: #00000070;
+    background-image: url(/revival/tile-black.png);
+    background-size: 10000% 75%;
+    opacity: 0.8;
+    animation-name: notMatrixBackground;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    box-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #54d3c0, 0 0 50px #00dbba;
+}
+
+.leftTop { 
+/*    grid-row: 1;
+    grid-column: 1;
+    grid-area: leftTop;
+    background-color: green;*/
+
+   grid-row: 1;
+    grid-column: 1;
+    /* background-color: green; */
+    height: 200px;
+    position: relative;
+    border-radius: 20%/50% 0 0;
+    background-color: #00000070;
+    background-image: url(/revival/tile-black.png);
+    background-size: 10000% 75%;
+    opacity: 0.8;
+    animation-name: notMatrixBackground;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    box-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #54d3c0, 0 0 50px #00dbba;
+}
+
+.rightArea { 
+    grid-column: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    /*grid-area: right;
+    /*background-color: cyan;*/
+
+     height: 100%;
+    position: relative;
+    background-color: #00000070;
+    background-image: url(/revival/tile-black.png);
+    background-size: 10000% 75%;
+    opacity: 0.8;
+    animation-name: notMatrixBackground;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    box-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #54d3c0, 0 0 50px #00dbba;
+}
+
+.top { 
+    /*grid-area: Top;*/
+    background-color: yellow;
+}

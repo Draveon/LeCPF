@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+
+/* ALL ELEMENTS */
+
+* {
+    font-family: 'IM Fell English SC';
+    padding: 0;
+    margin: 0;
+}
+
+/* ALL P */ 
+
+p {
+    font-family: 'IM Fell English SC', sans-serif;
+    margin: 0 10vh 3vh;
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 4vh;
+    text-shadow: -11px -5px 4px #633a2287, 0 0 20px #633a2394, 7px 3px 3px #633a2266;
+    animation-name: notMatrixText;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+/* CLASSE UTILITAIRE POUR MONTRER */
+.display {
+    display: block !important;
+}
+
+
+
+#main-container.container-fluid H2 {
+    font-size: 1rem;
+    text-align: center;
+}
+#main-container.container-fluid H2 SPAN {
+    font-family: IM+Fell+English+SC;
+}
+
+#main-container.container-fluid #login.form-index {
+    position: relative;
+}
+#main-container.container-fluid #presentation.text-index {
+    position: relative;
+}
+#main-container.container-fluid #presentation.text-index P {
+    position: absolute;
+    left: 0;
+}
+
+
+
+/* NAV */
+
+.nav.container-fluid H4.col {
+    margin: 0 auto;
+}
+
+
+/* LOGIN */
+
+  HTML .main #login .loginButtons {
+    display: flex;
+    justify-content: center;
+  } 
+  HTML .main #login #loginForm,
+  HTML .main #login #signinForm {
+    position: absolute;
+    z-index: 999;
+    right: 0;
+  }
+  HTML .main #login .loginButtons A {
+    color: #fff;
+    text-decoration: none;
+    /*border: 1px solid #fff;*/
+    /*border-radius: 100px/0px 40px;*/
+    font-family: 'IM Fell English SC', sans-serif;
+    margin: 5px 0;
+    padding: 5px;
+  }
+  HTML .main #login .loginButtons SPAN {
+    color:  #fff;
+    text-shadow: 0 0 10px #fff;
+        margin: 5px 0;
+    padding: 5px;
+  }
+
+#main-container.container-fluid #login FORM P:not(:last-child) {
+    position:   relative;
+}
+#main-container.container-fluid #login INPUT[type=submit] {
+    width: 100%;    
+    background-color: transparent;
+    border: 0px;
+    color: #fff;
+    font-size: 2rem;
+    font-family: 'IM Fell English SC';
+    transition: text-shadow 1s;
+    padding: 15px 0;
+    cursor: pointer;
+}
+#main-container.container-fluid #login .spanSubmit {
+    padding: 15px 0;
+}
+#main-container.container-fluid #login INPUT[type=submit]:hover {
+    -webkit-text-shadow: 0px 0px 10px 0.5px #fff;
+    -moz-text-shadow: 0px 0px 10px 0.5px #fff;
+    text-shadow: 0px 0px 10px 0.5px #fff;
+
+}
+#main-container.container-fluid #login P:last-child {
+    width: 20%;
+    margin: 0 auto;
+}
+#main-container.container-fluid #login P:not(:last-child) INPUT {
+    margin-left: 15px;
+    background-color: transparent;
+    color: #fff;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    font-size: 3rem;
+        display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+/*.shadow {
+    position: absolute; 
+    width:100%;
+    height: 1px;
+    margin: 0 15px;
+    background: #ffffff;
+    -webkit-box-shadow: 0px 0px 10px 0.5px #fff;
+    -moz-box-shadow: 0px 0px 10px 0.5px #fff;
+    box-shadow: 0px 0px 10px 0.5px #fff;
+}*/
+#main-container.container-fluid #login P:not(:last-child) INPUT:focus {
+    outline-width: 0px;
+}
+#main-container.container-fluid #login #antibot {
+        display: flex;
+    justify-content: center;
+    color: #fff;
+}
+#main-container.container-fluid #login #antibot A {
+    color: #fff;
+    margin: 0 10px;
+}
+/* The animation code */
+@keyframes notMatrixBackground {
+/*  from {background-size: 5%;}
+  to {background-size: 15%;}
+*/  from {background-position: 0% 0%;}
+  to {background-position: 100% 100%;}
+
+}/* The animation code */
+@keyframes notMatrixBackgroundNav {
+/*  from {background-size: 5%;}
+  to {background-size: 15%;}
+*/  from {box-shadow: 0 0 20px #fff, 0 0 80px #54d3c0, 0 0 100px #00dbba;}
+  to {box-shadow: 0 0 50px #fff, 0 0 80px #54d3c0, 0 0 100px #00dbba;}
+
+}
+@keyframes notMatrixBackgroundText {
+/*  from {background-size: 5%;}
+  to {background-size: 15%;}
+*/  from {text-shadow: 0 0 20px #fff, 0 0 80px #54d3c0, 0 0 100px #00dbba;}
+  to {text-shadow: 0 0 50px #fff, 0 0 80px #54d3c0, 0 0 100px #00dbba;}
+
+}
+
+
+/* The animation code */
+@keyframes notMatrixText {
+/*  from {background-size: 5%;}
+  to {background-size: 15%;}
+*/  from {    text-shadow: 0px -5px 4px #633a2287, 0 0 20px #633a2394, -5px 3px 3px #633a2266;}
+  to {text-shadow: -11px -5px 4px #633a2287, 0 0 20px #633a2394, 7px 3px 3px #633a2266;}
+
+}
+
+@-webkit-keyframes colorBackground {
+    0%{background-position:11% 0%}
+    50%{background-position:90% 100%}
+    100%{background-position:11% 0%}
+}
+@-moz-keyframes colorBackground {
+    0%{background-position:11% 0%}
+    50%{background-position:90% 100%}
+    100%{background-position:11% 0%}
+}
+@-o-keyframes colorBackground {
+    0%{background-position:11% 0%}
+    50%{background-position:90% 100%}
+    100%{background-position:11% 0%}
+}
+@keyframes colorBackground {
+    0%{background-position:11% 0%}
+    50%{background-position:90% 100%}
+    100%{background-position:11% 0%}
+}
+
+
+
+.top { 
+    /*grid-area: Top;*/
+    background-color: yellow;
+}

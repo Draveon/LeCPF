@@ -1,0 +1,103 @@
+#main-container #nav.container-fluid .nav-item {
+    height: 100%;
+}
+#main-container #nav.container-fluid .nav-item > A.nav-link {
+    text-align: center;
+    border: 1px solid gold;
+    height: 100%;
+}
+#main-container #nav.container-fluid .nav-item > DIV.dropdown-menu.show {
+    width: 100%;
+}
+
+
+.sidebar {
+    background: #333;
+    color: #fff;
+    transition: all .3s;
+    box-shadow: 3px 3px 3px rgba(51, 51, 51, 0.5);
+    text-align: left;
+    overflow-y: hidden;
+    height: 450px;
+    width: 250px;
+    border: 1px solid #fff;
+}
+
+.sidebar .logo {
+    padding: 40px 20px;
+    border-bottom: 1px solid #444;
+    transition: all .3s;
+}
+ 
+.sidebar .logo a {
+    display: inline-block;
+    width: 172px;
+    height: 34px;
+    background: url(../img/logo.png) left top no-repeat;
+    border: 0;
+    text-indent: -999999px;
+}
+
+.sidebar UL.list-unstyled {
+    padding-left: 25px;
+}
+
+
+
+/* MENU BTN */
+.sidebar #titlesidebar, #menuModal {
+    display: none;
+}
+
+/* MOBILE */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+ 
+    .sidebar {
+        width: 100%;
+        height: 50px;
+    }
+    .sidebar #topsidebar {
+        display: none;
+    }
+    .sidebar #menuModal {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 9999;
+    background-color: black;
+    opacity: 0.8;
+    text-align: center;
+    font-size: 2em;
+    }
+    .sidebar UL.list-unstyled {
+            padding-left: 0;
+    }
+    .sidebar UL.list-unstyled H2 {
+            font-size: 2em !important;
+    }
+    .sidebar UL.list-unstyled .dropdown-toggle, .sidebar UL.list-unstyled .not-dropdown-toggle {
+        display: block;
+    text-decoration: none;
+    border-width: thin;
+    border-color: #fff;
+    border-style: solid;
+    padding: 5px;
+}
+ 
+   /* .sidebar LI.submenu {
+        display: none;
+    }*/
+
+    /* MENU BTN */
+.sidebar #titlesidebar {
+    display: block;
+}
+ 
+}

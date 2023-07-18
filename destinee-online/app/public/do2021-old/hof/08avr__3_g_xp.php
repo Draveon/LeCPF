@@ -1,0 +1,138 @@
+<table border="0" cellspacing="2" cellpadding="0" style="width: 680px; vertical-align: center; text-align: center;">
+
+<tr>
+	<td> </td>
+	<td></td>
+	<td class="cl_entete" >Armada</td>
+	<td class="cl_entete" >Chef</td>
+	<td class="cl_entete" >Province</td>
+	<td class="cl_entete" >Membres</td>
+	<td class="cl_entete" >XP moy.</td>
+	<td class="cl_entete" >Niv moy.</td>
+	<td class="cl_entete" >Puissance</td>
+	</tr>
+<tr>	<td></td>
+	<td colspan="8" class="cl_vspacer">	</td></tr>
+<tr class="cl_player">	<td class="cl_position">1 -</td>
+	<td><img src=http://i21.servimg.com/u/f21/11/19/08/00/th/phoeni10.jpg width=20 height=20></td>
+	<td>L`Alliance Coloniale</td>
+	<td>Luisi</td>
+	<td>Outre-Mer</td>
+	<td class="cl_aligneC">4</td>
+	<td class="cl_aligneC">107831</td>
+	<td class="cl_aligneC">13.5</td>
+	<td class="cl_aligneR">79,232</td>
+	</tr>
+<tr>	<td></td>
+	<td colspan="8" class="cl_vspacer"></td>	</tr>
+<tr class="cl_player">	<td class="cl_position">2 -</td>
+	<td><img src=http://img522.imageshack.us/img522/6351/etendardhtml20b5cdc8xe2.jpg width=20 height=20></td>
+	<td>Les Veilleurs de Prévèze</td>
+	<td>Alcyban</td>
+	<td>Prévèze</td>
+	<td class="cl_aligneC">9</td>
+	<td class="cl_aligneC">85268</td>
+	<td class="cl_aligneC">10.67</td>
+	<td class="cl_aligneR">156,600</td>
+	</tr>
+<tr>	<td></td>
+	<td colspan="8" class="cl_vspacer"></td>	</tr>
+<tr class="cl_player">	<td class="cl_position">3 -</td>
+	<td><img src=http://img529.imageshack.us/img529/3517/agressivebirdblasonly4.jpg width=20 height=20></td>
+	<td>La Nuée de Paix Eternelle</td>
+	<td>Bördish</td>
+	<td>Zakinthe</td>
+	<td class="cl_aligneC">3</td>
+	<td class="cl_aligneC">61047</td>
+	<td class="cl_aligneC">10.67</td>
+	<td class="cl_aligneR">44,584</td>
+	</tr>
+<tr>	<td></td>
+	<td colspan="8" class="cl_vspacer"></td>	</tr>
+<tr class="cl_player">	<td class="cl_position">4 -</td>
+	<td><img src=http://www.cimbom.gs/frpnetgaleri/Images/Engin%20Deniz%20Erbas%20Galeri/1prom.jpg width=20 height=20></td>
+	<td>Les Legions de l`Ombre</td>
+	<td>Derundal Ixclam</td>
+	<td>Naxos</td>
+	<td class="cl_aligneC">9</td>
+	<td class="cl_aligneC">52495</td>
+	<td class="cl_aligneC">10.22</td>
+	<td class="cl_aligneR">121,640</td>
+	</tr>
+<tr>	<td></td>
+	<td colspan="8" class="cl_vspacer"></td>	</tr>
+<tr class="cl_player">	<td class="cl_position">5 -</td>
+	<td><img src=http://img129.imageshack.us/img129/1903/shielduw7hb8mb4.jpg width=20 height=20></td>
+	<td>Garde Celeste de Brasamical</td>
+	<td>Angelion</td>
+	<td>Scitopole</td>
+	<td class="cl_aligneC">4</td>
+	<td class="cl_aligneC">48858</td>
+	<td class="cl_aligneC">9.75</td>
+	<td class="cl_aligneR">53,977</td>
+	</tr>
+<tr>	<td></td>
+	<td colspan="8" class="cl_vspacer"></td>	</tr>
+<tr class="cl_player">	<td class="cl_position">6 -</td>
+	<td><img src=http://img122.imageshack.us/img122/9402/awaitinggreatnessbykilaov3.jpg width=20 height=20></td>
+	<td>Protectorat Ancestral</td>
+	<td>Inathanwël</td>
+	<td>Amphise</td>
+	<td class="cl_aligneC">7</td>
+	<td class="cl_aligneC">47882</td>
+	<td class="cl_aligneC">9.43</td>
+	<td class="cl_aligneR">114,755</td>
+	</tr>
+<tr>	<td></td>
+	<td colspan="8" class="cl_vspacer"></td>	</tr>
+<tr class="cl_player">	<td class="cl_position">7 -</td>
+	<td><img src=http://img119.imageshack.us/img119/6991/avathar2mf7.png width=20 height=20></td>
+	<td>Echoriath`Avathar</td>
+	<td>Aëras</td>
+	<td>Vénopole</td>
+	<td class="cl_aligneC">2</td>
+	<td class="cl_aligneC">46394</td>
+	<td class="cl_aligneC">9</td>
+	<td class="cl_aligneR">20,746</td>
+	</tr>
+<tr>	<td></td>
+	<td colspan="8" class="cl_vspacer"></td>	</tr>
+<tr class="cl_player">	<td class="cl_position">8 -</td>
+	<td><img src=http://www.elfemagie.com/dl/letoutpuissant/celestial0ez.jpg width=20 height=20></td>
+	<td>La Garde Divine</td>
+	<td>Fardall</td>
+	<td>Scitopole</td>
+	<td class="cl_aligneC">8</td>
+	<td class="cl_aligneC">21433</td>
+	<td class="cl_aligneC">6.13</td>
+	<td class="cl_aligneR">112,699</td>
+	</tr>
+<tr>	<td></td>
+	<td colspan="8" class="cl_vspacer"></td>	</tr>
+<tr class="cl_player">	<td class="cl_position">9 -</td>
+	<td><img src=http://img116.imageshack.us/img116/4566/imagedelaconfreriedessayo0.png width=20 height=20></td>
+	<td>La Confrérie des Saigneurs</td>
+	<td>Adalemos</td>
+	<td>Argostole</td>
+	<td class="cl_aligneC">3</td>
+	<td class="cl_aligneC">21212</td>
+	<td class="cl_aligneC">6</td>
+	<td class="cl_aligneR">40,208</td>
+	</tr>
+<tr>	<td></td>
+	<td colspan="8" class="cl_vspacer"></td>	</tr>
+<tr class="cl_player">	<td class="cl_position">10 -</td>
+	<td><img src=http://img105.imageshack.us/img105/920/baldursgate01se3.jpg width=20 height=20></td>
+	<td>Ordo Repurgatoris</td>
+	<td>Arzhùl Gorbad</td>
+	<td>Thassopole</td>
+	<td class="cl_aligneC">5</td>
+	<td class="cl_aligneC">17663</td>
+	<td class="cl_aligneC">5.8</td>
+	<td class="cl_aligneR">72,692</td>
+	</tr>
+<tr>	<td></td>
+	<td colspan="8" class="cl_vspacer"></td>	</tr>
+</table><br><br>
+
+

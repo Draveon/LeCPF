@@ -1,0 +1,58 @@
+<?php
+$css_sup = (ereg('Chrome', getenv('HTTP_USER_AGENT'))) ? 'margin-top:20px;' : '' ;
+$css_sup = (ereg('Safari', getenv('HTTP_USER_AGENT'))) ? 'margin-top:20px;' : '' ;
+	
+if( $afficher_allo_pass )
+{ ?>
+<table border="0" width="436" height="411" style="border: 1px solid #E5E3FF;" cellpadding="0" cellspacing="0">
+	<tr>
+		<td colspan="2" width="436"><table width="436" border="0" cellpadding="0" cellspacing="0">
+				<tr height="27">
+					<td width="127" align="left" bgcolor="#D0D0FD"><a href="http://www.allopass.com/?REDIRECT=presentation.php4&ADV=9584028" target="_blank"><img src="http://www.allopass.com/imgweb/common/access/logo.gif" width="127" height="27" border="0" alt="Allopass"></a></td>
+					<td width="309" align="right" bgcolor="#D0D0FD"><font style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #000084; font-style : none; font-weight: bold; text-decoration: none;">Solution de micro paiement sécurisé<br />Securised micro payment solution</font></td>
+				</tr>
+				<tr height="30">
+					<td colspan="2" width="436" align="center" valign="middle" bgcolor="#F1F0FF"><font style="font-family: Arial, Helvetica, sans-serif; font-size: 9px; color: #000084; font-style : none; font-weight: bold; text-decoration: none;">Pour acheter ce contenu, insérez le code obtenu en cliquant sur le drapeau de votre pays</font><br /><font style="font-family: Arial, Helvetica, sans-serif; font-size: 9px; color: #5E5E90; font-style : none; font-weight: bold; text-decoration: none;">To buy this content, insert your access code obtained by clicking on your country flag</font></td>
+				</tr>
+				<tr height="2">
+					<td colspan="2" width="436" bgcolor="#E5E3FF"></td>
+				</tr>
+			</table></td>
+	</tr>
+	<tr height="347">
+		<td width="284"><iframe name="APsleft" width="284" height="347" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" src="http://www.allopass.com/access/left.php4?LG=fr_uk&SITE_ID=130643&DOC_ID=359598&ADV=9584028"></iframe></td>
+		<td width="152"><iframe name="APsright" width="152" height="347" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" src="http://www.allopass.com/access/right.php4?LG=fr_uk&SITE_ID=130643&DOC_ID=359598&ADV=9584028"></iframe></td>
+	</tr>
+	<tr height="5">
+		<td colspan="2" bgcolor="#D0D0FD" width="436"></td>
+	</tr>
+</table>
+<?php
+}
+?>
+<form method="POST" action="inscription.php?serveur=<?php echo $_GET['serveur']; ?>&etape=2">
+	<div class="localtable630">
+		<h2 style="margin-left:25px;">Inscription - étape 2/2</h2>		
+		<font color="#FF0000"><?php echo $note; ?></font>		
+		<fieldset style="margin-left:15px;margin-right:15px;"><legend>Votre compte :</legend>
+		<table>
+			<tr>
+				<td class="inscrLef2"><h4>Login : </h4></td>
+				<td class="inscrRig2"><input type="text" name="login" size="20" required /></td>
+			</tr>
+			<tr><td><br /></td></tr>
+			<tr>
+				<td class="inscrLef2"><h4>Mot de passe : </h4></td>
+				<td class="inscrRig2"><input type="password" name="motdepasse" size="20" required /></td>
+			</tr>
+			<tr><td><br /></td></tr>
+			
+			<tr>
+				<td class="inscrLef2"><h4>E-mail : </h4></td>
+				<td class="inscrRig2"><input type="text" name="email" size="20" value="<?php echo $email; ?>" required /></td>
+			</tr>
+		</table>
+		</fieldset>
+	</div>
+	<br /><input type="submit" value="Continuer >>">
+</form>

@@ -1,0 +1,144 @@
+/* HTML, BODY*/
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+}
+#main-container.container-fluid {
+    background: #d5cea6;
+    background: -moz-linear-gradient(185deg, #d5cea6 0%, #c9c190 10%, #c9c190 18%, #c9c190 19%, #c9c190 19%, #ccc8a7 22%, #ccc8a7 29%, #c9c190 38%, #d5cea6 44%, #d5cea6 44%, #d5cea6 48%, #c6c48d 80%, #c6c48d 80%, #d5cea6 84%, #b7ad70 100%);
+    /* background: -webkit-linear-gradient( 
+185deg
+ , #d5cea6 0%,#c9c190 10%,#c9c190 18%,#c9c190 19%,#c9c190 19%,#ccc8a7 22%,#ccc8a7 29%,#c9c190 38%,#d5cea6 44%,#d5cea6 44%,#d5cea6 48%,#c6c48d 80%,#c6c48d 80%,#d5cea6 84%,#b7ad70 100%); */
+    background: linear-gradient( 
+185deg
+ , #d5cea6 0%,#c9c190 10%,#c9c190 18%,#c9c190 19%,#c9c190 19%,#ccc8a7 22%,#ccc8a7 29%,#c9c190 38%,#d5cea6 44%,#d5cea6 44%,#d5cea6 48%,#cac294 80%,#cac499 80%,#d5cea6 84%,#b7ad70 100%);
+    min-height: 101vh;   
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.open-menu {
+    position: fixed;
+    top: 20px;
+    left: 10px;
+    z-index: 997;
+    box-shadow: 3px 3px 3px rgba(51, 51, 51, 0.2);
+}
+ 
+.open-menu.btn-customized,
+.open-menu.btn-customized:hover, 
+.open-menu.btn-customized:active, 
+.open-menu.btn-customized:focus, 
+.open-menu.btn-customized:active:focus, 
+.open-menu.btn-customized.active:focus,
+.open-menu.btn-customized.btn.btn-primary:not(:disabled):not(.disabled):active,
+.open-menu.btn-customized.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
+    box-shadow: 3px 3px 3px rgba(51, 51, 51, 0.2);
+}
+ 
+/* Style for all buttons with the class btn-customized */
+ 
+a.btn-customized {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: .75rem 1.5rem;
+    background: #f35b3f;
+    border: 0;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    box-shadow: none;
+}
+ 
+a.btn-customized:hover, 
+a.btn-customized:active, 
+a.btn-customized:focus, 
+a.btn-customized:active:focus, 
+a.btn-customized.active:focus,
+a.btn-customized.btn.btn-primary:not(:disabled):not(.disabled):active,
+a.btn-customized.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
+    outline: 0;
+    background: #cd533d; /* for browsers that don't recognize rgba */
+    background: rgba(243, 91, 63, 0.7);
+    border: 0;
+    color: #fff;
+    box-shadow: none;
+}
+
+.dismiss {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: all .3s;
+    background: #444;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+}
+ 
+.dismiss:hover,
+.dismiss:focus {
+    background: #555;
+    color: #fff;
+}
+
+/* RECAPITULATIF PERSONNAGE (NIV, PUISSANCE, XP, OR, Rang ...) */
+#recap {
+    display: flex;
+    justify-content: space-around;
+}
+/* CHAT */
+#chat .chatframe {
+    height: 20vh;
+    overflow-y: scroll;
+}
+
+#main-container .row.home DIV {
+    border: 1px solid lightgrey;
+}
+#main-container .row.home H1 {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    word-break: break-word;
+}
+
+
+
+
+
+/* MOBILE */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+ 
+    BODY {
+        overflow-y: auto;
+    }
+    P {
+        font-size:  1em;
+    }
+
+   #profile-stats {
+    display: flex;
+   }
+   #profile-stats IMG {
+    width:  100px !important;
+   }
+
+   .sidebar #titlesidebar {
+    display: block;
+    }
+}

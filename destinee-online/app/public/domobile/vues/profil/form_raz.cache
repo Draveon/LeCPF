@@ -1,0 +1,253 @@
+<?php
+if($note != '' && !$afficher_form && !$afficher_form_del)
+{
+	if($erreur == 0)
+		echo '<fieldset style="width:70%;border-color:darkgreen;"><legend>Informations</legend>'.$note.'</fieldset>';
+	else
+		echo '<fieldset style="width:70%;border-color:darkred;"><legend>Erreurs</legend>'.$note.'</fieldset>';
+}
+?>
+<form method="post" action="profil.php?v=1&t=<?php echo $token; ?>">
+<fieldset>
+	<legend>Renaissance</legend>
+		<table>
+			<tr>
+				<td colspan="2" style="text-align:center;">Veuillez saisir les traits de votre nouveau personnage :</td>
+			</tr>
+			<tr>
+				<td><label for="race">Votre race :</label></td>
+				<td><select name="race" id="race" style="width:120px;" required>';
+
+			<?php
+
+// DRAVEON EN CAS DE RAZ IMPOSSIBLE DE CREER UN PERSO DANS LA MEME FACTION
+
+			//Si autre personnage sur ce compte
+			// $factionIdFromOtherHero;
+			// $checkNumberOfPlayerAccounts = mysql_query("SELECT * FROM joueurs_infos
+			// INNER JOIN joueurs_heros ON joueurs_heros.id_compte = joueurs_infos.id
+			// WHERE joueurs_infos.id = joueurs_heros.id_compte
+			// AND joueurs_infos.login = '".$_SESSION['login']."' ") or die(mysql_error());
+			// $nbAccounts = mysql_num_rows($checkNumberOfPlayerAccounts);
+			//
+			// if ($nbAccounts > 1) {
+			// 	$checkFactionIdOtherPlayerAccount = mysql_query("SELECT factions_membres.faction_id FROM joueurs_infos
+			// 	INNER JOIN joueurs_heros ON joueurs_heros.id_compte = joueurs_infos.id
+			// 	INNER JOIN factions_membres ON factions_membres.nom_membre = joueurs_heros.nom
+			// 	WHERE joueurs_infos.id = joueurs_heros.id_compte
+			// 	AND joueurs_infos.login = '".$_SESSION['login']."'
+			// 	AND joueurs_heros.nom != '".$_SESSION['nom']."' ") or die(mysql_error());
+			// 	$data = mysql_fetch_assoc($checkFactionIdOtherPlayerAccount);
+			// 	$factionIdFromOtherHero = $data['faction_id'];
+			// }
+			//
+			// $faction1 = ['Célestial', 'Fétide', 'Sahuagin', 'Septentrional', 'Ashtar', 'Malakeh'];
+			// $faction2 = ['Elfe', 'Homme', 'Nain', 'Ancien', 'Gnome', 'Fée'];
+			// $faction3 = ['Vampire', 'Orque', 'Infernal', 'Minotaure', 'Géant', 'Elfe Noir'];
+			//
+			// switch ($factionIdFromOtherHero){
+			// 		case 1: $racesUnavailable = $faction1;
+			// 		case 2: $racesUnavailable = $faction2;
+			// 		case 3: $racesUnavailable = $faction3;
+			// }
+			//
+			// $racesAvailable = array();
+			// $reqRacesAvailable = mysql_query("SELECT race FROM races ORDER BY race ASC") or die('Erreur SQL !<br>'.mysql_error());
+			// while ($data = mysql_fetch_assoc($reqRacesAvailable)) {
+			// 	array_push($racesAvailable, $data['race']);
+			// }
+			// 	$finalRacesAvailableForReset = array_diff($racesAvailable, $racesUnavailable);
+			//
+			// foreach ($finalRacesAvailableForReset as $raceAvailableAfterFilter) {
+			// 	echo '<option value="'.$raceAvailableAfterFilter.'"> '.$raceAvailableAfterFilter.' </option>';
+			// }
+			//
+
+			$nbAcc = getNumberAccounts($_SESSION['login']);
+			$race1 = getRacesPlayerIfOneAccount($_SESSION['login']);
+			$race2 = getRacesPlayerIfTwoAccounts($_SESSION['login']);
+			$nopeRaces1 = getListRacesUnavailableFromFirstAccount($race1);
+			$nopeRaces2 = getListRacesUnavailableFromFirstAccount($race2);
+
+			$vanillaRaces = getRacesAvailableVanilla();
+			if (count($nopeRaces2) != "" && count($nopeRaces2) > 0) {
+				$finalRacesAvailableForReset = array_diff($vanillaRaces, $nopeRaces1, $nopeRaces2);
+			} else {
+				$finalRacesAvailableForReset = array_diff($vanillaRaces, $nopeRaces1);
+			}
+			// foreach  ($finalRacesAvailableForReset as $finalRace) {
+			// 	echo '<option value="'.$finalRace.'"> '.$finalRace.' </option>';
+			// }
+
+			 $req = mysql_query("SELECT race FROM races ORDER BY race ASC") or die('Erreur SQL !<br>'.mysql_error());
+			while ($data = mysql_fetch_assoc($req)) {
+				echo '
+										<option value="'.$data['race'].'"> '.$data['race'].' </option>';
+			}
+			echo '
+								</select></td>
+							</tr>
+								<td><label for="classe">Votre classe :</label></td>
+								<td><select name="classe" id="classe" style="width:120px;" required>';
+
+			$req = mysql_query("SELECT classe FROM classes ORDER BY classe ASC") or die('Erreur SQL !<br>'.mysql_error());
+			while ($data = mysql_fetch_assoc($req)) {
+				echo '
+										<option value="'.$data['classe'].'"> '.$data['classe'].' </option>';
+			}
+			echo '
+								</select></td>
+							</tr>
+								<td><label for="dieu">Votre dieu :</label></td>
+								<td><select name="dieu" id="dieu" style="width:120px;" required>';
+
+			$req = mysql_query("SELECT nom FROM stats_dieux ORDER BY nom ASC") or die('Erreur SQL !<br>'.mysql_error());
+			while ($data = mysql_fetch_assoc($req)) {
+				echo '
+										<option value="'.$data['nom'].'"> '.$data['nom'].' </option>';
+			}
+			echo '
+								</select></td>'; ?>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="radio" name="sexe" value="mâle" /> Mâle - <input type="radio" name="sexe" value="femelle" /> Femelle</td>
+			</tr>
+		</table>
+</fieldset>
+<input type="hidden" name="raz" value="etape1" />
+<div style="text-align:center;"><a href="profil.php"><input type="button" value="Précédent >>" /></a><input type="submit" value="Suivant >>" /></div>
+</form>
+
+<?php
+
+// METHODES
+function getRacesAvailableVanilla() {
+	$reqRacesAvailable = mysql_query("SELECT race FROM races ORDER BY race ASC") or die('Erreur SQL !<br>'.mysql_error());
+	$racesAvailable = array();
+	while ($data = mysql_fetch_assoc($reqRacesAvailable)) {
+		array_push($racesAvailable, $data['race']);
+	}
+	return $racesAvailable;
+}
+function getNumberAccounts($login) {
+	$nbAccounts = mysql_query("SELECT COUNT(*) FROM joueurs_infos
+	INNER JOIN joueurs_heros ON joueurs_heros.id_compte = joueurs_infos.id
+	WHERE joueurs_infos.id = joueurs_heros.id_compte
+	AND joueurs_infos.login = '".$login."'
+	AND joueurs_heros.nom != '".$_SESSION['nom']."' ") or die(mysql_error());
+	$nbAccounts = mysql_fetch_array($nbAccounts);
+	return $nbAccounts[0];
+}
+function getRacesPlayerIfOneAccount($login) {
+	$checkRaceOtherPlayerAccount = mysql_query("SELECT joueurs_heros.race FROM joueurs_heros
+	INNER JOIN joueurs_infos ON joueurs_infos.id = joueurs_heros.id_compte
+	WHERE joueurs_infos.login = '".$login."' ") or die(mysql_error());
+
+	$racesPlayer = Array();
+	while ($data = mysql_fetch_assoc($checkRaceOtherPlayerAccount)) {
+		array_push($racesPlayer, $data['race']);
+	}
+
+	$raceFromOtherHero1;
+	for ($i = 0; $i < count($racesPlayer); $i++) {
+			$raceFromOtherHero1 = $racesPlayer[0];
+	}
+	return $raceFromOtherHero1;
+}
+function getRacesPlayerIfTwoAccounts($login) {
+	$checkRaceOtherPlayerAccount = mysql_query("SELECT joueurs_heros.race FROM joueurs_heros
+	INNER JOIN joueurs_infos ON joueurs_infos.id = joueurs_heros.id_compte
+	WHERE joueurs_infos.login = '".$login."' ") or die(mysql_error());
+
+	$racesPlayer = Array();
+	while ($data = mysql_fetch_assoc($checkRaceOtherPlayerAccount)) {
+		array_push($racesPlayer, $data['race']);
+	}
+
+	$raceFromOtherHero2;
+	for ($i = 0; $i < count($racesPlayer); $i++) {
+			$raceFromOtherHero2 = $racesPlayer[1];
+	}
+	return $raceFromOtherHero2;
+}
+function getListRacesUnavailableFromFirstAccount($raceFromOtherHero1) {
+
+	$faction1 = ['Célestial', 'Fétide', 'Sahuagin', 'Septentrional', 'Ashtar', 'Malakeh'];
+	$faction2 = ['Elfe', 'Homme', 'Nain', 'Ancien', 'Gnome', 'Fée'];
+	$faction3 = ['Vampire', 'Orque', 'Infernal', 'Minotaure', 'Géant', 'Elfe Noir'];
+
+	switch ($raceFromOtherHero1) {
+		//Les Six Lames
+		case 'Célestial': $factionIdFromOtherHero1 = 1; break;
+		case 'Fétide': $factionIdFromOtherHero1 = 1; break;
+		case 'Sahuagin': $factionIdFromOtherHero1 = 1; break;
+		case 'Septentrional': $factionIdFromOtherHero1 = 1; break;
+		case 'Ashtar': $factionIdFromOtherHero1 = 1; break;
+		case 'Malakeh': $factionIdFromOtherHero1 = 1; break;
+
+		//L'Ordre Impérial
+		case 'Elfe': $factionIdFromOtherHero1 = 2; break;
+		case 'Homme': $factionIdFromOtherHero1 = 2; break;
+		case 'Nain': $factionIdFromOtherHero1 = 2; break;
+		case 'Ancien': $factionIdFromOtherHero1 = 2; break;
+		case 'Gnome': $factionIdFromOtherHero1 = 2; break;
+		case 'Fée': $factionIdFromOtherHero1 = 2; break;
+
+		//Les Disciples du Chaos
+		case 'Vampire': $factionIdFromOtherHero1 = 3; break;
+		case 'Orque': $factionIdFromOtherHero1 = 3; break;
+		case 'Infernal': $factionIdFromOtherHero1 = 3; break;
+		case 'Minotaure': $factionIdFromOtherHero1 = 3; break;
+		case 'Géant': $factionIdFromOtherHero1 = 3; break;
+		case 'Elfe Noir': $factionIdFromOtherHero1 = 3; break;
+	}
+
+	switch ($factionIdFromOtherHero1) {
+		case 1: $racesUnavailable1 = $faction1; break;
+		case 2: $racesUnavailable1 = $faction2; break;
+		case 3: $racesUnavailable1 = $faction3; break;
+	}
+	return $racesUnavailable1;
+}
+function getListRacesUnavailableFromSecondAccount($raceFromOtherHero2) {
+
+
+	$faction1 = ['Célestial', 'Fétide', 'Sahuagin', 'Septentrional', 'Ashtar', 'Malakeh'];
+	$faction2 = ['Elfe', 'Homme', 'Nain', 'Ancien', 'Gnome', 'Fée'];
+	$faction3 = ['Vampire', 'Orque', 'Infernal', 'Minotaure', 'Géant', 'Elfe Noir'];
+
+	switch ($raceFromOtherHero2) {
+		//Les Six Lames
+		case 'Célestial': $factionIdFromOtherHero2 = 1; break;
+		case 'Fétide': $factionIdFromOtherHero2 = 1; break;
+		case 'Sahuagin': $factionIdFromOtherHero2 = 1; break;
+		case 'Septentrional': $factionIdFromOtherHero2 = 1; break;
+		case 'Ashtar': $factionIdFromOtherHero2 = 1; break;
+		case 'Malakeh': $factionIdFromOtherHero2 = 1; break;
+
+		//L'Ordre Impérial
+		case 'Elfe': $factionIdFromOtherHero2 = 2; break;
+		case 'Homme': $factionIdFromOtherHero2 = 2; break;
+		case 'Nain': $factionIdFromOtherHero2 = 2; break;
+		case 'Ancien': $factionIdFromOtherHero2 = 2; break;
+		case 'Gnome': $factionIdFromOtherHero2 = 2; break;
+		case 'Fée': $factionIdFromOtherHero2 = 2; break;
+
+		//Les Disciples du Chaos
+		case 'Vampire': $factionIdFromOtherHero2 = 3; break;
+		case 'Orque': $factionIdFromOtherHero2 = 3; break;
+		case 'Infernal': $factionIdFromOtherHero2 = 3; break;
+		case 'Minotaure': $factionIdFromOtherHero2 = 3; break;
+		case 'Géant': $factionIdFromOtherHero2 = 3; break;
+		case 'Elfe Noir': $factionIdFromOtherHero2 = 3; break;
+	}
+
+	switch ($factionIdFromOtherHero2) {
+		case 1: $racesUnavailable2 = $faction1; break;
+		case 2: $racesUnavailable2 = $faction2; break;
+		case 3: $racesUnavailable2 = $faction3; break;
+	}
+	return $racesUnavailable2;
+}
+
+ ?>

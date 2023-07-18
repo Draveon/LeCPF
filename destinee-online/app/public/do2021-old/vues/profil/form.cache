@@ -1,0 +1,52 @@
+<?php
+if($note != '')
+{
+	if($erreur == 0)
+		echo '<fieldset style="width:70%;border-color:darkgreen;"><legend>Informations</legend>'.$note.'</fieldset>';
+	else
+		echo '<fieldset style="width:70%;border-color:darkred;"><legend>Erreurs</legend>'.$note.'</fieldset>';
+}
+?>
+<form method="post" action="profil.php?v=1&t=<?php echo $token; ?>">
+<fieldset style="margin-bottom:20px;width:80%;">
+	<legend>Vos informations</legend>
+		<table>
+			<tr>
+				<td class="profilleft">Email associé au personnage :</td>
+				<td class="profilright"><?php echo $donnees_joueur['email']; ?></td>
+			</tr>
+			<tr>
+				<td class="profilleft"><label for="email">Nouvelle adresse mail :</td>
+				<td class="profilright"><input type="text" id="email" name="email" /><br /><span style="font-weight: bold;">Attention :</span> Les adresse Gmail et Hotmail ne permettent pas de recevoir les rapport de combats. <br />(Recommandé : Yahoo)</td>
+			</tr>
+		</table>
+</fieldset>
+
+<fieldset style="margin-bottom:20px;width:80%;">
+	<legend>Votre personnage</legend>
+		<table>
+			<tr>
+				<td class="profilleft">Votre avatar actuel :</td>
+				<td class="profilright"><img src="<?php echo $donnees_joueur['avatar']; ?>" width="300" height="300" alt="<?php echo $_SESSION['nom']; ?>" border="1" /></td>
+			</tr>
+			<tr>
+				<td class="profilleft"><label for="avatar">Nouvel avatar :</td>
+				<td class="profilright"><input type="text" id="avatar" name="avatar" /></td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr height="1" width="20%;"/></td>
+			</tr>
+			<tr>
+				<td class="profilleft"><label for="avatar">Description :</td>
+				<td class="profilright"><textarea rows="5" cols="40" id="description" name="description"><?php echo stripslashes($donnees_joueur['description']); ?></textarea></td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr height="1" width="20%;"/></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="checkbox" name="raz" /> Renaître.</td>
+			</tr>
+		</table>
+</fieldset>
+<div style="text-align:center;"><input type="submit" value="Suivant >>" /></div>
+</form>

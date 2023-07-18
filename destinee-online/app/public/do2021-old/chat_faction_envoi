@@ -1,0 +1,11 @@
+<?php
+// Connexion à la base de données
+include("connect.php");
+
+// Insertion du message à l'aide d'une requête préparée
+$req = mysql_query('INSERT INTO chatFaction (nom_joueur, message) VALUES(?, ?)');
+mysql_query($req) or die('Erreur SQL ! '.$sql.'<br />.mysql_error()');
+mysql_close();
+// Redirection du visiteur vers la page du minichat
+header('Location: faction.php');
+?>

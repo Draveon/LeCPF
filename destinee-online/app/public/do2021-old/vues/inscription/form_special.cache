@@ -1,0 +1,19 @@
+<?php
+if($note != '')
+{
+	if($erreurs == 0)
+		echo '<fieldset style="width:70%;border-color:darkgreen;"><legend>Informations</legend>'.$note.'</fieldset>';
+	else
+		echo '<fieldset style="width:70%;border-color:darkred;"><legend>Erreurs</legend>'.$note.'</fieldset>';
+}
+else
+{
+	if($inscription_reussie == 1)
+		echo '<table class="localtable630"><tbody>
+			<tr><td><h2>Inscription réussie, vous pouvez désormais vous connecter!</h2>
+			</td></tr></tbody></table>
+			';
+	else
+		echo 'L\'application a subi une erreur inconnue.';
+}
+?>

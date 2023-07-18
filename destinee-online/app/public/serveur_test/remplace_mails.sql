@@ -1,0 +1,1 @@
+UPDATE `joueurs_infos` SET `email` = 'draveongoblin@gmail.com' WHERE 1;

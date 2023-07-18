@@ -1,0 +1,235 @@
+<?php session_start();
+
+if ($_SESSION['connexion'] != 1 OR $_SESSION['connexion'] == 'null' && $actual_db != 2) {
+	
+	echo '<META http-equiv="refresh" content="1; URL=http://www.destinee-online.com">';
+		exit;
+}
+
+include ("debut.php");
+include ("menu.php");
+entete("Factions");
+include("connect.php");
+
+ //header('Location: http://www.destinee-online.com/armada.php');
+//fait rejoindre une faction à un personnage
+$id = $_SESSION['id'];
+$nom = $_SESSION['nom'];
+$race = $_SESSION['race'];
+
+
+	switch ($race){
+		//Les Six Lames
+		case 'Célestial': $faction = 1; break;
+		case 'Fétide': $faction = 1; break;
+		case 'Sahuagin': $faction = 1; break;
+		case 'Septentrional': $faction = 1; break;
+		case 'Ashtar': $faction = 1; break;
+		case 'Malakeh': $faction = 1; break;
+
+		//L'Ordre Impérial
+		case 'Elfe': $faction = 2; break;
+		case 'Homme': $faction = 2; break;
+		case 'Nain': $faction = 2; break;
+		case 'Ancien': $faction = 2; break;
+		case 'Gnome': $faction = 2; break;
+		case 'Fée': $faction = 2; break;
+
+		//Les Disciples du Chaos
+		case 'Vampire': $faction = 3; break;
+		case 'Orque': $faction = 3; break;
+		case 'Infernal': $faction = 3; break;
+		case 'Minotaure': $faction = 3; break;
+		case 'Géant': $faction = 3; break;
+		case 'Elfe Noir': $faction = 3; break;
+		
+	}
+	//Commandes SQL nécessaires :
+
+			
+			$sqlNomFaction = "SELECT nom, image, descr FROM `factions` WHERE id = $faction";
+	//On prépare la commande sql d'insertion si le personnage n'est pas déjà présent dans une faction
+			$reqCondition = mysql_query("SELECT COUNT(nom_membre) FROM `factions_membres` WHERE nom_membre = '$nom'; ")or die('Erreur SQL !<br>'.$sql.'<br>'.mysql_error());
+			$res = mysql_fetch_array($reqCondition);
+			
+	
+
+			$reqNomFaction = mysql_query($sqlNomFaction) or die('Erreur SQL !<br>'.$sql.'<br>'.mysql_error());
+			$res2 = mysql_fetch_array($reqNomFaction);
+			$nomFaction = $res2[0];
+			$imageFaction = $res2[1];
+			$descrFaction = $res2[2];
+
+
+
+
+
+// récupération des données pour l'affichage de la page
+$req = mysql_query("SELECT * FROM `factions_membres` INNER JOIN `factions` ON `factions_membres`.`faction_id` = `factions`.`id`");
+while ($data = mysql_fetch_array($req)) {
+
+	if ($data['faction_id'] > 0) {
+
+
+		var_dump($nom);
+?>
+
+	
+
+	<div class="sectionFactions">
+
+		<h2 style="font-size: 38px;"><span class="nomFaction"><?php echo $nomFaction ?></span></h2>
+		<img class="imageFaction" src=" <?php echo $imageFaction ?> " alt="">
+
+		<div class="panel-groupFaction" id="accordion">
+		  <div class="panel panel-default">
+		    <div class="panel-heading btn btn-do-faction" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+		      <h2 class="panel-title">
+		        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+		        Voir l'Historique de la faction</a>
+		      </h2>
+		    </div>
+		    <div id="collapse1" class="panel-collapse collapse">
+		      <div class="panel-body"><?php echo $descrFaction ?></div>
+		    </div>
+		  </div>
+
+		  	<h2>Membres de <?php echo $nomFaction ?> </h2>
+			<table class="tableFactionMembres">
+				<tr>
+					<th>Nom</th><th>Titre</th><th>Royaume</th><th>Race</th><th>Classe</th><th>Rang</th><th>Puissance</th>
+				</tr>
+
+<?php
+		
+					
+			$req = mysql_query("SELECT nom_membre, `joueurs_heros`.titre, `joueurs_heros`.royaume, `joueurs_heros`.race, `joueurs_heros`.classe, `joueurs_bonus`.rangFaction, `joueurs_bonus`.victoire, `joueurs_bonus`.défaite, `joueurs_heros`.puissance FROM `joueurs_heros` INNER JOIN `factions_membres` ON `joueurs_heros`.nom = `factions_membres`.nom_membre INNER JOIN `joueurs_bonus` ON `joueurs_bonus`.id = `joueurs_heros`.id WHERE `factions_membres`.faction_id = '$faction' ORDER BY puissance DESC ");
+			while ($data = mysql_fetch_array($req)) {
+
+				//RANGS de faction
+				//Si faction =
+
+				//Six lames
+				if ($faction == 1  ) {
+					//Si victoires inférieur à 20
+					if ($data['victoire'] < 20) {
+						$data['rangFaction'] = "Lame";
+					}
+					if ($data['victoire'] >= 20 && $data['victoire'] < 40) {
+						$data['rangFaction'] = "Grande Lame";
+					}
+					if ($data['victoire'] >= 40 && $data['victoire'] < 60) {
+						$data['rangFaction'] = "Mercenaire";
+					}
+					if ($data['victoire'] >= 80 && $data['victoire'] < 100) {
+						$data['rangFaction'] = "Ecuyer d'Andeïn";
+					}
+					if ($data['victoire'] >= 100 && $data['victoire'] < 125) {
+						$data['rangFaction'] = "Protecteur des Marginaux";
+					}
+					if ($data['victoire'] >= 125 && $data['victoire'] < 150) {
+						$data['rangFaction'] = "Tacticien de Guerre";
+					}
+					if ($data['victoire'] >= 150) {
+						$data['rangFaction'] = "Seigneur des Lames";
+					}
+					
+				}
+				//Ordre Impérial
+				if ($faction == 2  ) {
+					//Si victoires inférieur à 20
+					if ($data['victoire'] < 20) {
+						$data['rangFaction'] = "Soldat Impérial";
+					}
+					if ($data['victoire'] >= 20 && $data['victoire'] < 40) {
+						$data['rangFaction'] = "Armurier Impérial";
+					}
+					if ($data['victoire'] >= 40 && $data['victoire'] < 60) {
+						$data['rangFaction'] = "Capitaine de Garnison";
+					}
+					if ($data['victoire'] >= 80 && $data['victoire'] < 100) {
+						$data['rangFaction'] = "Conseiller du Thane";
+					}
+					if ($data['victoire'] >= 100 && $data['victoire'] < 125) {
+						$data['rangFaction'] = "Gardien du Livre Impérial";
+					}
+					if ($data['victoire'] >= 125 && $data['victoire'] < 150) {
+						$data['rangFaction'] = "Descendant de Manassé";
+					}
+					if ($data['victoire'] >= 150) {
+						$data['rangFaction'] = "Thane Impérial";
+					}
+					
+				}
+								
+				//Disciples du Chaos
+				if ($faction == 3  ) {
+					//Si victoires inférieur à 20
+					if ($data['victoire'] < 20) {
+						$data['rangFaction'] = "Serviteur du Chaos";
+					}
+					if ($data['victoire'] >= 20 && $data['victoire'] < 40) {
+						$data['rangFaction'] = "Dévot de Chezzer";
+					}
+					if ($data['victoire'] >= 40 && $data['victoire'] < 60) {
+						$data['rangFaction'] = "Dépeceur Sanglant";
+					}
+					if ($data['victoire'] >= 80 && $data['victoire'] < 100) {
+						$data['rangFaction'] = "Adorateur de Nucter";
+					}
+					if ($data['victoire'] >= 100 && $data['victoire'] < 125) {
+						$data['rangFaction'] = "Collectionneur de Crânes";
+					}
+					if ($data['victoire'] >= 125 && $data['victoire'] < 150) {
+						$data['rangFaction'] = "Profanateur de Tombes";
+					}
+					if ($data['victoire'] >= 150) {
+						$data['rangFaction'] = "Chef de la Horde";
+					}
+					
+				}
+
+				
+				
+					echo '
+
+					<tr>
+						<td class="celluleTableauFaction">
+						'.$data['nom_membre'].'</td><td class="celluleTableauFaction">'.$data['titre'].'</td><td class="celluleTableauFaction">'.$data['royaume'].'</td><td class="celluleTableauFaction">'.$data['race'].'</td><td class="celluleTableauFaction">'.$data['classe'].'</td><td class="celluleTableauFaction">'.$data['rangFaction'].'</td><td class="celluleTableauFaction">'.$data['puissance'].'
+						</td>
+					</tr>
+					';
+			}
+?>		
+			</table>
+
+		     
+		  </div>
+		</div>
+
+
+		
+
+	</div>
+
+<?php
+	}
+}
+
+	
+
+	echo $dataIndex.'</td>';
+
+include("fin.php");
+mysqli_close($db);
+
+		
+
+
+
+
+
+
+
+
+ ?>

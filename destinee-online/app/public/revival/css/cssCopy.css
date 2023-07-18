@@ -1,0 +1,962 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@696&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quantico:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+/*DEBUT MOBILE */
+
+@media screen and (max-width: 1200px) {
+/*LOGO*/
+  HTML .wrapper .logo {
+        margin: 3vh 0 5vh;  
+  }
+
+  HTML .wrapper .logo .logo2 {
+    text-align: center;
+    font-size: 3.5rem;
+  }
+  /* ALL P */
+
+  HTML P {
+    margin: 0 10vh 1vh;
+  }
+  /* WRAPPER */
+
+  HTML .wrapper {
+    min-height: 85%;
+  }
+  /*MAIN P*/
+
+  HTML MAIN P {
+    font-size: 1.2em;
+    margin: 0 50px 15px;
+  }
+  /*LOGIN*/
+
+  HTML MAIN #login {
+    display: flex;
+    flex-direction: column;
+    border: 1px double #fff;
+    margin: 30px 40px;
+    box-shadow: 0 0 15px #ffff;
+    border-width: medium;
+  }
+  HTML MAIN #login P {
+    margin: 10px;
+  } 
+  HTML MAIN #login .loginButtons {
+    display: flex;
+    justify-content: space-around;
+  }
+  HTML MAIN #login .loginButtons A {
+    color: #fff;
+    text-decoration: none;
+    /*border: 1px solid #fff;*/
+    /*border-radius: 100px/0px 40px;*/
+    font-family: Orbitron, sans-serif;
+    margin: 5px 0;
+    padding: 5px;
+  }
+  HTML MAIN #login .loginButtons SPAN {
+    color:  #fff;
+    text-shadow: 0 0 10px #fff;
+        margin: 5px 0;
+    padding: 5px;
+  }
+  HTML .wrapper #login INPUT[type=submit] {
+    font-size: 0.85rem;
+  }
+  HTML .wrapper #login P:not(:last-child) INPUT {
+    height: 25px;
+    font-size: 1.5em;
+    margin-left: 0;
+  } 
+   HTML .wrapper #login P:not(:last-child) .shadow {
+    position: absolute; 
+    width:100%;
+    height: 1px;
+    margin: 0;
+    background: #ffffff;
+    -webkit-box-shadow: 0px 0px 10px 0.5px #fff;
+    -moz-box-shadow: 0px 0px 10px 0.5px #fff;
+    box-shadow: 0px 0px 10px 1.5px #fff;
+  }
+  HTML .wrapper MAIN #login P:last-child {
+    width: 100%;
+    margin: 0 auto;
+    }
+
+/* NAV */
+
+  HTML .wrapper #navPerso {
+    /*height: 0px;*/
+
+    height: 100px;
+    margin: 0 auto;
+    width: 100%;
+    background-blend-mode: color-dodge;
+    background-color: #ffffff0d;
+   
+    box-shadow: 0 0 20px #fff, 0 0 80px #54d3c0, 0 0 100px #00dbba;
+    border-top: 8px #fff double;
+    background-image: url("/revival/tile-black.png");
+
+    display: flex;
+    justify-content: space-around;
+  }
+  HTML .wrapper .nav .btn {
+    /*padding: 0;*/
+    /*font-size: 1em;*/
+
+        text-shadow: 0 0 10px #54d3c0, 0 0 30px #54d3c08a, 0 0 30px #54d3c0;
+    text-align: center;
+    width: 25%;
+    padding: 10px 0;
+    height: 30px;
+    margin: 25px 5px 0;
+    border: 1px solid transparent;
+    color: #fff;
+    font-size: 25px;
+  } 
+
+  /* DASHBOARD*/
+
+  /*HTML .wrapper #dashboard {}*/
+  HTML .wrapper .leftTop,
+  HTML .wrapper #dashboardQG .main {
+    flex-wrap: wrap;
+  }
+  HTML .wrapper .leftTop {
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    /* background-color: green; */
+    height: 200px;
+    position: relative;
+    border-radius: 40% 0 0;
+    background-color: #00000070;
+    background-image: url(/revival/tile-black.png);
+    background-size: 10000% 75%;
+    opacity: 0.8;
+    animation-name: notMatrixBackground;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    box-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #54d3c0, 0 0 50px #00dbba;
+}  
+HTML .wrapper .leftTop .img {
+    z-index: 2;
+    position: absolute;
+    background-color: azure;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTWDUUToLKxTmFuNHTJ9KCEy4pKXPAAk8JX4YK_BBbTSObUrJtY&usqp=CAU);
+    height: 75px;
+    background-size: cover;
+    width: 75px;
+    /* margin: 0 0 0 50px; */
+    top: 0;
+    border-radius: 50% 0;
+    padding: 0;
+}
+HTML .wrapper .leftBot {
+    grid-row: 1;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    /* background-color: green; */
+    height: 200px;
+    position: relative;
+    border-radius: 0 0 20% 0;
+    background-color: #00000070;
+    background-image: url(/revival/tile-black.png);
+    background-size: 10000% 75%;
+    opacity: 0.8;
+    animation-name: notMatrixBackground;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    box-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #54d3c0, 0 0 50px #00dbba;
+}
+HTML .wrapper .rightArea {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-top: 30px;
+    height: 100%;
+    position: relative;
+    background-color: #00000070;
+    background-image: url(/revival/tile-black.png);
+    background-size: 10000% 75%;
+    opacity: 0.8;
+    animation-name: notMatrixBackground;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    box-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #54d3c0, 0 0 50px #00dbba;
+}
+  HTML .wrapper .leftTop .dashbar,
+  HTML .wrapper #dashboardQG .main .img,
+  HTML .wrapper #dashboardQG .main .dashbar {
+    margin: 0 auto;
+    padding: 0 15px;    
+    width: 75px;
+    height: 100px;
+    background-size: cover;    
+  }  
+  HTML .wrapper .leftTop .dashbar,
+  HTML .wrapper #dashboardQG .main .dashbar {
+background-color: transparent;
+    margin: 0 auto 0 -50px;
+    width: 200px;
+    z-index: 1;
+    border-radius: 0% 0/50% 0;
+  }  
+  HTML .wrapper .leftTop .content,
+  HTML .wrapper #dashboardQG .main .content {
+    width: 100%;
+  }
+
+  /*  HTML .wrapper #dashboard .main,
+  HTML .wrapper #dashboardQG .main {
+    flex-wrap: wrap;
+  }
+  HTML .wrapper #dashboard .main .img,
+  HTML .wrapper #dashboard .main .dashbar,
+  HTML .wrapper #dashboardQG .main .img,
+  HTML .wrapper #dashboardQG .main .dashbar {
+    margin: 0 auto;
+    padding: 0 15px;    
+    width: 75px;
+    height: 100px;
+    background-size: cover;    
+  }  
+  HTML .wrapper #dashboard .main .dashbar,
+  HTML .wrapper #dashboardQG .main .dashbar {
+background-color: transparent;
+    margin: 0 auto 0 -50px;
+    width: 200px;
+    z-index: 1;
+    border-radius: 0% 0/50% 0;
+  }  
+  HTML .wrapper #dashboard .main .content,
+  HTML .wrapper #dashboardQG .main .content {
+    width: 100%;
+  }*/
+  /*HTML .wrapper #dashboard .content P {
+    margin: 0 auto;
+  }*/
+}
+
+/* FIN MOBILE */
+
+
+/* HTML, BODY*/
+
+html,body{
+  width:100%;
+  height:100%;
+  margin:0;
+  /*background-color: #052923;*/
+
+     background: #052923; /* Old browsers */
+
+
+background-image: url("/revival/tile-black.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
+    animation-name: notMatrixBackground;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+}
+/* ALL ELEMENTS */
+
+* {
+    font-family: VT323, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* ALL P */ 
+
+p {
+    margin: 0 10vh 3vh;
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 4vh;
+    text-shadow: -19px -5px 4px #8ac9b1a1, 0 0 20px #fff, 17px 3px 3px #2becc085;
+    animation-name: notMatrixText;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+/* CLASSE UTILITAIRE POUR MONTRER */
+
+.display {
+    display: block !important;
+}
+
+/* WRAPPER - MAIN CONTAINER */
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    align-items: stretch;
+    background: linear-gradient(317deg, #1b938130 20%, #0c3e6742 40%, #137b2552 45.2%, #931b7040 47.3%, #f9630c30 65%, #02115a38 66.2%, #96080854 70%, #17556d73 95%);
+    background-size: 200% 800%;
+    -webkit-animation: colorBackground 20s cubic-bezier(0.55, 0.09, 0.68, 0.53) infinite;
+    -moz-animation: colorBackground 20s cubic-bezier(0.55, 0.09, 0.68, 0.53) infinite;
+    -o-animation: colorBackground 20s cubic-bezier(0.55, 0.09, 0.68, 0.53) infinite;
+    animation: colorBackground 90s cubic-bezier(0.55, 0.09, 0.68, 0.53) infinite;
+}
+.wrapper H2 {
+    font-size: 1rem;
+    text-align: center;
+}
+.wrapper H2 SPAN {
+    font-family: Orbitron;
+}
+/* MAIN - FALSE MAIN CONTAINER - CONTIENT login & dashboard */
+
+MAIN {
+    flex-grow: 1;
+}
+
+/* NAV - GERE TOUS LES MENUS */
+
+.wrapper .nav {
+    height: 100px;
+    margin: 0 auto;
+    width: 100%;
+    background-blend-mode: color-dodge;
+    background-color: #ffffff0d;
+   
+    box-shadow: 0 0 20px #fff, 0 0 80px #54d3c0, 0 0 100px #00dbba;
+    border-top: 8px #fff double;
+    background-image: url("/revival/tile-black.png");
+
+    display: flex;
+    justify-content: space-around;
+}
+.wrapper .nav.active {
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    width: 100%;
+    background-blend-mode: color-dodge;
+    background-color: #00101cba;
+    animation-name: notMatrixBackgroundNav;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    border-top: 8px #fff double;
+    background-image: url("/revival/tile-black.png");
+    display: flex;
+    justify-content: space-around;
+}
+.wrapper .nav.active * {
+    color: #fff;
+}.wrapper .nav.active .closeTab {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    font-size: 3em;
+}.wrapper .nav .closeTab {
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    font-size: 3em;
+}
+.wrapper .nav > .btn {
+    text-shadow: 0 0 10px #54d3c0, 0 0 30px #54d3c08a, 0 0 30px #54d3c0;
+    text-align: center;
+    width: 25%;
+    padding: 10px 0;
+    height: 30px;
+    margin: 25px 5px 0;
+    border: 1px solid transparent;
+    color: #fff;
+    font-size: 25px;
+}
+.wrapper .nav > .mainBtn {
+    text-shadow: 0 0 10px #54d3c0, 0 0 30px #54d3c08a, 0 0 30px #54d3c0;
+    text-align: center;
+    width: 25%;
+    padding: 0;
+    margin: 0;
+    background-color: cyan;
+    border: 1px solid transparent;
+    color: #fff;
+    font-size: 25px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}.wrapper .nav > .mainBtn DIV {
+color: white;
+    font-size: 1.5rem;
+    text-shadow: 0 0 11px #b57641;
+    font-family: Orbitron;
+}
+.wrapper .btn:hover, .wrapper .mainBtn:hover {
+    cursor: pointer;
+}
+.wrapper .nav:not(.active) > .btn:hover {
+    background-clip: text;
+    color: #fff;
+   background-image: url("/revival/tile-black.png");
+    animation-name: notMatrixBackground;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 80px #54d3c0, 0 0 100px #00dbba;
+    border: 1px solid #fff;
+    border-radius: 100px/0px 40px;
+    box-shadow: 0 0 18px #FFF;
+}
+.wrapper .nav:not(.active) > .mainBtn:hover {
+    background-clip: text;
+    color: cyan;
+   background-image: url("/revival/tile-black.png");
+    animation-name: notMatrixBackground;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 80px cyan, 0 0 100px cyan;
+    border: 1px solid cyan;
+    border-radius: 100px/0px 40px;
+    box-shadow: 0 0 18px #FFF;
+}
+.wrapper .nav.active > .btn {
+    text-align: center;
+    height: 5%;
+    width: 25%;
+    padding: 10px 0; 
+    margin: 25px 5px;
+    font-size: 25px;
+    background-clip: text;
+    color: #fff;
+    background-image: url("/revival/tile-black.png");
+    animation-name: notMatrixBackground;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 80px #54d3c0, 0 0 100px #00dbba;
+    border: 1px solid #fff;
+    border-radius: 100px/0px 40px;
+    box-shadow: 0 0 18px #FFF;
+}
+.wrapper .nav > .boxtab {
+    display: none;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0; 
+    margin: 25px 5px;
+    font-size: 25px;
+    color: #fff;
+    background-image: url("/revival/tile-black.png");
+    animation-name: notMatrixBackground;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 80px #54d3c0, 0 0 100px #00dbba;
+    border: 1px solid #fff;
+    border-radius: 100px/0px 40px;
+    box-shadow: 0 0 18px #FFF;
+}
+.wrapper .nav.active > .boxtab {
+    display: block;
+    text-align: center;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 90%;
+    top: 70px;
+    height: 65%;
+    padding: 10px 0;
+    margin: 25px 5px;
+    font-size: 25px;
+    color: #fff;
+   background-image: url("/revival/tile-black.png");
+    animation-name: notMatrixBackground;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 80px #54d3c0, 0 0 100px #00dbba;
+    border: 1px solid #fff;
+    border-radius: 100px/0px 40px;
+    box-shadow: 0 0 18px #FFF;
+}
+.wrapper .nav.active > .btn:hover {
+    background-color: #d361007a;
+    text-align: center;
+
+    width: 25%;
+    padding: 10px 0; 
+    margin: 25px 5px;
+    font-size: 25px;
+    background-clip: text;
+    /* -webkit-background-clip: text; */
+    color: #fff;
+    /* clip-path: polygon(50% 100%, 0 0, 100% 0); */
+    background-image: url("/revival/tile-black.png");
+    animation-name: notMatrixBackground;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 80px #54d3c0, 0 0 100px #00dbba;
+    border: 1px solid #fff;
+    border-radius: 100px/0px 40px;
+    box-shadow: 0 0 18px #FFF;
+}
+.wrapper .nav .subtab {
+    display: none;
+position: absolute;
+    left: 10%;
+    top: 20%;
+    font-size: 4rem;
+}
+
+/*DASHBOARD PERSO + QG*/
+
+/*.wrapper #dashboard, .wrapper #dashboardQG {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+}*/
+.wrapper #dashboard .main, .wrapper #dashboardQG .main {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.wrapper #dashboard .main {
+    display: flex;
+    flex-wrap: wrap;
+}
+HTML .break {
+  flex-basis: 100%;
+  height: 0;
+}
+.wrapper #dashboard .main {
+    flex-direction: column;
+}
+.wrapper #dashboard .main .firstLvl {
+    display: flex;
+}
+/*.wrapper #dashboard .main .img {*/
+.wrapper .leftTop .img {
+    z-index: 2;
+    position: absolute;
+    background-color: azure;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTWDUUToLKxTmFuNHTJ9KCEy4pKXPAAk8JX4YK_BBbTSObUrJtY&usqp=CAU);
+    height: 200px;
+    width: 200px;
+    /*margin: 0 0 0 50px;*/
+    top:    0;
+     border-radius: 50% 0;  
+}
+/*.wrapper #dashboard .main .img:after {*/
+.wrapper .leftTop .img:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fdfdfd00;
+    height: 100%;
+    width: 100%;
+    background-image: url(/revival/tile-white.png);
+    background-size: 75% 10000%;
+    opacity: 0.8;
+    animation-name: notMatrixBackground;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    box-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #54d3c0, 0 0 50px #00dbba;
+    border-radius: 50% 0;
+}
+.wrapper #dashboardQG .main .img {
+    z-index: 2;
+    position: relative;
+    background-color: azure;
+    background-image: url(https://i.redd.it/7gpqy6tujbhz.jpg);
+    background-size: 200px 200px;
+    height: 200px;
+    width: 200px;
+    margin: 0 0 0 50px;
+     border-radius: 50% 0;  
+}
+.wrapper #dashboardQG .main .img:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius:  50% 0;
+    background-color: #fdfdfd00;
+    height: 100%;
+    width: 100%;
+    background-image: url(/revival/tile-white.png);
+    background-size: 75% 10000%;
+    opacity: 0.8;
+    animation-name: notMatrixBackground;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    box-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #54d3c0, 0 0 50px #00dbba;
+}        
+.wrapper #dashboard .main .dashbar,
+.wrapper #dashboardQG .main .dashbar {
+    position: relative;
+    background-color: #f0ffff00;
+    /*background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTWDUUToLKxTmFuNHTJ9KCEy4pKXPAAk8JX4YK_BBbTSObUrJtY&usqp=CAU);*/
+    height: 200px;
+    width: 35%;
+    margin: 0 50px 0 -100px;
+     /*border-radius: 50% 0;    */
+}
+.wrapper #dashboard .main .dashbar .contentbar,
+.wrapper #dashboardQG .main .dashbar .contentbar {
+   position: absolute;
+    left: 150px;
+    display: flex;
+    flex-direction: column;
+}
+.wrapper #dashboard .main .dashbar .contentbar H2,
+.wrapper #dashboardQG .main .dashbar .contentbar H2 {
+    font-size: 2rem;
+    text-align: left;
+}
+.wrapper #dashboard .main .dashbar .contentbar .stats,
+ .wrapper #dashboardQG .main .dashbar .contentbar .stats {
+        display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+    color: #fff;
+}
+.wrapper #dashboard .main .dashbar:after,
+.wrapper #dashboardQG .main .dashbar:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fdfdfd00;
+    height: 100%;
+    width: 100%;
+    background-image: url(/revival/tile-black.png);
+    /* opacity: 0.8; */
+    animation-name: notMatrixBackground;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    box-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #54d3c0, 0 0 50px #00dbba;
+    border-radius: 0;
+}
+.wrapper #dashboard .main .content,
+.wrapper #dashboardQG .main .content {
+    position: relative;
+    background-color: #f0ffff00;
+    /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTWDUUToLKxTmFuNHTJ9KCEy4pKXPAAk8JX4YK_BBbTSObUrJtY&usqp=CAU); */
+    height: 400px;
+    width: 60%;
+    margin: 0 50px 0;
+}
+.wrapper #dashboard .main .content:after,
+.wrapper #dashboardQG .main .content:after {
+       content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fdfdfd00;
+    height: 100%;
+    width: 100%;
+    background-image: url(/revival/tile-black.png);
+    /* opacity: 0.8; */
+    animation-name: notMatrixBackground;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    box-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #54d3c0, 0 0 50px #00dbba;
+    border-radius: 0;
+}
+.wrapper #dashboard .main .content .deco1,
+.wrapper #dashboardQG .main .content .deco1 {
+    position:   absolute;
+    left:   0;
+    bottom: 0;
+       clip-path: polygon(0 0, 100% 0%, 94% 100%, 29% 100%);
+}
+
+/*LOGO*/
+
+.wrapper .logo .logo2, H2 {
+    margin: 10px auto 0;
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: -19px -5px 4px #8ac9b1a1, 0 0 20px #fff, 17px 3px 3px #2becc085;
+
+    animation-name: notMatrixText;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function:  ease-in-out;
+}
+
+.wrapper .logo {
+    text-align: center;
+    line-height: 0.8;
+    margin: 5vh 0 5vh;
+}
+.wrapper .logo HR {
+    width: 80%;
+    margin: 6px auto 5px;
+    box-shadow: 0 0 10px #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.wrapper .logo .logo1 {
+    font-family: Orbitron;
+    color: #fff;
+    text-shadow: 0 0 6px #fff;  
+    letter-spacing: 7px;
+}
+.wrapper .logo .logo2 {
+    text-align: center;
+    font-size: 4rem;
+}
+.wrapper .logo .logo2 SPAN {
+    font-family: Orbitron;
+    text-transform: uppercase;
+}
+.wrapper .logo .logo2clone {
+    text-align: left;
+    font-size: 4rem;
+}
+
+/* LOGIN */
+
+  HTML MAIN #login .loginButtons {
+    display: flex;
+    justify-content: center;
+  }
+  HTML MAIN #login .loginButtons A {
+    color: #fff;
+    text-decoration: none;
+    /*border: 1px solid #fff;*/
+    /*border-radius: 100px/0px 40px;*/
+    font-family: Orbitron, sans-serif;
+    margin: 5px 0;
+    padding: 5px;
+  }
+  HTML MAIN #login .loginButtons SPAN {
+    color:  #fff;
+    text-shadow: 0 0 10px #fff;
+        margin: 5px 0;
+    padding: 5px;
+  }
+
+.wrapper #login FORM P:not(:last-child) {
+    position:   relative;
+}
+.wrapper #login INPUT[type=submit] {
+    width: 100%;    
+    background-color: transparent;
+    border: 0px;
+    color: #fff;
+    font-size: 2rem;
+    font-family: Orbitron;
+    transition: letter-spacing 1s;
+    padding: 15px 0;
+    cursor: pointer;
+}
+.wrapper #login .spanSubmit {
+    padding: 15px 0;
+}
+.wrapper #login INPUT[type=submit]:hover {
+    letter-spacing: 20px;
+
+}
+.wrapper #login P:last-child {
+    width: 20%;
+    margin: 0 auto;
+}
+.wrapper #login P:not(:last-child) INPUT {
+    margin-left: 15px;
+    background-color: transparent;
+    color: #fff;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    font-size: 3rem;
+        display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.shadow {
+    position: absolute; 
+    width:100%;
+    height: 1px;
+    margin: 0 15px;
+    background: #ffffff;
+    -webkit-box-shadow: 0px 0px 10px 0.5px #fff;
+    -moz-box-shadow: 0px 0px 10px 0.5px #fff;
+    box-shadow: 0px 0px 10px 0.5px #fff;
+}
+.wrapper #login P:not(:last-child) INPUT:focus {
+    outline-width: 0px;
+}
+.wrapper #login #antibot {
+        display: flex;
+    justify-content: center;
+    color: #fff;
+}
+.wrapper #login #antibot A {
+    color: #fff;
+    margin: 0 10px;
+}
+/* The animation code */
+@keyframes notMatrixBackground {
+/*  from {background-size: 5%;}
+  to {background-size: 15%;}
+*/  from {background-position: 0% 0%;}
+  to {background-position: 100% 100%;}
+
+}/* The animation code */
+@keyframes notMatrixBackgroundNav {
+/*  from {background-size: 5%;}
+  to {background-size: 15%;}
+*/  from {box-shadow: 0 0 20px #fff, 0 0 80px #54d3c0, 0 0 100px #00dbba;}
+  to {box-shadow: 0 0 50px #fff, 0 0 80px #54d3c0, 0 0 100px #00dbba;}
+
+}
+@keyframes notMatrixBackgroundText {
+/*  from {background-size: 5%;}
+  to {background-size: 15%;}
+*/  from {text-shadow: 0 0 20px #fff, 0 0 80px #54d3c0, 0 0 100px #00dbba;}
+  to {text-shadow: 0 0 50px #fff, 0 0 80px #54d3c0, 0 0 100px #00dbba;}
+
+}
+
+
+/* The animation code */
+@keyframes notMatrixText {
+/*  from {background-size: 5%;}
+  to {background-size: 15%;}
+*/  from {    text-shadow: -15px -5px 8px #00e1ffa1, 0 0 10px #fff, 12px 3px 14px #b42bec7d;}
+  to {text-shadow: 15px -5px 8px #00e1ffa1, 0 0 30px #fff, -10px 3px 14px #b42bec7d;}
+
+}
+
+@-webkit-keyframes colorBackground {
+    0%{background-position:11% 0%}
+    50%{background-position:90% 100%}
+    100%{background-position:11% 0%}
+}
+@-moz-keyframes colorBackground {
+    0%{background-position:11% 0%}
+    50%{background-position:90% 100%}
+    100%{background-position:11% 0%}
+}
+@-o-keyframes colorBackground {
+    0%{background-position:11% 0%}
+    50%{background-position:90% 100%}
+    100%{background-position:11% 0%}
+}
+@keyframes colorBackground {
+    0%{background-position:11% 0%}
+    50%{background-position:90% 100%}
+    100%{background-position:11% 0%}
+}
+
+/*@keyframes widthAnimation {
+    0%{width: 0px}
+    100%{width: 1640px}
+}*/
+
+
+
+.grid-container {
+  /*display: grid;*/
+  /*grid-gap: 25px;*/
+  /*width:    100%;*/
+  /*background-color:     #ffffff57;*/
+  /*grid-template-columns: 50% 50%;*/
+  /*grid-template-rows: 50% 50%;*/
+
+      display: grid;
+    grid-gap: 5% 5%;
+    /* width: 100%; */
+    /* background-color: #ffffff57; */
+    grid-template-columns: 30% 65%;
+    margin: 0 5%;
+    grid-template-rows: 50% 50%;
+}
+
+.leftBot { 
+    /*grid-row: 2;
+    grid-column: 1;
+    grid-area: leftBot; 
+    background-color:   red;*/
+
+    grid-row: 2;
+    grid-column: 1;
+    /* background-color: green; */
+    height: 200px;
+    position: relative;
+    border-radius: 0 0 20%/50% 0;
+    background-color: #00000070;
+    background-image: url(/revival/tile-black.png);
+    background-size: 10000% 75%;
+    opacity: 0.8;
+    animation-name: notMatrixBackground;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    box-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #54d3c0, 0 0 50px #00dbba;
+}
+
+.leftTop { 
+/*    grid-row: 1;
+    grid-column: 1;
+    grid-area: leftTop;
+    background-color: green;*/
+
+   grid-row: 1;
+    grid-column: 1;
+    /* background-color: green; */
+    height: 200px;
+    position: relative;
+    border-radius: 20%/50% 0 0;
+    background-color: #00000070;
+    background-image: url(/revival/tile-black.png);
+    background-size: 10000% 75%;
+    opacity: 0.8;
+    animation-name: notMatrixBackground;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    box-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #54d3c0, 0 0 50px #00dbba;
+}
+
+.rightArea { 
+    grid-column: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    /*grid-area: right;
+    /*background-color: cyan;*/
+
+     height: 100%;
+    position: relative;
+    background-color: #00000070;
+    background-image: url(/revival/tile-black.png);
+    background-size: 10000% 75%;
+    opacity: 0.8;
+    animation-name: notMatrixBackground;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    box-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #54d3c0, 0 0 50px #00dbba;
+}
+
+.top { 
+    /*grid-area: Top;*/
+    background-color: yellow;
+}

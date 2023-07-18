@@ -1,0 +1,1 @@
+<?php if ($actual_db == 2):  ?>
